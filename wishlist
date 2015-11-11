@@ -14,8 +14,8 @@
         init(e);
         function renderAll (){
             init_home_hours();
-            
-            
+            var fashion = getFashionBySlug(slug);
+            renderFashion("#fashion_container", "#fashion_template", fashion);
             show_content();
         }
         loadMallDataCached(renderAll); 
