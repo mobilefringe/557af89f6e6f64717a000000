@@ -20,6 +20,9 @@
                 renderFashionImages("#fashion_images_container", "#fashion_images_template", fashion_images);
             }
             show_content();
+            $('.flexslider').flexslider({
+                animation: "slide",
+            });
         }
         loadMallDataCached(renderAll); 
     })
