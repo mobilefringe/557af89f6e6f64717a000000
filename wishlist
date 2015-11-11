@@ -1,8 +1,8 @@
 <div class="container-fluid container_60">
     <h1 class="text-center">Holiday Wish List</h1>
     <div class="flexslider">
-        <ul class="slides" id="fashion_container">
-            <script id="fashion_template" type="x-tmpl-mustache/text">
+        <ul class="slides" id="fashion_images_container">
+            <script id="fashion_images_template" type="x-tmpl-mustache/text">
                <li><img src="{{image_url}}" alt="fashion" /></li>
             </script>
         </ul>
@@ -15,7 +15,7 @@
         function renderAll (){
             init_home_hours();
             var fashion = getFashionBySlug(slug);
-            renderFashion("#fashion_container", "#fashion_template", fashion);
+            renderFashionImages("#fashion_images_container", "#fashion_images_template", fashion_images);
             show_content();
         }
         loadMallDataCached(renderAll); 
