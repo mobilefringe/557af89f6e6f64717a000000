@@ -15,6 +15,7 @@
         function renderAll (){
             init_home_hours();
             var fashion = getFashionBySlug(slug);
+            var fashion_images = fashion.fashion_images
             renderFashionImages("#fashion_images_container", "#fashion_images_template", fashion_images);
             show_content();
         }
