@@ -69,6 +69,22 @@
     color:#5F6263;
 }
 
+.flex-direction-nav a:before  { 
+    content: " ";
+    display: block;
+    background: url('../path-to-image/flexslider-left.png') no-repeat;
+    width: 40px;
+    height: 40px;
+}
+.flex-direction-nav a.flex-next:before  { 
+    content: " ";
+    display: block;
+    background: url('../path-to-image/flexslider-right.png') no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+
 @media(max-width:800px){
     .share_social img{
         width:25px;
