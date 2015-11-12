@@ -10,6 +10,10 @@ h1{
     right:0;
 }
 
+.c_bold{
+    font-family: ChronicleTextG1-Bold;
+}
+
 .flex-control-paging li a{
     background:#4a4a4a;
     -webkit-box-shadow:  0 0 0 6px #EDEDED;
