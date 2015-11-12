@@ -88,6 +88,9 @@
 
 
 @media(max-width:800px){
+    .flex-direction-nav a{
+        text-indent:9999;
+    }
     .share_social img{
         width:25px;
     }
