@@ -73,6 +73,12 @@
     .share_social img{
         width:100px;
     }
+    .share_social{
+        width:25px;
+        margin:0;
+        margin-bottom:10px;
+        display:inline-block;
+    }
 }
 
 
