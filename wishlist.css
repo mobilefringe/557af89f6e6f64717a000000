@@ -107,6 +107,9 @@
         background-size: 20px;
             position: absolute;
     }
+    .flex-direction-nav .flex-next{
+        right:-10px;
+    }
 }
 
 
