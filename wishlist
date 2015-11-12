@@ -15,10 +15,23 @@
         <div class="margin_30"></div>
         <h3 class="new_store_subheading no_margin c_bold">SHARE YOUR FAVOURITE WISH LIST</h3>
         <div class="margin_20"></div>
-        <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://preview-56056be06e6f641a1d020000.codecloudapp.com/wishlist" class="c_deck share_social">
-            <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447354236000/facebook26.png" class="" alt="fb">
-            Facebook
-        </a>
+        <div class="row">
+            <div class="col-md-3">
+                <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://preview-56056be06e6f641a1d020000.codecloudapp.com/wishlist" class="c_deck share_social">
+                    <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447354236000/facebook26.png" class="" alt="fb">
+                    Facebook
+                </a>
+            </div>
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-3">
+                
+            </div>
+        </div>
         <a target="_blank" href="http://twitter.com/share?text=My STC Wish List&url=http://preview-56056be06e6f641a1d020000.codecloudapp.com/wishlist" class="share_social c_deck">
             <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447354246000/twitter15.png" class="" alt="tweet">
             Tweet
