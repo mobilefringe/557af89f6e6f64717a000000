@@ -52,7 +52,7 @@
                 animation: "slide",
                 after: function(slider){
                     var img_src = $(slider).find(".flex-active-slide").find('img').attr('src');
-                    $('meta[property=og:image]').attr('content', img_src);
+                    $('meta[property="og:image"]').attr('content', img_src);
                 
               }
             });
