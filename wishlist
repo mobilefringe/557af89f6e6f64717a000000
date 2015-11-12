@@ -23,6 +23,7 @@
             <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447350751000/twitter15.png" class="" alt="tweet">
             Tweet
         </a>
+        <br class="show_phone" />
         <a onclick="pinIt()" class="share_social">
             <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447350764000/pinterest12.png" class="" alt="pin">
             Pinterest
