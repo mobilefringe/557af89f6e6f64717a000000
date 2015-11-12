@@ -15,7 +15,7 @@
         <div class="margin_30"></div>
         <h3 class="new_store_subheading no_margin c_bold">SHARE YOUR FAVOURITE WISH LIST</h3>
         <div class="margin_20"></div>
-        <div>
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3 col-xs-6">
                     <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://preview-56056be06e6f641a1d020000.codecloudapp.com/wishlist" class="c_deck share_social c_margin">
