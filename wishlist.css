@@ -98,6 +98,8 @@
         display:inline-block;
         text-align:left;
     }
+    .flex-direction-nav a:before , .flex-direction-nav a.flex-next:before { 
+    }
 }
 
 
