@@ -36,6 +36,7 @@
 .share_social{
     margin: 0 10px;
     color:#5F6263;
+    cursor:pointer;
 }
 
 .share_social img{
