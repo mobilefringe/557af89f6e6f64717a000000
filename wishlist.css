@@ -81,9 +81,9 @@
     content: " ";
     display: block;
     background: url('http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447352962000/Triangle 1 Copy.png') no-repeat;
-    width: 40px;
-    height: 40px;
-        background-size: 40px;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
 }
 
 
@@ -99,6 +99,9 @@
         text-align:left;
     }
     .flex-direction-nav a:before , .flex-direction-nav a.flex-next:before { 
+         width: 20px;
+        height: 20px;
+        background-size: 20px;
     }
 }
 
