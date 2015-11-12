@@ -51,7 +51,7 @@
             $('.flexslider').flexslider({
                 animation: "slide",
                 after: function(slider){
-                ($(slider).find(".flex-active-slide").find('img').attr('src'))
+                console.log($(slider).find(".flex-active-slide").find('img').attr('src'))
               }
             });
         }
