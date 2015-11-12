@@ -1,6 +1,7 @@
 .flex-control-nav{
     text-align:center;
     bottom:-40px;
+    right:0;
 }
 
 .flex-control-paging li a{
