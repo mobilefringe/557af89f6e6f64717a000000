@@ -75,6 +75,7 @@
     background: url('http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447352973000/Triangle 1.png') no-repeat;
     width: 40px;
     height: 40px;
+        background-size: 40px;
 }
 .flex-direction-nav a.flex-next:before  { 
     content: " ";
@@ -82,6 +83,7 @@
     background: url('http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447352962000/Triangle 1 Copy.png') no-repeat;
     width: 40px;
     height: 40px;
+        background-size: 40px;
 }
 
 
