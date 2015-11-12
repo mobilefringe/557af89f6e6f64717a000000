@@ -9,9 +9,9 @@
     </div>
     <img src="http://assets.kodekloud.io/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/footer_stc_logo.png" class="wishlist_logo" alt="wishlist logo">
     <div class="text-center">
-        <img src="http://assets.kodekloud.io/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_facebook.png" class="wishlist_social" alt="fb">
-        <img src="http://assets.kodekloud.io/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_twitter.png" class="wishlist_social" alt="twitter">
-        <img src="http://assets.kodekloud.io/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_instagram.png" class="wishlist_social" alt="insta">
+        <a href="#"><img src="http://assets.kodekloud.io/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_facebook.png" class="wishlist_social" alt="fb"></a>
+        <a href="#"><img src="http://assets.kodekloud.io/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_twitter.png" class="wishlist_social" alt="twitter"></a>
+        <a href="#"><img src="http://assets.kodekloud.io/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_instagram.png" class="wishlist_social" alt="insta"></a>
     </div>
 </div>
 
