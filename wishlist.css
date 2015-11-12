@@ -2,3 +2,7 @@
     text-align:center;
     bottom:-40px;
 }
+
+.flex-control-paging li a{
+    background:#4a4a4a;
+}
