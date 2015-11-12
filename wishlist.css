@@ -69,6 +69,12 @@
     color:#5F6263;
 }
 
+@media(max-width:800px){
+    .share_social img{
+        width:25;
+    }
+}
+
 
 
 
