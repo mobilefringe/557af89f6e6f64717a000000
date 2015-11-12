@@ -1391,7 +1391,8 @@ ul.nav li.dropdown:hover > .dropdown-menu-hover {
     }
     .flex-direction-nav a{
         width:20px;
-        height:20px
+        height:20px;
+        margin-top: 0px;
     }
     .flex-direction-nav a{
         text-indent:9999;
