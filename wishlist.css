@@ -1,5 +1,5 @@
 .content_container{
-    width:1080px;
+    max-width:1080px;
 }
 .flex-control-nav{
     text-align:center;
