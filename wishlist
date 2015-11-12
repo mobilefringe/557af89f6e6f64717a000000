@@ -17,7 +17,7 @@
         <div class="margin_20"></div>
         <div class="row">
             <div class="col-md-3 col-xs-6">
-                <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://preview-56056be06e6f641a1d020000.codecloudapp.com/wishlist" class="c_deck share_social">
+                <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://preview-56056be06e6f641a1d020000.codecloudapp.com/wishlist" class="c_deck share_social c_margin">
                     <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447354236000/facebook26.png" class="" alt="fb">
                     Facebook
                 </a>
@@ -29,7 +29,7 @@
                 </a>
             </div>
             <div class="col-md-3 col-xs-6">
-                <a onclick="pinIt()" class="share_social c_deck">
+                <a onclick="pinIt()" class="share_social c_deck c_margin">
                     <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447354256000/pinterest12.png" class="" alt="pin">
                     Pinterest
                 </a>
