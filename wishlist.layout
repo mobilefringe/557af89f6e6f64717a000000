@@ -1,7 +1,7 @@
 <html lang="en">
     <head>
-        <meta property="og:title" content="{{meta_title}}">
-        <meta property="og:description" content="{{meta_description}}">
+        <meta property="og:title" content="STC Wish List">
+        <meta property="og:description" content="STC Wish List">
         <meta property="og:image" content="{{meta_image}}">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +11,8 @@
         <meta name="author" content="">
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@shopstc" />
-        <meta name="twitter:title" content="{{meta_title}}" />
-        <meta name="twitter:description" content="{{meta_description}}" />
+        <meta name="twitter:title" content="STC Wish List" />
+        <meta name="twitter:description" content="STC Wish List" />
         <meta name="twitter:image" content="{{meta_image}}" />
     
         <title>{{meta_title}}</title>
