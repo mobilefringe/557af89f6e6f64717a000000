@@ -488,13 +488,7 @@ h1 {
     cursor: default;
 }
 
-.flex-direction-nav a:before{
-    content: '\25C0';
-    font-size: 28px;
-}
-.flex-direction-nav a.flex-next:before {
-  content: '\25B6';
-}
+
 
 /*Home Page*/
 .stc_logo{
