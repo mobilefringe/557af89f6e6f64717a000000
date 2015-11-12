@@ -13,6 +13,9 @@ h1{
 .c_bold{
     font-family: CircularStd-Bold; 
 }
+.c_deck{
+    font-family: CircularStd-Book; 
+}
 
 .flex-control-paging li a{
     background:#4a4a4a;
