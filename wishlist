@@ -23,28 +23,24 @@
                 </a>
             </div>
             <div class="col-md-3">
-                
+                <a target="_blank" href="http://twitter.com/share?text=My STC Wish List&url=http://preview-56056be06e6f641a1d020000.codecloudapp.com/wishlist" class="share_social c_deck">
+                    <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447354246000/twitter15.png" class="" alt="tweet">
+                    Tweet
+                </a>
             </div>
             <div class="col-md-3">
-                
+                <a onclick="pinIt()" class="share_social c_deck">
+                    <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447354256000/pinterest12.png" class="" alt="pin">
+                    Pinterest
+                </a>
             </div>
             <div class="col-md-3">
-                
+                <a href="mailto:email@address.com?subject=My STC Wish List&body=http://preview-56056be06e6f641a1d020000.codecloudapp.com/wishlist" class="c_deck share_social">
+                    <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447354263000/Group.png" class="" alt="email">
+                    Email
+                </a>  
             </div>
         </div>
-        <a target="_blank" href="http://twitter.com/share?text=My STC Wish List&url=http://preview-56056be06e6f641a1d020000.codecloudapp.com/wishlist" class="share_social c_deck">
-            <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447354246000/twitter15.png" class="" alt="tweet">
-            Tweet
-        </a>
-        <br class="show_phone" />
-        <a onclick="pinIt()" class="share_social c_deck">
-            <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447354256000/pinterest12.png" class="" alt="pin">
-            Pinterest
-        </a>
-        <a href="mailto:email@address.com?subject=My STC Wish List&body=http://preview-56056be06e6f641a1d020000.codecloudapp.com/wishlist" class="c_deck share_social">
-            <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447354263000/Group.png" class="" alt="email">
-            Email
-        </a>
         <div class="margin_20"></div>
         <p class="wishlist_footer c_deck">Scarborough Town Centre - 300 Borough Drive <br class="show_phone" /> Scarborough, Ontario M1P 4P5</p>
         <p class="wishlist_footer2 c_deck"><a href="/"><i class="fa fa-long-arrow-left"></i> Back to scarboroughtowncentre.com</a></p>
