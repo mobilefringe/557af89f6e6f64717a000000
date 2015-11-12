@@ -2,7 +2,7 @@
     <head>
         <meta property="og:title" content="STC Wish List">
         <meta property="og:description" content="STC Wish List">
-        <meta property="og:image" content="{{meta_image}}">
+        <meta property="og:image" content="">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
