@@ -70,9 +70,7 @@
 }
 
 @media(max-width:800px){
-    .flex-direction-nav a{
-        text-indent:9999;
-    }
+    
     .share_social img{
         width:25px;
     }
@@ -83,22 +81,7 @@
         display:inline-block;
         text-align:left;
     }
-    .flex-direction-nav a:before , .flex-direction-nav a.flex-next:before { 
-        width: 20px;
-        height: 20px;
-        background-size: 20px;
-        position: absolute;
-        top:50%;
-        -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        transform: translateY(-50%);
-    }
-    .flex-direction-nav a{
-        width:20px;
-        height:20px
-    }
+    
 }
 
 
