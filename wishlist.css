@@ -71,10 +71,10 @@
 
 @media(max-width:800px){
     .share_social img{
-        width:100px;
+        width:25px;
     }
     .share_social{
-        width:25px;
+        width:100px;
         margin:0;
         margin-bottom:10px;
         display:inline-block;
