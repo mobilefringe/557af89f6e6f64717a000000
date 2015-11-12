@@ -1,6 +1,7 @@
 <html lang="en">
     <head>
         <meta property="og:title" content="STC Wish List">
+        <meta property="og:url" content="STC Wish List">
         <meta property="og:description" content="STC Wish List">
         <meta property="og:image" content="{{meta_image}}">
         <meta charset="utf-8">
