@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div>
     <h1 class="text-center">Holiday Wish List</h1>
     <div class="flexslider custom_slider">
         <ul class="slides" id="fashion_images_container">
