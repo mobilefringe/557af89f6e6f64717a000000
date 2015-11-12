@@ -71,11 +71,7 @@
 
 @media(max-width:800px){
     .share_social img{
-        width:25px;
-        margin:0;
-        margin-bottom:10px;
-        display:inline-block;
-        
+        width:100px;
     }
 }
 
