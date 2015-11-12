@@ -16,20 +16,20 @@
         <h3 class="new_store_subheading no_margin">SHARE YOUR FAVOURITE WISH LIST</h3>
         <div class="margin_20"></div>
         <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://preview-56056be06e6f641a1d020000.codecloudapp.com/wishlist" class="share_social">
-            <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447350743000/facebook26.png" class="" alt="fb">
+            <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447354236000/facebook26.png" class="" alt="fb">
             Facebook
         </a>
         <a target="_blank" href="http://twitter.com/share?text=STC Wish List&url=http://preview-56056be06e6f641a1d020000.codecloudapp.com/wishlist" class="share_social">
-            <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447350751000/twitter15.png" class="" alt="tweet">
+            <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447354246000/twitter15.png" class="" alt="tweet">
             Tweet
         </a>
         <br class="show_phone" />
         <a onclick="pinIt()" class="share_social">
-            <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447350764000/pinterest12.png" class="" alt="pin">
+            <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447354256000/pinterest12.png" class="" alt="pin">
             Pinterest
         </a>
         <a href="mailto:email@address.com?subject=STC Wish List&body=http://preview-56056be06e6f641a1d020000.codecloudapp.com/wishlist" class="share_social">
-            <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447350773000/envelope4.png" class="" alt="email">
+            <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1447354263000/Group.png" class="" alt="email">
             Email
         </a>
         <div class="margin_20"></div>
