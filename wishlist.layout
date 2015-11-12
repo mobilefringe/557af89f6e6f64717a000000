@@ -97,6 +97,6 @@
                 {{yield}}
             </div>
         </div>
-        <a href="#top" class="scrollToTop"><i class="fa fa-chevron-up"></i></a>
+        
     </body>
 </html>
