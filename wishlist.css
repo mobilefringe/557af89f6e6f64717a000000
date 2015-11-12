@@ -5,9 +5,9 @@
 
 .flex-control-paging li a{
     background:#4a4a4a;
-    -webkit-box-shadow: inset 0 0 0 6px #EDEDED;
-    -moz-box-shadow: inset 0 0 0 6px #EDEDED;
-    -o-box-shadow: inset 0 0 0 6px #EDEDED;
-    box-shadow: inset 0 0 0 6px #EDEDED;
+    -webkit-box-shadow:  0 0 0 6px #EDEDED;
+    -moz-box-shadow:  0 0 0 6px #EDEDED;
+    -o-box-shadow:  0 0 0 6px #EDEDED;
+    box-shadow:  0 0 0 6px #EDEDED;
 }
 
