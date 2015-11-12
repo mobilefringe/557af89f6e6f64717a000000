@@ -113,9 +113,10 @@
         -o-transform: translateY(-50%);
         transform: translateY(-50%);
     }
-    /*.flex-direction-nav .flex-next{*/
-    /*    right:-10px;*/
-    /*}*/
+    .flex-direction-nav a{
+        width:20px;
+        height:20px
+    }
 }
 
 
