@@ -15,6 +15,11 @@ h1{
     right:0;
 }
 
+.custom_share_row{
+    max-width:400px;
+    margin:0 auto;
+}
+
 .c_bold{
     font-family: CircularStd-Bold; 
 }
