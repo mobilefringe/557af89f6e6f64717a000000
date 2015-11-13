@@ -90,7 +90,10 @@ h1{
 }
 
 @media(max-width:800px){
-    
+    .custom_share_row{
+        max-width:400px;
+        margin:inherit;
+    }
     .share_social img{
         width:25px;
     }
