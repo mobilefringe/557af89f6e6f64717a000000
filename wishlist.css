@@ -60,6 +60,7 @@ h1{
 
 .share_social:hover{
     text-decoration:none;
+    opacity:0.8;
 }
 
 .share_social img{
