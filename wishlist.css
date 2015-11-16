@@ -58,6 +58,10 @@ h1{
     cursor:pointer;
 }
 
+.share_social:hover{
+    text-decoration:none;
+}
+
 .share_social img{
     width:20px;
 }
