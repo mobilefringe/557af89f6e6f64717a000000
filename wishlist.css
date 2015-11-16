@@ -111,7 +111,8 @@ h1{
         font-size:40px;
     }
     .wishlist_logo{
-        width:200px
+        width:200px;
+        margin-bottom:20px;
     }
     
 }
