@@ -3,6 +3,10 @@ body {
     padding-top: 30px;
 }
 
+h1{
+    font-family: CircularStd-Book;
+    font-size: 50px;
+}
 .content_container{
     max-width:1080px;
 }
