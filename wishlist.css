@@ -119,6 +119,9 @@ h1{
     .custom_slider{
         margin-bottom:120px;
     }
+    .flex-control-nav li{
+        height:20px;
+    }
     
 }
 
