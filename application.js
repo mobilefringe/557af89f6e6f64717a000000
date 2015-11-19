@@ -866,7 +866,9 @@ function renderPromos(container, template, collection){
         } else {
             val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();    
         }
-        var rendered = Mustache.render(template_html,val);
+        if(val.is_special_promo != true){
+            var rendered = Mustache.render(template_html,val);
+        }
         item_rendered.push(rendered);
     });
     $(container).show();
