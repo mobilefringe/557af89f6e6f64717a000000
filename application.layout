@@ -1,4 +1,4 @@
-a<html lang="en">
+<html lang="en">
     <head>
         <meta property="og:title" content="{{meta_title}}">
         <meta property="og:description" content="{{meta_description}}">
