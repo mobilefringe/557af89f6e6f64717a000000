@@ -4,7 +4,7 @@
     <div class="flexslider custom_slider">
         <ul class="slides" id="fashion_images_container">
             <script id="fashion_images_template" type="x-tmpl-mustache/text">
-               <li><img src="{{image_url}}" alt="fashion" /></li>
+               <li><img src="{{image_url}}" alt="fashion image" /></li>
             </script>
         </ul>
     </div>
