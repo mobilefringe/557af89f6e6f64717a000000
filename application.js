@@ -823,7 +823,7 @@ function renderInsidePages(container, template, collection){
     $(container).html(item_rendered.join(''));
 };
 
-function renderPromo(container, template, collection){
+function renderPromos(container, template, collection){
     var item_rendered = [];
     var template_html = $(template).html();
     Mustache.parse(template_html);   // optional, speeds up future use
