@@ -1,5 +1,5 @@
 <div>
-    <img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446833203000/stc-logo-holiday-360%20copy%20copy.png" class="wishlist_logo" alt="wishlist logo">
+    <a href="/"><img src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446833203000/stc-logo-holiday-360%20copy%20copy.png" class="wishlist_logo" alt="wishlist logo"></a>
     <!--<h1 class="text-center">Holiday Wish List</h1>-->
     <div class="flexslider custom_slider">
         <ul class="slides" id="fashion_images_container">
