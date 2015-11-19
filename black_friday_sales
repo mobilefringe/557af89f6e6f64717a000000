@@ -12,7 +12,8 @@
                 <a href="/stores">STORE LIST</a>
                 <a href="/map">CENTRE MAP</a>
                 <a href="/new_stores">NEW STORES</a>
-                <a class="active" href="/promotions">PROMOTIONS</a>
+                <a href="/promotions">PROMOTIONS</a>
+                <a class="active" href="/black_friday_sales">Black Friday Sales</a>
             </p>
             <div id="promo_container">
                 <script id="promo_template" type="x-tmpl-mustache/text">
