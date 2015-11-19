@@ -59,7 +59,7 @@
                 } 
             });
             all_promos = promo_array;
-            renderPromo("#promo_container","#promo_template", all_promos);
+            renderPromos("#promo_container","#promo_template", all_promos);
             show_content();
             more_less(e);
         }
