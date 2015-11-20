@@ -905,6 +905,8 @@ function renderSplPromos(container, template, collection){
                 val.store_detail_btn = store_details.slug;
                 val.store_name = store_details.name;
                 val.store_image = store_details.store_front_url_abs
+            }else {
+                val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC%20Newsletter.jpg";
             }
     
         }
