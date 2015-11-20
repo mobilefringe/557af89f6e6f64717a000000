@@ -55,7 +55,7 @@
             $.each( all_promos , function( key, val ){
                 today = new Date();
                 webDate = new Date(val.show_on_web_date)
-                if (today >= webDate) {
+                if (today >= webDate && val.is_special_promo) {
                     promo_array.push(val)
                 } 
             });
