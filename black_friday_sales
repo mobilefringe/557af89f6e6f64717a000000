@@ -65,7 +65,7 @@
                 renderSplPromos("#promo_container","#promo_template", all_promos);
             }
             else{
-                $('#promo_container').html("There are currently no Black Friday promotions available, please check back again later.")
+                $('#no_promos').html("There are currently no Black Friday promotions available, please check back again later.")
             }
             show_content();
             more_less(e);
