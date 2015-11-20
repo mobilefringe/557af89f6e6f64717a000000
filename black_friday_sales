@@ -61,7 +61,7 @@
                 } 
             });
             all_promos = promo_array;
-            all_promos = all_promos.sortBy(function(o){ return o.name }).reverse();
+            all_promos = all_promos.sortBy(function(o){ return o.name });
             if (all_promos.length >0){
                 renderSplPromos("#promo_container","#promo_template", all_promos);
             }
