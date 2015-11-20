@@ -55,6 +55,11 @@ h1 {
     font-weight:400;
 }
 
+
+.main_logo{
+    width:360px;    
+}
+
 .row {
     margin-right: -10px;
     margin-left: -10px;
