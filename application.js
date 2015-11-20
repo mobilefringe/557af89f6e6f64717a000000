@@ -139,7 +139,7 @@ function renderStoreList(container, template, collection, type,starter, breaker)
     $.each( collection , function( key, val ) {
         if (type == "stores" || type == "category_stores"){
             if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
-                val.alt_store_front_url = "http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC%20Newsletter.jpg";
+                val.alt_store_front_url = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
             } else {
                 val.alt_store_front_url = getImageURL(val.store_front_url);    
             }
@@ -252,7 +252,7 @@ function renderStoreDetails(container, template, collection, slug){
             val.level = "Upper Level";
         }
         if ((val.store_front_url).indexOf('missing.png') > -1){
-            val.alt_store_front_url = "http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC%20Newsletter.jpg";
+            val.alt_store_front_url = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
         } else {
             val.alt_store_front_url = getImageURL(val.store_front_url); 
         }
@@ -279,8 +279,8 @@ function renderGeneral(container, template, collection, type){
                 if (val.promotionable_type == "Store") {
                     var store_details = getStoreDetailsByID(val.promotionable_id);
                     if ((store_details.store_front_url_abs).indexOf('missing.png') > -1) {
-                        val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC%20Newsletter.jpg";
-                        val.store_image = "http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC%20Newsletter.jpg";
+                        val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
+                        val.store_image = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
                     } else {
                         val.alt_promo_image_url = (store_details.store_front_url_abs); 
                         val.store_image = store_details.store_front_url_abs
@@ -288,7 +288,7 @@ function renderGeneral(container, template, collection, type){
                     
                     val.store_name = store_details.name;
                 } else {
-                    val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC%20Newsletter.jpg";
+                    val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
                 }
                 
             } else {
@@ -318,7 +318,7 @@ function renderGeneral(container, template, collection, type){
             if (val.jobable_type == "Store") {
                 var store_details = getStoreDetailsByID(val.jobable_id);
                 if ((store_details.store_front_url_abs).indexOf('missing.png') > -1) {
-                    val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC%20Newsletter.jpg"
+                    val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png"
                 } else {
                     val.alt_promo_image_url = (store_details.store_front_url_abs);    
                 }
@@ -634,7 +634,7 @@ function renderTrending(container, template, collection){
         val.post_title = post.title;
         val.post_slug = post.slug;
         if (post.image_url.indexOf('missing.png') > -1) {
-            val.post_image = "http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC%20Newsletter.jpg";
+            val.post_image = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
         } else {
             val.post_image = post.image_url;
         }
@@ -696,7 +696,7 @@ function renderPosts2(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.post_image = "http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC%20Newsletter.jpg";
+            val.post_image = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
         } else {
             val.post_image = val.image_url;
         }
@@ -729,7 +729,7 @@ function renderPostDetails(container, template, collection){
     var template_html = $(template).html();
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.post_image = "http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC%20Newsletter.jpg";
+            val.post_image = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
         } else {
             val.post_image = val.image_url;
         }
@@ -833,8 +833,8 @@ function renderPromos(container, template, collection){
             if (val.promotionable_type == "Store") {
                 var store_details = getStoreDetailsByID(val.promotionable_id);
                 if ((store_details.store_front_url_abs).indexOf('missing.png') > -1) {
-                    val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC%20Newsletter.jpg";
-                    val.store_image = "http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC%20Newsletter.jpg";
+                    val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
+                    val.store_image = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
                 } else {
                     val.alt_promo_image_url = (store_details.store_front_url_abs); 
                     val.store_image = store_details.store_front_url_abs
@@ -842,7 +842,7 @@ function renderPromos(container, template, collection){
                 
                 val.store_name = store_details.name;
             } else {
-                val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC%20Newsletter.jpg";
+                val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
             }
             
         } else {
@@ -886,15 +886,15 @@ function renderSplPromos(container, template, collection){
             if (val.promotionable_type == "Store") {
                 var store_details = getStoreDetailsByID(val.promotionable_id);
                 if ((store_details.store_front_url_abs).indexOf('missing.png') > -1) {
-                    val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC%20Newsletter.jpg";
-                    val.store_image = "http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC%20Newsletter.jpg";
+                    val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
+                    val.store_image = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
                 } else {
                     val.alt_promo_image_url = (store_details.store_front_url_abs); 
                     val.store_image = store_details.store_front_url_abs
                 }
                 val.store_name = store_details.name;
             } else {
-                val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC%20Newsletter.jpg";
+                val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
             }
             
         } else {
@@ -902,15 +902,15 @@ function renderSplPromos(container, template, collection){
             if (val.promotionable_type == "Store") {
                 var store_details = getStoreDetailsByID(val.promotionable_id);
                 if ((store_details.store_front_url_abs).indexOf('missing.png') > -1) {
-                    val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC%20Newsletter.jpg";
-                    val.store_image = "http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC%20Newsletter.jpg";
+                    val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
+                    val.store_image = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
                 } else {
                     val.alt_promo_image_url = (store_details.store_front_url_abs); 
                     val.store_image = store_details.store_front_url_abs
                 }
                 val.store_name = store_details.name;
             } else {
-                val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC%20Newsletter.jpg";
+                val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
             }
     
         }
