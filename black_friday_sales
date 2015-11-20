@@ -52,7 +52,7 @@
         function renderAll (){
             init_home_hours();
             var all_promos = getPromotionsList();
-            all_promos = all_promos.sortBy(function(o){ return o.name }).reverse();
+            all_promos = all_promos.sortBy(function(o){ return o.name });
             promo_array = []
             $.each( all_promos , function( key, val ){
                 today = new Date();
