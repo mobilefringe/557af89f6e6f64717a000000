@@ -60,7 +60,12 @@
                 } 
             });
             all_promos = promo_array;
-            renderSplPromos("#promo_container","#promo_template", all_promos);
+            if (all_promos.lenght >0){
+                renderSplPromos("#promo_container","#promo_template", all_promos);
+            }
+            else{
+                $('#promo_container').html("There are currently no Black Friday promotions available, please check back again later.")
+            }
             show_content();
             more_less(e);
         }
