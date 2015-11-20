@@ -60,7 +60,7 @@
                 } 
             });
             all_promos = promo_array;
-            if (all_promos.lenght >0){
+            if (all_promos.length >0){
                 renderSplPromos("#promo_container","#promo_template", all_promos);
             }
             else{
