@@ -41,7 +41,7 @@
                     <div class="separator2"></div>
                 </script>
             </div>
-            <p id="no_promos"></p>
+            <h5 id="no_promos"></h5>
         </div>
     </div>
 </div>
