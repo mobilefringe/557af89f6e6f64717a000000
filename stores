@@ -1,0 +1,131 @@
+<div class="container-fluid container_60">
+    <div class="row">
+        <div class="col-md-3 text-center hidden_phone">
+            <a href="fashions/stc_both">
+                <img alt="side image" class="width_100" src="http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/jpeg/1448033802000/Attachment-1.jpeg" />
+            </a>
+        </div>
+        <!--<div class="col-md-1 hidden_phone">-->
+        <!--    <div style="width:50%;border-right:1px solid #ccc;height:100%" id="mid_div"></div>-->
+        <!--</div>-->
+        <div class="col-md-8 left_pad">
+            <h1>Stores</h1>
+            <div class="line"></div>
+            <p class="mini_nav ">
+                <a class="active" href="/stores">STORE LIST</a>
+                <a href="/map">CENTRE MAP</a>
+                <a href="/new_stores">NEW STORES</a>
+                <a href="/promotions">PROMOTIONS</a>
+            </p>
+            <p class="mini_nav_2">
+                <a class="active hstc" href="#alphabetical" aria-controls="alphabetical" role="tab" data-toggle="tab">ALPHABETICAL</a>
+                <a class="hstc" href="#categories" aria-controls="categories" role="tab" data-toggle="tab">CATEGORY</a>
+            </p>
+             <div class="tab-content ">
+                <div role="tabpanel" class="tab-pane active" id="alphabetical">
+                    <p class="alpha_list">
+                        <a href="#A">A</a>
+                        <a href="#B">B</a>
+                        <a href="#C">C</a>
+                        <a href="#D">D</a>
+                        <a href="#E">E</a>
+                        <a href="#F">F</a>
+                        <a href="#G">G</a>
+                        <a href="#H">H</a>
+                        <a href="#I">I</a>
+                        <a href="#J">J</a>
+                        <a href="#K">K</a>
+                        <a href="#L">L</a>
+                        <a href="#M">M</a>
+                        <a href="#N">N</a>
+                        <a href="#O">O</a>
+                        <a href="#P">P</a>
+                        <a href="#Q">Q</a>
+                        <a href="#R">R</a>
+                        <a href="#S">S</a>
+                        <a href="#T">T</a>
+                        <a href="#U">U</a>
+                        <a href="#V">V</a>
+                        <a href="#W">W</a>
+                        <a href="#X">X</a>
+                        <a href="#Y">Y</a>
+                        <a href="#Z">Z</a>
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="store_list" id="store_list_container">
+                                <script id="store_list_template" type="x-tmpl-mustache/text">
+                                    <div class="store_list_content">
+                                        <p class="store_initial hstc" style="{{show}}" id="{{initial}}">{{initial}}</p>
+                                        <p class="store_name"><a href="/stores/{{slug}}">{{name}}</a></p>
+                                    </div>
+                                </script>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="store_list" id="store_list_container_right">
+                                <script id="store_list_template_right" type="x-tmpl-mustache/text">
+                                    <div class="store_list_content">
+                                        <p class="store_initial hstc" style="{{show}}" id="{{initial}}">{{initial}}</p>
+                                        <p class="store_name"><a href="/stores/{{slug}}">{{name}}</a></p>
+                                    </div>
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="categories">
+                    <p class="alpha_list">
+                        <a href="#A" style="visibility:hidden">A</a>
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="store_list" id="category_list_container">
+                                <script id="category_list_template" type="x-tmpl-mustache/text">
+                                    <div class="store_list_content {{block}}">
+                                        <p class="store_initial" style="{{show}}">{{header}}</p>
+                                        <p class="store_name"><a href="/stores/{{slug}}">{{name}}</a></p>
+                                    </div>
+                                </script>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="store_list" id="category_list_container_right">
+                                <script id="category_list_template_right" type="x-tmpl-mustache/text">
+                                    <div class="store_list_content {{block}}">
+                                        <p class="store_initial" style="{{show}}">{{header}}</p>
+                                        <p class="store_name"><a href="/stores/{{slug}}">{{name}}</a></p>
+                                    </div>
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            $('.mini_nav_2 a').removeClass('active')
+            $(this).addClass('active')
+        })
+        function renderAll (){
+            init_home_hours();
+            var stores = getStoresList();
+            var categories = getStoreCategories();
+            var half = Math.ceil(categories.length / 2)
+            var leftSide = categories.splice(0, half);
+            var rightSide = categories
+            
+            renderStoreList('#store_list_container','#store_list_template', stores, "stores", "A", "M");
+            renderStoreList('#store_list_container_right','#store_list_template_right', stores, "stores", "M", "Z");
+            renderStoreListCatetories('#category_list_container','#category_list_template', leftSide, stores);
+            renderStoreListCatetories('#category_list_container_right','#category_list_template_right', rightSide, stores);
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
