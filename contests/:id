@@ -112,7 +112,9 @@
                 renderContest('#form_div','#contest_template', contestDetails, 'contestDetails');
                 renderContest('#contest_image_container','#contest_image_template', contestDetails, 'contestDetails');
             }
-            
+            else{
+                $('#contest_ended').show()
+            }
             show_content();
             randomgen();
             $('#contest_form').submit(function (e) {
