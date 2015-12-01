@@ -105,9 +105,10 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             var contestDetails = getContestBySlug(slug);
-            console.log(contestDetails)
-            renderContest('#form_div','#contest_template', contestDetails, 'contestDetails');
-            renderContest('#contest_image_container','#contest_image_template', contestDetails, 'contestDetails');
+            if(contestDetails != undefined){
+                renderContest('#form_div','#contest_template', contestDetails, 'contestDetails');
+                renderContest('#contest_image_container','#contest_image_template', contestDetails, 'contestDetails');
+            }
             show_content();
             randomgen();
             $('#contest_form').submit(function (e) {
