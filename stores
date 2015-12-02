@@ -16,7 +16,6 @@
                 <a href="/map">CENTRE MAP</a>
                 <a href="/new_stores">NEW STORES</a>
                 <a href="/promotions">PROMOTIONS</a>
-                <a href="/black_friday_sales">BLACK FRIDAY SALES</a>
             </p>
             <p class="mini_nav_2">
                 <a class="active hstc" href="#alphabetical" aria-controls="alphabetical" role="tab" data-toggle="tab">ALPHABETICAL</a>
