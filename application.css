@@ -290,6 +290,7 @@ h1 {
     text-decoration:none;
 }
 .mobile_logo{
+    padding: 10px;
     height: 55px;
     position: absolute;
     left: 50%;
