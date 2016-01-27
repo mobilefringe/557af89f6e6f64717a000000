@@ -74,7 +74,11 @@
                             or contact us: 300 Borough Drive, Scarborough, Ontario, M1P 4P5
                         </label>  
                         <label id="error_policy" for="consent_policy" generated="true" class="text-danger error"></label>
-                        <button type="submit" class="btn_submit_stc ">Subscribe</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="submit" value="SUBMIT" class="btn_submit_stc ">
                     </div>
                 </div>
 
