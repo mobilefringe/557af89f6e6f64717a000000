@@ -45,6 +45,7 @@
                     <div class="col-md-2">
                         <label for="age">Age</label>
                         <input id="age" class="form-control" type="Text" name="age" placeholder="Age" value="">
+                        <div class="margin_30"></div>
                     </div>
                     <div class="col-md-6">
                         <label for="Gender">Gender</label>
@@ -53,17 +54,18 @@
                             <option value="Female">Female</option>
                             <option value="Male">Male</option>
                         </select>
+                        <div class="margin_30"></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <input type="checkbox" name="publication_agreement" id="publication_agreement" value="1" required data-msg="Please agree to received newsletters from us" />
                         <label for="publication_agreement">I agree to receive newsletters from Scarborough Town Centre.</label>
+                        <label id="error_publication_agreement" for="publication_agreement" generated="true" class="text-danger error"></label>
+                        <input type="checkbox" name="consent_policy" id="consent_policy" value="1" required data-msg="Please confirm your consent to receive electronic communications from us">
+                        
                     </div>
                 </div>
-    <tr><td colspan="2"><label id="error_publication_agreement" for="publication_agreement" generated="true" class="text-danger error"></label></td></tr>
-    <tr>
-        <td width="20"><input type="checkbox" name="consent_policy" id="consent_policy" value="1" required data-msg="Please confirm your consent to receive electronic communications from us"> </td>
         <td><label for="consent_policy">I agree to receive communications from Scarborough Town Centre.<br />
         You can unsubscribe at anytime.<br />
         For more details about personal data privacy, please read or <a href="http://scarboroughtowncentre.com/privacy" target="_blank">Privacy Policy</a><br />
