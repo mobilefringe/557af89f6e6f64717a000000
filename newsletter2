@@ -35,14 +35,10 @@
                         <input id="phone_number" class="form-control" type="Text" name="phone_number" placeholder="Mobile number" value="">
                     </div>
                 </div>
-    <tr>
-            <td>
-                Postal Code
-            </td>
-        </tr>
-    <tr>
-        <td>
-            <input type="Text" name="postalcode" placeholder="Postal code" value="">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="postal">Postal Code</label>
+                        <input id="postal" class="form-control" type="Text" name="postalcode" placeholder="Postal code" value="">
         </td>
     </tr>
     <tr>
