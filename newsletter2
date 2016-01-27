@@ -42,6 +42,9 @@
                         <input id="postal" class="form-control" type="Text" name="postalcode" placeholder="Postal code" value="">
                         <div class="margin_30"></div>
                     </div>
+                    <div class="col-md-2">
+                        <label for="postal">Postal Code</label>
+                    </div>
                 </div>
         </td>
     </tr>
