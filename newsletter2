@@ -63,13 +63,14 @@
                         <label for="publication_agreement">I agree to receive newsletters from Scarborough Town Centre.</label>
                         <label id="error_publication_agreement" for="publication_agreement" generated="true" class="text-danger error"></label>
                         <input type="checkbox" name="consent_policy" id="consent_policy" value="1" required data-msg="Please confirm your consent to receive electronic communications from us">
-                        
+                        <label for="consent_policy">
+                            I agree to receive communications from Scarborough Town Centre.<br />
+                            You can unsubscribe at anytime.<br />
+                            For more details about personal data privacy, please read or <a href="http://scarboroughtowncentre.com/privacy" target="_blank">Privacy Policy</a>
+                            <br />
+                            or contact us: 300 Borough Drive, Scarborough, Ontario, M1P 4P5 </label>  
                     </div>
                 </div>
-        <td><label for="consent_policy">I agree to receive communications from Scarborough Town Centre.<br />
-        You can unsubscribe at anytime.<br />
-        For more details about personal data privacy, please read or <a href="http://scarboroughtowncentre.com/privacy" target="_blank">Privacy Policy</a><br />
-        or contact us: 300 Borough Drive, Scarborough, Ontario, M1P 4P5 </label></td>
     </tr>
     <tr><td colspan="2"><label id="error_policy" for="consent_policy" generated="true" class="text-danger error"></label></td></tr>
     <tr>
