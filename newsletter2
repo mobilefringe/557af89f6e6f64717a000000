@@ -124,4 +124,15 @@ $("#sub_form").validate();
 .error{color:#F00}
 </style>
 
-<!-- End eFlyerMaker form -->
+
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            init_home_hours();
+            show_content();
+            
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
