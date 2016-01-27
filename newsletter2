@@ -40,6 +40,7 @@
                     <div class="col-md-4">
                         <label for="postal">Postal Code</label>
                         <input id="postal" class="form-control" type="Text" name="postalcode" placeholder="Postal code" value="">
+                        <div class="margin_30"></div>
                     </div>
                 </div>
         </td>
