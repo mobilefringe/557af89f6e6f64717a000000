@@ -31,20 +31,10 @@
                         <div class="margin_30"></div>
                     </div>
                     <div class="col-md-6">
-                        <label for="email">Email*</label>
+                        <label for="phone_number">Phone Number</label>
+                        <input class="form-control" type="Text" name="phone_number" placeholder="Mobile number" value="">
                     </div>
                 </div>
-    </tr>
-    <tr>
-            <td>
-                Phone Number
-            </td>
-        </tr>
-    <tr>
-        <td>
-            <input type="Text" name="phone_number" placeholder="Mobile number" value="">
-        </td>
-    </tr>
     <tr>
             <td>
                 Postal Code
