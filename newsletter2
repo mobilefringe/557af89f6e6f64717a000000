@@ -9,14 +9,12 @@
         <div class="col-md-6 left_pad">
             <h1>Subscribe to the STC Newsletter</h1>
             <div class="line"></div>
-<form id="sub_form" method="post" action="https://campaign.eflyermaker.com">
-    <input type="hidden" name="action" value="Campaigns_subscribe" />
-    <input type="hidden" name="p" value="53616c7465645f5f42cbce77c41591389a87144b6bedf2cc" />
-<table align="center">
-
-<tr>
-    <td>
-        First Name*
+                <form id="sub_form" method="post" action="https://campaign.eflyermaker.com">
+                    <input type="hidden" name="action" value="Campaigns_subscribe" />
+                    <input type="hidden" name="p" value="53616c7465645f5f42cbce77c41591389a87144b6bedf2cc" />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>First Name*</label>
     </td>
         </tr>
     <tr>
