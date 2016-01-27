@@ -43,19 +43,8 @@
                         <div class="margin_30"></div>
                     </div>
                     <div class="col-md-2">
-                        <label for="postal">Postal Code</label>
-                    </div>
-                </div>
-        </td>
-    </tr>
-    <tr>
-            <td>
-                Age
-            </td>
-        </tr>
-    <tr>
-        <td>
-            <input type="Text" name="age" placeholder="Age" value="">
+                        <label for="age">Age</label>
+                        <input id="age" type="Text" name="age" placeholder="Age" value="">
         </td>
     </tr>
     <tr>
