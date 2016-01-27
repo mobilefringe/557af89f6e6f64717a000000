@@ -12,6 +12,8 @@
             <form id="sub_form" method="post" action="https://campaign.eflyermaker.com">
                 <input type="hidden" name="action" value="Campaigns_subscribe" />
                 <input type="hidden" name="p" value="53616c7465645f5f42cbce77c41591389a87144b6bedf2cc" />
+                <input type="hidden" name="simple" value="1">
+                <input type="hidden" name="subscriber_source" value="eFlyerMaker Subscription Form">
                 <div class="row">
                     <div class="col-md-6">
                         <label for="first_name">First Name*</label>
@@ -71,25 +73,10 @@
                             or contact us: 300 Borough Drive, Scarborough, Ontario, M1P 4P5
                         </label>  
                         <label id="error_policy" for="consent_policy" generated="true" class="text-danger error"></label>
+                        <button type="submit">Subscribe</button>
                     </div>
                 </div>
 
-    <tr>
-        <td colspan="2"> </td>
-    </tr>
-    <tr>
-        <td colspan="2"></td>
-    </tr>
-    <tr>
-        <td colspan="2"><input type="hidden" name="simple" value="1"></td>
-    </tr>
-    <tr>
-        <td colspan="2">
-            <input type="hidden" name="subscriber_source" value="eFlyerMaker Subscription Form">
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2"><button type="submit">Subscribe</button></td>
     </tr>
 </table>
 </form>
