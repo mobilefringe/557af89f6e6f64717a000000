@@ -46,19 +46,17 @@
                         <label for="age">Age</label>
                         <input id="age" class="form-control" type="Text" name="age" placeholder="Age" value="">
                     </div>
+                    <div class="col-md-2">
+                        <label for="Gender">Gender</label>
+                        <select id="Gender" name="gender">
+                            <option value="Unknown"></option>
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                        </select>
                 </div>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2"><b>Gender</b></td>
-    </tr>
     <tr>
         <td colspan="2">
-            <select id="Gender" name="gender">
-					  <option value="Unknown"></option>
-					  <option value="Female">Female</option>
-					  <option value="Male">Male</option>
-					</select>
+            
         </td>
     </tr>
     <tr>
