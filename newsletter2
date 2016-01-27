@@ -46,6 +46,7 @@
                         <label for="age">Age</label>
                         <input id="age" class="form-control" type="Text" name="age" placeholder="Age" value="">
                     </div>
+                </div>
         </td>
     </tr>
     <tr>
