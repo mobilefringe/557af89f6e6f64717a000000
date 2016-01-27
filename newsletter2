@@ -15,7 +15,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <label for="first_name">First Name*</label>
-                            <input id="first_name" type="Text" name="firstname" placeholder="First Name" value="" required data-msg="Please enter your first name">
+                            <input id="first_name" class="form-control" type="Text" name="firstname" placeholder="First Name" value="" required data-msg="Please enter your first name">
         </td>
     </tr>
 
