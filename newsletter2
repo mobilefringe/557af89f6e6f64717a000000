@@ -1,3 +1,14 @@
+<div class="container-fluid container_60">
+    <div class="row">
+        <div class="col-md-5 text-center">
+            <img alt="side image" class="width_100" src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC Newsletter.jpg" />
+        </div>
+        <!--<div class="col-md-1 hidden_phone">-->
+        <!--    <div style="width:50%;border-right:1px solid #ccc;height:100%"></div>-->
+        <!--</div>-->
+        <div class="col-md-6 left_pad">
+            <h1>Subscribe to the STC Newsletter</h1>
+            <div class="line"></div>
 <form id="sub_form" method="post" action="https://campaign.eflyermaker.com">
     <input type="hidden" name="action" value="Campaigns_subscribe" />
     <input type="hidden" name="p" value="53616c7465645f5f42cbce77c41591389a87144b6bedf2cc" />
