@@ -44,7 +44,7 @@
                     </div>
                     <div class="col-md-2">
                         <label for="age">Age</label>
-                        <input id="age" type="Text" name="age" placeholder="Age" value="">
+                        <input id="age" class="form-control" type="Text" name="age" placeholder="Age" value="">
         </td>
     </tr>
     <tr>
