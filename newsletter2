@@ -70,10 +70,10 @@
                             <br />
                             or contact us: 300 Borough Drive, Scarborough, Ontario, M1P 4P5
                         </label>  
+                        <label id="error_policy" for="consent_policy" generated="true" class="text-danger error"></label>
                     </div>
                 </div>
-    </tr>
-    <tr><td colspan="2"><label id="error_policy" for="consent_policy" generated="true" class="text-danger error"></label></td></tr>
+
     <tr>
         <td colspan="2"> </td>
     </tr>
