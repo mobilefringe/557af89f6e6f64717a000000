@@ -1,0 +1,127 @@
+<!-- Begin eFlyerMaker Signup form -->
+
+<form id="sub_form" method="post" action="https://campaign.eflyermaker.com">
+    <input type="hidden" name="action" value="Campaigns_subscribe" />
+    <input type="hidden" name="p" value="53616c7465645f5f42cbce77c41591389a87144b6bedf2cc" />
+<table align="center">
+
+<tr>
+            <td>
+                First Name*
+    </td>
+        </tr>
+    <tr>
+        <td>
+            <input type="Text" name="firstname" placeholder="First Name" value="" required data-msg="Please enter your first name">
+        </td>
+    </tr>
+
+        <tr>
+            <td>
+                Last Name*
+            </td>
+        </tr>
+    <tr>
+        <td>
+            <input type="Text" name="lastname" placeholder="Last Name" value="" required data-msg="Please enter your last name">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><b>Email*</b></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="email" id="email" name="email" placeholder="address@email.com" value="" size="40" required data-msg="Please enter your email" data-rule-email="true" data-msg-email="Please enter a valid email address"></td>
+    </tr>
+    <tr>
+            <td>
+                Phone Number
+            </td>
+        </tr>
+    <tr>
+        <td>
+            <input type="Text" name="phone_number" placeholder="Mobile number" value="">
+        </td>
+    </tr>
+    <tr>
+            <td>
+                Postal Code
+            </td>
+        </tr>
+    <tr>
+        <td>
+            <input type="Text" name="postalcode" placeholder="Postal code" value="">
+        </td>
+    </tr>
+    <tr>
+            <td>
+                Age
+            </td>
+        </tr>
+    <tr>
+        <td>
+            <input type="Text" name="age" placeholder="Age" value="">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><b>Gender</b></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <select id="Gender" name="gender">
+					  <option value="Unknown"></option>
+					  <option value="Female">Female</option>
+					  <option value="Male">Male</option>
+					</select>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"> </td>
+    </tr>
+    <tr>
+        <td colspan="2"> </td>
+    </tr>
+    <tr>
+        <td width="20"><input type="checkbox" name="publication_agreement" id="publication_agreement" value="1" required data-msg="Please agree to received newsletters from us"></td>
+        <td><label for="publication_agreement">I agree to receive newsletters from Scarborough Town Centre.</label></td>
+    </tr>
+    <tr><td colspan="2"><label id="error_publication_agreement" for="publication_agreement" generated="true" class="text-danger error"></label></td></tr>
+    <tr>
+        <td width="20"><input type="checkbox" name="consent_policy" id="consent_policy" value="1" required data-msg="Please confirm your consent to receive electronic communications from us"> </td>
+        <td><label for="consent_policy">I agree to receive communications from Scarborough Town Centre.<br />
+        You can unsubscribe at anytime.<br />
+        For more details about personal data privacy, please read or <a href="http://scarboroughtowncentre.com/privacy" target="_blank">Privacy Policy</a><br />
+        or contact us: 300 Borough Drive, Scarborough, Ontario, M1P 4P5 </label></td>
+    </tr>
+    <tr><td colspan="2"><label id="error_policy" for="consent_policy" generated="true" class="text-danger error"></label></td></tr>
+    <tr>
+        <td colspan="2"> </td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="hidden" name="simple" value="1"></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <input type="hidden" name="subscriber_source" value="eFlyerMaker Subscription Form">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><button type="submit">Subscribe</button></td>
+    </tr>
+</table>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+
+<script>
+$("#sub_form").validate();
+</script>
+
+<style>
+.error{color:#F00}
+</style>
+
+<!-- End eFlyerMaker form -->
