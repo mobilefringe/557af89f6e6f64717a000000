@@ -66,7 +66,7 @@
                         <label id="error_publication_agreement" for="publication_agreement" generated="true" class="text-danger error"></label>
                         <br /><br />
                         <input style="vertical-align: top;" type="checkbox" name="consent_policy" id="consent_policy" value="1" required data-msg="Please confirm your consent to receive electronic communications from us">
-                        <label for="consent_policy" style="width:94%">
+                        <label for="consent_policy" style="width:95%">
                             I agree to receive communications from Scarborough Town Centre.<br />
                             You can unsubscribe at anytime.<br />
                             For more details about personal data privacy, please read or <a href="http://scarboroughtowncentre.com/privacy" target="_blank">Privacy Policy</a>
