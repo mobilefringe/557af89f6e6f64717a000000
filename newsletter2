@@ -14,12 +14,8 @@
                     <input type="hidden" name="p" value="53616c7465645f5f42cbce77c41591389a87144b6bedf2cc" />
                     <div class="row">
                         <div class="col-md-6">
-                            <label>First Name*</label>
-    </td>
-        </tr>
-    <tr>
-        <td>
-            <input type="Text" name="firstname" placeholder="First Name" value="" required data-msg="Please enter your first name">
+                            <label for="first_name">First Name*</label>
+                            <input id="first_name" type="Text" name="firstname" placeholder="First Name" value="" required data-msg="Please enter your first name">
         </td>
     </tr>
 
