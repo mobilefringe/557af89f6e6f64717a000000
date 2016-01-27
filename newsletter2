@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label for="postal">Postal Code</label>
                         <input id="postal" class="form-control" type="Text" name="postalcode" placeholder="Postal code" value="">
                     </div>
