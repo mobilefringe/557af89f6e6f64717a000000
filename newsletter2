@@ -30,6 +30,9 @@
                         <input class="form-control" type="email" id="email" name="email" placeholder="address@email.com" value="" required data-msg="Please enter your email" data-rule-email="true" data-msg-email="Please enter a valid email address">
                         <div class="margin_30"></div>
                     </div>
+                    <div class="col-md-6">
+                        <label for="email">Email*</label>
+                    </div>
                 </div>
     </tr>
     <tr>
