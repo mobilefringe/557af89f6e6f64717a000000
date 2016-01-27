@@ -33,6 +33,7 @@
                     <div class="col-md-6">
                         <label for="phone_number">Phone Number</label>
                         <input id="phone_number" class="form-control" type="Text" name="phone_number" placeholder="Mobile number" value="">
+                        <div class="margin_30"></div>
                     </div>
                 </div>
                 <div class="row">
