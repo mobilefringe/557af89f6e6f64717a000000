@@ -16,17 +16,8 @@
                         <div class="col-md-6">
                             <label for="first_name">First Name*</label>
                             <input id="first_name" class="form-control" type="Text" name="firstname" placeholder="First Name" value="" required data-msg="Please enter your first name">
-        </td>
-    </tr>
-
-        <tr>
-            <td>
-                Last Name*
-            </td>
-        </tr>
-    <tr>
-        <td>
-            <input type="Text" name="lastname" placeholder="Last Name" value="" required data-msg="Please enter your last name">
+                            <label for="last_name">Last Name*
+                            <input id="last_name" class="form-control" type="Text" name="lastname" placeholder="Last Name" value="" required data-msg="Please enter your last name">
         </td>
     </tr>
     <tr>
