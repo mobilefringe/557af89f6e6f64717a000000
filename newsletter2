@@ -53,6 +53,7 @@
                             <option value="Female">Female</option>
                             <option value="Male">Male</option>
                         </select>
+                    </div>
                 </div>
     <tr>
         <td colspan="2">
