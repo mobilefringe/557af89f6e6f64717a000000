@@ -1,0 +1,81 @@
+<div class="container-fluid container_60">
+    <div class="row">
+        <div class="col-md-3 text-center hidden_phone">
+            <a href="/fashions/stc_both">
+                <img alt="side image" class="width_100" src="http://assets.codecloudapp.com/sites/56ba24f16e6f641f99030000/image/jpeg/1451320527000/winter_lookbok.jpg" />
+            </a>
+        </div>
+        <!--<div class="col-md-1 hidden_phone">-->
+        <!--    <div style="width:50%;border-right:1px solid #ccc;height:100%"  id="mid_div"></div>-->
+        <!--</div>-->
+        <div class="col-md-8 left_pad">
+            <h1>New Stores</h1>
+            <div class="line"></div>
+            <p class="mini_nav">
+                <a href="/stores">STORE LIST</a>
+                <a href="/map">CENTRE MAP</a>
+                <a class="active" href="/new_stores">NEW STORES</a>
+                <a href="/promotions">PROMOTIONS</a>
+            </p>
+            <!--<h3 class="new_store_subheading">OPENING SOON</h3>-->
+            <!--<p class="description hidden_now" id="no_opening_soon" >No new opening stores at the moment. Please check back later.</p>-->
+            <!--<div id="coming_soon_store_container">-->
+            <!--    <script id="coming_soon_store_template" type="x-tmpl-mustache/text">-->
+            <!--        <div class="row new_store_box">-->
+            <!--            <div class="col-md-3 new_store_img_div text-center">-->
+            <!--                <div class="new_store_img_parent">-->
+            <!--                    <img alt="new store" class="new_store_image" src="{{store_front_url_abs}}" />-->
+            <!--                </div>-->
+            <!--            </div>-->
+            <!--            <div class="col-md-9">-->
+            <!--                <h5 class="new_store_name">{{name}}</h5>-->
+            <!--                <p class="description">{{description}}</p>-->
+            <!--                <p><a class="feature_read_more" href="/stores/{{slug}}">MORE</a></p>-->
+            <!--            </div>-->
+            <!--        </div>-->
+            <!--        <hr class="separator2" />-->
+            <!--    </script>-->
+            <!--</div>-->
+            <br />
+            <p class="description hidden_now" id="no_now_open" >No new opened stores at the moment. Please check back later.</p>
+            <div id="new_store_container" class="custom_mobile_margin">
+                <script id="new_store_template" type="x-tmpl-mustache/text">
+                    <div class="row new_store_box">
+                        <div class="col-md-3 new_store_img_div text-center">
+                            <div class="new_store_img_parent">
+                                <img alt="new store" class="new_store_image" src="{{store_front_url_abs}}" />
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h5 class="new_store_name">{{name}}</h5>
+                            <p class="description">{{description}}</p>
+                            <a class="feature_read_more" href="/stores/{{slug}}">MORE</a>
+                        </div>
+                    </div>
+                    <hr class="separator2" />
+                </script>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            init_home_hours();
+            var coming_soon_stores = getComingSoonList();
+            var new_stores = coming_soon_stores.concat(getNewStoresList());
+            var nn = new_stores.sortBy(function(o){ return new Date( o.new_store_open_date ) });
+            if (new_stores.length > 0){
+                renderGeneral("#new_store_container","#new_store_template", new_stores);
+            }
+            else{
+                $('#no_now_open').fadeIn();
+            }
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
