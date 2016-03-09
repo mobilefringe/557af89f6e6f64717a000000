@@ -114,7 +114,6 @@ function init_home_hours(){
             hours_today.push(val);
         } 
     });
-    console.log(hours_today)
     var item_list = [];
     var item_rendered = [];
     var template_html = $('#home_hours_template').html();
@@ -129,6 +128,13 @@ function init_home_hours(){
         item_rendered.push(rendered);
     });
     $('#home_hours_container').html(item_rendered.join(''));
+    
+    $.each( getPropertyHours(), function(i,v){
+        if(v.is_holiday == true || v.is_closed == true){
+            var hours_day = new Date(v.holiday_date)
+            
+        } 
+    })
 }
 
 function renderStoreList(container, template, collection, type,starter, breaker){
