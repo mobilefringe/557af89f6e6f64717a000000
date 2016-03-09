@@ -59,7 +59,7 @@
         </div>
     </div>
 </div>
-<script src="//s3.amazonaws.com/kodekloud/sites/56ba0abc6e6f644468020000/application/x-javascript/1455034186000/jquery.hearts.min.1.0.js"></script>
+<script src="../shamrocks.js"></script>
 <script>
     $(document).ready(function(e){
         init(e);
