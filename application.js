@@ -135,10 +135,10 @@ function init_home_hours(){
         if(v.is_holiday == true || v.is_closed == true){
             var hours_day = new Date(v.holiday_date + "T05:00:00Z")
             
-            console.log(hours_day)
+            console.log(hours_day == d)
             
             if(hours_day == d){
-                console.log(v)
+                console.log("herer")
             }
             
         } 
