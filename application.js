@@ -128,12 +128,12 @@ function init_home_hours(){
         item_rendered.push(rendered);
     });
     $('#home_hours_container').html(item_rendered.join(''));
-    console.log(hours_day)
+    console.log(d)
     console.log("here")
     $.each( getPropertyHours(), function(i,v){
         if(v.is_holiday == true || v.is_closed == true){
             var hours_day = new Date(v.holiday_date + "T05:00:00Z")
-            console.log(d)
+            console.log(hours_day)
             
             if(hours_day == d){
                 console.log(v)
