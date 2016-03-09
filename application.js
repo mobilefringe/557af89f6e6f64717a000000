@@ -129,8 +129,6 @@ function init_home_hours(){
     });
     $('#home_hours_container').html(item_rendered.join(''));
     d.setHours(0, 0, 0, 0);
-    console.log(d)
-    console.log("here")
     $.each( getPropertyHours(), function(i,v){
         if(v.is_holiday == true || v.is_closed == true){
             var hours_day = new Date(v.holiday_date + "T05:00:00Z")
