@@ -63,7 +63,7 @@
 <script>
     $(document).ready(function(e){
         init(e);
-        $.fn.snow({flakeColor: '#EE0000', newOn: 200});
+        $.fn.snow({flakeColor: '#0f0', newOn: 200});
         function renderAll(){
             init_home_hours();
             var banners = getBanners();
