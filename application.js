@@ -133,6 +133,7 @@ function init_home_hours(){
     $.each( getPropertyHours(), function(i,v){
         if(v.is_holiday == true || v.is_closed == true){
             var hours_day = new Date(v.holiday_date + "T05:00:00Z")
+            hours_day.setHours(0, 0, 0, 0);
             console.log(hours_day)
             
             if(hours_day == d){
