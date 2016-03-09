@@ -133,7 +133,7 @@ function init_home_hours(){
             var hours_day = new Date(v.holiday_date + "T05:00:00Z")
             
             if(hours_day.setHours(0, 0, 0, 0) == d.setHours(0, 0, 0, 0)){
-                $('#home_hours_template').text("Closed Today")
+                $('#home_hours_container').text("Closed Today")
             }
             
         } 
