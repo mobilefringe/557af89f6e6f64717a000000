@@ -59,7 +59,7 @@
         </div>
     </div>
 </div>
-<script src="../shamrocks.js"></script>
+<script src="/shamrocks.js"></script>
 <script>
     $(document).ready(function(e){
         init(e);
