@@ -78,9 +78,9 @@
         init(e);
         function renderAll (){
             var blogs = getBlogList().sortBy(function(o){ return o.name });
-            var blog_beauty = getBlogDataBySlug('stc-lookbook');
+            var blog_beauty = getBlogDataBySlug('stc-stcdresscode');
             var blog_lifestyle = getBlogDataBySlug('stc-women-s-fashion');
-            var blog_mens = getBlogDataBySlug('stc-happenings');
+            var blog_mens = getBlogDataBySlug('stc-lookbook');
             
             blog_beauty.posts = blog_beauty.posts.sortBy(function(o){ return new Date(o.publish_date) }).reverse();
             blog_lifestyle.posts = blog_lifestyle.posts.sortBy(function(o){ return new Date(o.publish_date) }).reverse();
