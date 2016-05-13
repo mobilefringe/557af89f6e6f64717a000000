@@ -356,8 +356,8 @@ function renderGeneral(container, template, collection, type){
             } else {
                 val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();    
             }
-            if ((store_details.store_front_url_abs).indexOf('missing.png') > -1) {
-                val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png"
+            if ((val.event_image_url_abs).indexOf('missing.png') > -1) {
+                val.event_image_url_abs = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png"
             }
         }
         var rendered = Mustache.render(template_html,val);
