@@ -15,7 +15,7 @@
             <div id="promo_container">
                 <script id="promo_template" type="x-tmpl-mustache/text">
                     <h5 class="new_store_name">{{name}}</h5>
-                    <p class="description">{{dates}}</p>
+                    // <p class="description">{{dates}}</p>
                     <a class="feature_read_more more" href="#" data-id = "{{id}}" id="more_{{id}}">MORE</a>
                     <div class="show_accordion" id="show_{{id}}">
                         <div class="new_store_desc">{{description}}</div>
