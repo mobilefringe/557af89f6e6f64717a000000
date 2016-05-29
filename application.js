@@ -131,14 +131,15 @@ function init_home_hours(){
         var time_now_in_mins = d.getHours()*60 + d.getMinutes()
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
-    });
-    $('#home_hours_container').html(item_rendered.join(''));
-    if (close_in_mins < time_now_in_mins && open_in_mins >= time_now_in_mins){
+        if (close_in_mins < time_now_in_mins && open_in_mins >= time_now_in_mins){
         
     }
     else{
         $('.chat_link').hide()
     }
+    });
+    $('#home_hours_container').html(item_rendered.join(''));
+    
     $.each( getPropertyHours(), function(i,v){
         if(v.is_holiday == true || v.is_closed == true){
             var hours_day = new Date(v.holiday_date + "T05:00:00Z")
