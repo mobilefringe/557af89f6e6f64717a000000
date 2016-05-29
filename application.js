@@ -126,7 +126,9 @@ function init_home_hours(){
         console.log(val)
         
         
-        var open_in_mins = "2001-01-01 " + va.open;
+        var open = new date("2001-01-01 " + val.open);
+        var open_in_mins = 
+        
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
