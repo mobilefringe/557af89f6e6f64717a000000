@@ -128,6 +128,8 @@ function init_home_hours(){
         
         var open = new Date("2001-01-01 " + val.open);
         var open_in_mins = open.getHours()*60 + open.getMinutes()
+        var close = new Date("2001-01-01 " + val.close);
+        var open_in_mins = open.getHours()*60 + open.getMinutes()
         console.log(open)
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
