@@ -129,7 +129,7 @@ function init_home_hours(){
         var close = new Date("2001-01-01 " + val.close);
         var close_in_mins = close.getHours()*60 + close.getMinutes()
         var time_now_in_mins = d.getHours()*60 + d.getMinutes()
-        console.log((close_in_mins > time_now_in_mins && open_in_mins <= time_now_in_mins))
+        console.log(time_now_in_mins < close_in_mins)
         if (time_now_in_mins < close_in_mins){
         
         }
