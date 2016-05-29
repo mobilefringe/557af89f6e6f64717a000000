@@ -126,7 +126,7 @@ function init_home_hours(){
         console.log(val)
         
         
-        var open = new Date("2001-01-01 " + "01:00 Pm");
+        var open = new Date("2001-01-01 " + val.open);
         var open_in_mins = open.getHours()*60 + open.getMinutes()
         console.log(open)
         var rendered = Mustache.render(template_html,val);
