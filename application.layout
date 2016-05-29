@@ -318,7 +318,7 @@
             <div class="clearfix"></div>
         </footer>
         <a href="#top" class="scrollToTop"><i class="fa fa-chevron-up"></i></a>
-        <a class="chat_link" href="#" onclick="window.open('https://secure.kipsu.com/acct/','Ask us anything!','resizable=no,width=500,height=650,top=100,left=200'); return false;">Ask us anything!</a>
+        <a class="chat_link" href="#" onclick="window.open('https://secure.kipsu.com/acct/guestchat/oxford-scarborough-town-centre/guest-chat-page','Ask us anything!','resizable=no,width=500,height=650,top=100,left=200'); return false;">Ask us anything!</a>
     </body>
     
 </html>
