@@ -130,7 +130,7 @@ function init_home_hours(){
         var close_in_mins = close.getHours()*60 + close.getMinutes()
         var time_now_in_mins = d.getHours()*60 + d.getMinutes()
         console.log((close_in_mins > time_now_in_mins && open_in_mins <= time_now_in_mins))
-        if (close_in_mins > time_now_in_mins){
+        if (close_in_mins < time_now_in_mins){
         
         }
         else{
