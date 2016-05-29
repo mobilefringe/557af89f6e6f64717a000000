@@ -124,6 +124,9 @@ function init_home_hours(){
         val.open = check_open_time(open_time, close_time);
         val.close = convert_hour(close_time);
         console.log(val)
+        
+        
+        var open_in_mins = "2001-01-01 " + va.open;
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
