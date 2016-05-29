@@ -123,15 +123,15 @@ function init_home_hours(){
         var close_time = new Date (val.close_time);
         val.open = check_open_time(open_time, close_time);
         val.close = convert_hour(close_time);
-        console.log(val)
-        
         
         var open = new Date("2001-01-01 " + val.open);
         var open_in_mins = open.getHours()*60 + open.getMinutes()
         var close = new Date("2001-01-01 " + val.close);
         var close_in_mins = close.getHours()*60 + close.getMinutes()
-        var tme_now_in_mins = close.getHours()*60 + close.getMinutes()
+        var tme_now_in_mins = d.getHours()*60 + d.getMinutes()
+        console.log(close)
         console.log(close_in_mins)
+        console.log(tme_now_in_mins)
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
