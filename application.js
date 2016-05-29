@@ -129,13 +129,11 @@ function init_home_hours(){
         var close = new Date("2001-01-01 " + val.close);
         var close_in_mins = close.getHours()*60 + close.getMinutes()
         var tme_now_in_mins = d.getHours()*60 + d.getMinutes()
-        console.log(open_in_mins)
-        console.log(close_in_mins)
-        console.log(tme_now_in_mins)
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
     $('#home_hours_container').html(item_rendered.join(''));
+    if (close_in_mins < time_now_in_mins)
     $.each( getPropertyHours(), function(i,v){
         if(v.is_holiday == true || v.is_closed == true){
             var hours_day = new Date(v.holiday_date + "T05:00:00Z")
