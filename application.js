@@ -128,7 +128,7 @@ function init_home_hours(){
         
         var open = new Date("2001-01-01 " + val.open);
         var open_in_mins = open.getHours()*60 + open.getMinutes()
-        
+        console.log(open_in_mins)
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
