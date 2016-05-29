@@ -130,7 +130,7 @@ function init_home_hours(){
         var open_in_mins = open.getHours()*60 + open.getMinutes()
         var close = new Date("2001-01-01 " + val.close);
         var close_in_mins = close.getHours()*60 + close.getMinutes()
-        console.log(open_in_mins)
+        var tme_now_in_mins = close.getHours()*60 + close.getMinutes()
         console.log(close_in_mins)
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
