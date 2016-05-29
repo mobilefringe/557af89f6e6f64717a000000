@@ -123,7 +123,7 @@ function init_home_hours(){
         var close_time = new Date (val.close_time);
         val.open = check_open_time(open_time, close_time);
         val.close = convert_hour(close_time);
-        
+        console.log(val)
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
