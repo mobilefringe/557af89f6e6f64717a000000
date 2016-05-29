@@ -131,6 +131,7 @@ function init_home_hours(){
         var time_now_in_mins = d.getHours()*60 + d.getMinutes()
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
+        console.log((close_in_mins > time_now_in_mins && open_in_mins <= time_now_in_mins))
         if (close_in_mins > time_now_in_mins && open_in_mins <= time_now_in_mins){
         
         }
