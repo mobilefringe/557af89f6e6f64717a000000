@@ -133,10 +133,10 @@ function init_home_hours(){
         item_rendered.push(rendered);
         if (close_in_mins < time_now_in_mins && open_in_mins >= time_now_in_mins){
         
-    }
-    else{
-        $('.chat_link').hide()
-    }
+        }
+        else{
+            $('.chat_link').hide()
+        }
     });
     $('#home_hours_container').html(item_rendered.join(''));
     
