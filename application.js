@@ -736,7 +736,7 @@ function renderPosts2(container, template, collection){
         
         
         val.counter = counter;
-        var date_blog = new Date((val.publish_date + " 05:00:00").replace(/-/g,"/"));
+        var date_blog = new Date(val.publish_date);
         val.published_on = get_month(date_blog.getMonth()) + " " + date_blog.getDate() + ", " + date_blog.getFullYear();
         
         var rendered = Mustache.render(template_html,val);
