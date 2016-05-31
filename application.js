@@ -703,8 +703,7 @@ function renderPosts(container, template, collection){
             val.slug = val.video_link;
         }
         val.counter = counter;
-        var date_blog = new Date((val.publish_date));
-        console.log(date_blog)
+        var date_blog = new Date((val.publish_date).replace(/-/g,"/"));
         val.published_on = get_month(date_blog.getMonth()) + " " + date_blog.getDate() + ", " + date_blog.getFullYear();
         
         var rendered = Mustache.render(template_html,val);
