@@ -703,7 +703,7 @@ function renderPosts(container, template, collection){
             val.slug = val.video_link;
         }
         val.counter = counter;
-        var date_blog = new Date((val.publish_date + " 05:00:00");
+        var date_blog = new Date((val.publish_date + " 05:00:00"));
         console.log(date_blog)
         val.published_on = get_month(date_blog.getMonth()) + " " + date_blog.getDate() + ", " + date_blog.getFullYear();
         
