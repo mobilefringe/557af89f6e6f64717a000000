@@ -68,12 +68,12 @@ h1 {
 
 
 .chat_link{
-    background: #000;
+    background: #3f2a56;
     color: #fff;
-    width: 300px;
+    max-width: 400px;
     display: block;
     position: fixed;
-    left: 0px;
+    right: 0px;
     text-align: center;
     padding: 10px;
     bottom: 0px;
