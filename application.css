@@ -1212,6 +1212,10 @@ ul.nav li.dropdown:hover > .dropdown-menu-hover {
 }
 
 @media only screen and (max-width: 800px) { 
+    .chat_link{
+        width:100%;
+    }
+    }
     .custom_mobile_margin{
         margin-top:-70px;
     }
