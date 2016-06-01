@@ -79,16 +79,16 @@
         function renderAll (){
             var blogs = getBlogList().sortBy(function(o){ return o.name });
             var blog_beauty = getBlogDataBySlug('stc-stcdresscode');
-            var blog_lifestyle = getBlogDataBySlug('stc-women-s-fashion');
+            var blog_lifestyle = getBlogDataBySlug('stc-happenings');
             var blog_mens = getBlogDataBySlug('stc-lookbook');
             
             blog_beauty.posts = blog_beauty.posts.sortBy(function(o){ return new Date(o.publish_date) }).reverse();
             blog_lifestyle.posts = blog_lifestyle.posts.sortBy(function(o){ return new Date(o.publish_date) }).reverse();
             blog_mens.posts = blog_mens.posts.sortBy(function(o){ return new Date(o.publish_date) }).reverse();
             var top_blogs = [];
-            top_blogs.push(blog_stcdresscode);
-            top_blogs.push(blog_happenings);
-            top_blogs.push(blog_lookbook);
+            top_blogs.push(blog_beauty);
+            top_blogs.push(blog_lifestyle);
+            top_blogs.push(blog_mens);
             var posts = getAllPublishedPosts();
             var published_posts = posts.sortBy(function(o){ return new Date(o.publish_date) }).reverse();
             renderTrending("#trending_container", "#trending_template", top_blogs);
