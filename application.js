@@ -124,6 +124,7 @@ function init_home_hours(){
         val.open = check_open_time(open_time, close_time);
         val.close = convert_hour(close_time);
         var open_t = convert_hour(open_time)
+        console.log(open_t)
         var open = moment("2001-01-01 " + open_t);
         var open_in_mins = open.hour()*60 + open.minutes()
         var close_t = ""
@@ -137,6 +138,8 @@ function init_home_hours(){
         console.log(open_in_mins)
         console.log(time_now_in_mins)
         console.log(close_in_mins)
+        
+        
         if (time_now_in_mins < close_in_mins && time_now_in_mins >= open_in_mins){
         
         }
