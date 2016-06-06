@@ -610,7 +610,7 @@ function renderBanner(banner_template,home_banner,banners){
            val.noLink = "return false";
         }
         
-        console.log(val)
+        console.log(val.image_url)
        if (start <= today){
          if (val.end_date){
              end = new Date (val.end_date);
