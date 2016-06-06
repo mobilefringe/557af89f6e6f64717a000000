@@ -133,7 +133,9 @@ function init_home_hours(){
         var close = new Date("2001-01-01 " + close_t.split(" ")[0]);
         var close_in_mins = close.getHours()*60 + close.getMinutes()
         var time_now_in_mins = d.getHours()*60 + d.getMinutes()
-        
+        console.log(open_in_mins)
+        console.log(time_now_in_mins)
+        console.log(close_in_mins)
         if (close_t.split()[1] == "PM"){
             close_in_mins = close_in_mins + 720
         }
