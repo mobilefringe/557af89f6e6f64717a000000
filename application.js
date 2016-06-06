@@ -127,10 +127,10 @@ function init_home_hours(){
         var close_t = convert_hour(close_time)
         
         
-        var open = new Date("2001-01-01 " + open_t.split(" ")[0]));
-        console.log("2001-01-01 " + open_t.split(" ")[0]))
+        var open = new Date("2001-01-01 " + open_t.split(" ")[0]);
+        console.log("2001-01-01 " + open_t.split(" ")[0])
         var open_in_mins = open.getHours()*60 + open.getMinutes()
-        var close = new Date("2001-01-01 " + close_t.split(" ")[0]));
+        var close = new Date("2001-01-01 " + close_t.split(" ")[0]);
         var close_in_mins = close.getHours()*60 + close.getMinutes()
         var time_now_in_mins = d.getHours()*60 + d.getMinutes()
         console.log(open_in_mins)
