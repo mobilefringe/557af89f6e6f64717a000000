@@ -1,0 +1,87 @@
+<script src="http://snapwidget.com/js/snapwidget.js"></script>
+<div class="container-fluid container_60">
+    <div class="row">
+        <div class="col-md-8 right_pad">
+            <div id="fashion_container">
+                <script id="fashion_template" type="x-tmpl-mustache/text">
+                    <h1>{{name}}</h1>
+                </script>
+            </div>
+            <div class="line"></div>
+            <div class="flexslider">
+                <ul class="slides" id="fashion_images_container">
+                    <script id="fashion_images_template" type="x-tmpl-mustache/text">
+                       <li><img src="{{image_url}}" alt="fashion" /></li>
+                    </script>
+                </ul>
+            </div>
+            <hr class="chevron_line" />
+            <div class="triangle-down"></div>
+            <div class="triangle-down-inside"></div>
+            <div class="margin_15px"></div>
+            <p class="text-center new_store_subheading no_margin">SHARE</p>
+            <div class="margin_15px"></div>
+            <p class="text-center" id="share_container">
+                <script id="share_template" type="x-tmpl-mustache/text">
+                    <a class="share_link" target="_blank" href="http://www.facebook.com/sharer.php?u=http://scarboroughtowncentre.com/fashion/{{slug}}">
+                        <img class="share_img site_icons" alt="fb share" src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_facebook.png" />
+                    </a>
+                    <a class="share_link" target="_blank" href="http://twitter.com/share?url=http://scarboroughtowncentre.com/fashion/{{slug}}">
+                        <img class="share_img site_icons" alt="twitter share" src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_twitter.png" />
+                    </a>
+                    <a class="share_link" target="_blank" onclick="pinIt()" style="cursor:pointer" count-layout="horizontal">
+                        <img class="share_img site_icons" alt="pinterest share" src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_pin.png" />
+                    </a>
+                </script>
+            </p>
+        </div>
+        <!--<div class="col-md-1 hidden_phone">-->
+        <!--    <div style="width:50%;border-right:1px solid #ccc;height:100%"></div>-->
+        <!--</div>-->
+        <div class="col-md-3">
+            <img class="share_img site_icons no_margin" alt="fb share" src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_instagram.png" />
+            <!--<span class="new_store_subheading">@SHOPSTC</span>-->
+            <div class="margin_15px"></div>
+            <div id="instafeed"></div>
+            <p class="new_store_subheading">RECENT POSTS</p>
+            <div id="side_links_container">
+                <script id="side_links_template" type="x-tmpl-mustache/text">
+                    <p><a href="/{{slug}}" class="trending_side_link">{{title}}</a></p>
+                </script>
+            </div>
+            <p class="new_store_subheading">CATEGORIES</p>
+            <div id="blog_links_container">
+                <script id="blog_links_template" type="x-tmpl-mustache/text">
+                    <p><a href="/trending_categories/{{slug}}" class="trending_side_link">{{name}}</a></p>
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        
+        function renderAll (){
+            init_home_hours();
+            var blogs = getBlogList().sortBy(function(o){ return o.name });
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var fashion = getFashionBySlug(slug);
+            var fashion_images = fashion.fashion_images;
+            var posts = getAllPublishedPosts();
+            var published_posts = posts.sortBy(function(o){ return o.publish_date }).reverse();
+            renderFashion("#fashion_container", "#fashion_template", fashion);
+            renderFashion("#share_container", "#share_template", fashion);
+            renderFashion("#fashion_desc_container", "#fashion_desc_template", fashion);
+            renderFashionImages("#fashion_images_container", "#fashion_images_template", fashion_images);
+            renderPosts("#side_links_container", "#side_links_template", published_posts.slice(0,3));
+            renderBlogs("#blog_links_container", "#blog_links_template", blogs);
+            show_content();
+            $('.flexslider').flexslider({
+                animation: "slide",
+            });
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
