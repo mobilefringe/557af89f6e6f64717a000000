@@ -605,10 +605,12 @@ function renderBanner(banner_template,home_banner,banners){
         start = new Date (val.start_date);
        
         start.setDate(start.getDate());
-       if(val.url == "" || val.url === null){
+        if(val.url == "" || val.url === null){
            val.css = "style=cursor:default;";
            val.noLink = "return false";
-       }
+        }
+        
+        console.log(val)
        if (start <= today){
          if (val.end_date){
              end = new Date (val.end_date);
