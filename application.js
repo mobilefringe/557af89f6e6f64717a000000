@@ -141,9 +141,8 @@ function init_home_hours(){
         }
         
         var open = new Date("2001-01-01 " + open_t);
-        console.log("2001-01-01 " + val.close)
         var open_in_mins = open.getHours()*60 + open.getMinutes()
-        var close = new Date("2001-01-01 " + val.close);
+        var close = new Date("2001-01-01 " + close_t);
         var close_in_mins = close.getHours()*60 + close.getMinutes()
         var time_now_in_mins = d.getHours()*60 + d.getMinutes()
         console.log(open_in_mins)
