@@ -131,6 +131,7 @@ function init_home_hours(){
         var time_now_in_mins = moment().hour()*60 + moment().minutes()
         console.log(open_in_mins)
         console.log(time_now_in_mins)
+        console.log(close_in_mins)
         if (time_now_in_mins < close_in_mins && time_now_in_mins >= open_in_mins){
         
         }
