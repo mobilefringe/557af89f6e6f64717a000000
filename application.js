@@ -126,11 +126,11 @@ function init_home_hours(){
         var open_t = convert_hour(open_time)
         var open = moment("2001-01-01 " + open_t);
         var open_in_mins = open.hour()*60 + open.minutes()
-        var close = moment("2001-01-01 " + val.close);
         var close_t = ""
         if (parseInt(val.close) <10){
             close_t = "0" + val.close
         }
+        var close = moment("2001-01-01 " + close_t);
         console.log("2001-01-01 " + close_t)
         var close_in_mins = close.hour()*60 + close.minutes()
         var time_now_in_mins = moment().hour()*60 + moment().minutes()
