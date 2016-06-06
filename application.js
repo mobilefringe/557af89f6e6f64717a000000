@@ -126,6 +126,12 @@ function init_home_hours(){
         var open_t = convert_hour(open_time)
         var close_t = convert_hour(close_time)
         
+        if(open_t.split(" ")[1] == "PM"){
+            open_t = parseInt(open_t.split(" ")[0]) + 12
+        }
+        else{
+            open_t = parseInt(open_t.split(" ")[0]) + 12
+        }
         
         var open = new Date("2001-01-01 " + open_t);
         console.log("2001-01-01 " + val.close)
