@@ -124,11 +124,11 @@ function init_home_hours(){
         val.open = check_open_time(open_time, close_time);
         val.close = convert_hour(close_time);
         var open_t = convert_hour(open_time)
-        var open = new Date("2001-01-01 " + open_t);
-        var open_in_mins = open.getHours()*60 + open.getMinutes()
-        var close = new Date("2001-01-01 " + val.close);
-        var close_in_mins = close.getHours()*60 + close.getMinutes()
-        var time_now_in_mins = d.getHours()*60 + d.getMinutes()
+        var open = moment("2001-01-01 " + open_t);
+        var open_in_mins = open.hour()*60 + open.minutes()
+        var close = moment("2001-01-01 " + val.close);
+        var close_in_mins = close.getHours()*60 + close.minutes()
+        var time_now_in_mins = d.getHours()*60 + d.minutes()
         console.log(open_in_mins)
         console.log(time_now_in_mins)
         if (time_now_in_mins < close_in_mins && time_now_in_mins >= open_in_mins){
