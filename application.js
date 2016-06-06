@@ -133,6 +133,13 @@ function init_home_hours(){
             open_t = parseInt(open_t.split(" ")[0])
         }
         
+        if(close_t.split(" ")[1] == "PM"){
+            close_t = parseInt(close_t.split(" ")[0]) + 12
+        }
+        else{
+            close_t = parseInt(close_t.split(" ")[0])
+        }
+        
         var open = new Date("2001-01-01 " + open_t);
         console.log("2001-01-01 " + val.close)
         var open_in_mins = open.getHours()*60 + open.getMinutes()
