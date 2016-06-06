@@ -610,7 +610,7 @@ function renderBanner(banner_template,home_banner,banners){
            val.noLink = "return false";
         }
         
-        if (val.image_urlsplit("?")[0].substr(-3).toLowerCase() == "gif"){
+        if (val.image_url.split("?")[0].substr(-3).toLowerCase() == "gif"){
             val.gif_class = "gif_class"
         }
        if (start <= today){
