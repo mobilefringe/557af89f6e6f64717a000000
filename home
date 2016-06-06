@@ -66,7 +66,6 @@
             init_home_hours();
             var banners = getBanners();
             renderBanner('#banner_template','#home_banner',banners);
-            $('.gif_class').attr('src', $('.gif_class').attr('src'))
             var featureList = getFeatureList();
             var featureList2 = featureList.splice(2)
             renderFeatureItems('#feature_template', '#feature_items', featureList)
