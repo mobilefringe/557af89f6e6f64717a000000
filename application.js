@@ -130,7 +130,7 @@ function init_home_hours(){
             open_t = parseInt(open_t.split(" ")[0]) + 12
         }
         else{
-            open_t = parseInt(open_t.split(" ")[0]) + 12
+            open_t = parseInt(open_t.split(" ")[0])
         }
         
         var open = new Date("2001-01-01 " + open_t);
