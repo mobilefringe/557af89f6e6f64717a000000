@@ -75,6 +75,9 @@
                 animation: "slide",
                 after: function(slider) {
                     $('.gif_class').attr('src', $('.gif_class').attr('src'))
+                },
+                start: function(slider) {
+                    $('.gif_class').attr('src', $('.gif_class').attr('src'))
                 }
             });
         //     if($.cookie("popup_viewed") != "true"){
