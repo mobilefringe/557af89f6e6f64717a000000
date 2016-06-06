@@ -135,10 +135,10 @@ function init_home_hours(){
         var close_in_mins = close.hour()*60 + close.minutes()
         var time_now_in_mins = moment().hour()*60 + moment().minutes()
         
-        if(open_t.split(" ")[1]){
+        if(open_t.split(" ")[1] == "PM"){
             open_in_mins = open_in_mins + 720
         }
-        if(val.close.split(" ")[1]){
+        if(val.close.split(" ")[1] == "PM"){
             close_in_mins = close_in_mins + 720
         }
         console.log(open_in_mins)
