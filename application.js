@@ -126,7 +126,7 @@ function init_home_hours(){
         var open_t = convert_hour(open_time)
         var close_t = convert_hour(close_time)
         
-        
+        console.log("2001-01-01 " + open_t.split(" ")[0])
         var open = new Date("2001-01-01 " + open_t.split(" ")[0]);
         var open_in_mins = open.getHours()*60 + open.getMinutes()
         var close = new Date("2001-01-01 " + close_t.split(" ")[0]);
