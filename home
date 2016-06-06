@@ -73,7 +73,7 @@
             show_content();
             $('.flexslider').flexslider({
                 animation: "slide",
-                start: function(slider) {
+                after: function(slider) {
                     $('.gif_class').attr('src', $('.gif_class').attr('src'))
                 }
             });
