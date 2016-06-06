@@ -37,7 +37,7 @@
         <!--</div>-->
         <div class="col-md-3">
             <img class="share_img site_icons no_margin" alt="fb share" src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_instagram.png" />
-            <span class="new_store_subheading">@SHOPSTC</span>
+            <!--<span class="new_store_subheading">@SHOPSTC</span>-->
             <div class="margin_15px"></div>
             <!-- INSTANSIVE WIDGET --><script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/9a635922f208e3e1d6eb5147e13a383921caf354.html" id="instansive_9a635922f2" name="instansive_9a635922f2"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
             <p class="new_store_subheading">RECENT POSTS</p>
