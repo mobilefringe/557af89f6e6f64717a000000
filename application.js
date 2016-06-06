@@ -140,9 +140,9 @@ function init_home_hours(){
         if (open_t.split(" ")[1] == "PM"){
             open_in_mins = open_in_mins + 720
         }
-        // console.log(open_in_mins)
-        // console.log(time_now_in_mins)
-        // console.log(close_in_mins)
+        console.log(open_in_mins)
+        console.log(time_now_in_mins)
+        console.log(close_in_mins)
         if (time_now_in_mins < close_in_mins && time_now_in_mins >= open_in_mins){
         
         }
