@@ -96,6 +96,11 @@ $('.close-search-mobile').click(function(){
 function show_content(){
     $('.yield').fadeIn();
     $(".modal-backdrop").remove();
+    $.get('http://stc.mallmaverick.com/is_chat_available', function(data){
+        if (data.status == false){
+            $('.chat_link').hide()
+        }
+    })
     
 }
 
