@@ -90,10 +90,12 @@ function init(e){
         $('#mobile_search_box').val('');
     });
     
-    function render_instagram(data){
+    
+}
+
+function render_instagram(data){
         console.log(data)
     }
-}
 
 function init_home_hours(){
     var hours = getPropertyHours();
