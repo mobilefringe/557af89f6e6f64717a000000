@@ -37,9 +37,9 @@
         <!--</div>-->
         <div class="col-md-3">
             <!--<img class="share_img site_icons no_margin" alt="fb share" src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_instagram.png" />-->
-            <!--<span class="new_store_subheading">@SHOPSTC</span>-->
+            <span class="new_store_subheading">@SHOPSTC</span>
             <div class="margin_15px"></div>
-            
+            <div id="instafeed"></div>
             <p class="new_store_subheading">RECENT POSTS</p>
             <div id="side_links_container">
                 <script id="side_links_template" type="x-tmpl-mustache/text">
