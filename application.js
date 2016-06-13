@@ -90,7 +90,7 @@ function init(e){
         $('#mobile_search_box').val('');
     });
     
-    get_instagram("http://stc.mallmaverick.com/api/v2/stc/social.json", 10, render_instagram, 'thumbnail')
+    get_instagram("http://stc.mallmaverick.com/api/v2/stc/social.json", 10, 'thumbnail', render_instagram)
 }
 
 function render_instagram(data){
