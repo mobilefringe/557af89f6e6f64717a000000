@@ -100,7 +100,7 @@ function init(e){
 
         });
     
-        feed.run();
+        
     }
 }
 
