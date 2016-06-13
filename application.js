@@ -94,7 +94,7 @@ function init(e){
 }
 
 function render_instagram(data){
-        // console.log(data)
+        console.log(data)
     }
 
 function init_home_hours(){
