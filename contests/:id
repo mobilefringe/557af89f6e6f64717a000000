@@ -68,9 +68,9 @@
                         <div class="margin_30"></div>
                         <div class="row">
                             <div class="col-md-12">
-                                <label><input id="vendor_info" type="checkbox" name="contest[get_vendor_info]" /> Get More Info from This Retailer</label>
+                                <label><input id="vendor_info" type="checkbox" name="contest[get_vendor_info]" /> I agree to receive electronic message from Hudson’s Bay Company containing information and offers with respect to products and services that may be of interest to me, including notification of sales, special events and store promotions. I may withdraw this consent at any time by selecting the unsubscribe option.</label>
                                 <div class="margin_15px"></div>
-                                <label><input id="newsletter_signup" type="checkbox" name="contest[newsletter]" /> Subscribe to STC Newsletter</label>
+                                <label><input id="newsletter_signup" type="checkbox" name="contest[newsletter]" /> I agree to receive newsletters from Scarborough Town Centre. You can unsubscribe anytime. For more details about personal privacy, please read our <a href="/privacy" target="_blank">Privacy Policy.</a></label>
                             </div>
                         </div>
                         <div class="margin_30"></div>
