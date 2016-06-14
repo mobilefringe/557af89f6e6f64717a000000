@@ -62,7 +62,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <input style="vertical-align: top;" type="checkbox" name="publication_agreement" id="publication_agreement" value="1" required data-msg="Please agree to received newsletters from us" />
-                        <label for="publication_agreement" style="width:90%">I agree to receive newsletters from Scarborough Town Centre.</label>
+                        <label for="publication_agreement" style="width:90%">I agree to receive newsletters from Scarborough Town Centre. You can unsubscribe anytime. For more details about personal privacy, please read our <a href="http://scarboroughtowncentre.com/privacy" target="_blank">Privacy Policy</a></label>
                         <label id="error_publication_agreement" for="publication_agreement" generated="true" class="text-danger error"></label>
                         <br /><br />
                         <input style="vertical-align: top;" type="checkbox" name="consent_policy" id="consent_policy" value="1" required data-msg="Please confirm your consent to receive electronic communications from us">
