@@ -130,6 +130,9 @@ function init_home_hours(){
                 $('#home_hours_container').text("Closed Today")
                 $('.chat_link').hide()
             }
+            else{
+                $('#home_banner').prepend("<li class='item '><a href='#' onclick='window.open(\"https://secure.kipsu.com/acct/guestchat/oxford-scarborough-town-centre/guest-chat-page\",\"Hi, this is STC Guest Services. How can we help you?\",\"resizable=no,width=500,height=650,top=100,left=200\"); return false;'><img src='http://placehold.it/1140x550' /></a></li>")
+            }
             
         } 
     })
