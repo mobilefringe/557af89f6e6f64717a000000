@@ -70,7 +70,7 @@
             var featureList2 = featureList.splice(2)
             renderFeatureItems('#feature_template', '#feature_items', featureList)
             renderFeatureItems('#feature_template2', '#feature_items2', featureList2)
-            $('#home_banner').append("<a href='#' onclick='window.open(\"https://secure.kipsu.com/acct/guestchat/oxford-scarborough-town-centre/guest-chat-page\",\"Hi, this is STC Guest Services. How can we help you?\",\"resizable=no,width=500,height=650,top=100,left=200\"); return false;'>")
+            $('#home_banner').append("<a href='#' onclick='window.open(\"https://secure.kipsu.com/acct/guestchat/oxford-scarborough-town-centre/guest-chat-page\",\"Hi, this is STC Guest Services. How can we help you?\",\"resizable=no,width=500,height=650,top=100,left=200\"); return false;'><img src='http://placehold.it/1140x550' /></a>")
             show_content();
             $('.flexslider').flexslider({
                 animation: "slide",
