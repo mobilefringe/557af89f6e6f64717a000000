@@ -129,6 +129,7 @@ function init_home_hours(){
             if(hours_day.setHours(0, 0, 0, 0) == d.setHours(0, 0, 0, 0)){
                 $('#home_hours_container').text("Closed Today")
                 $('.chat_link').hide()
+                $('.chat_banner').hide()
             }
             
         } 
