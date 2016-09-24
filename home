@@ -70,8 +70,9 @@
             var featureList2 = featureList.splice(2)
             renderFeatureItems('#feature_template', '#feature_items', featureList)
             renderFeatureItems('#feature_template2', '#feature_items2', featureList2)
-            $('#home_banner').prepend("<li class='item chat_banner'><a href='#' onclick='window.open(\"https://secure.kipsu.com/acct/guestchat/oxford-scarborough-town-centre/guest-chat-page\",\"Hi, this is STC Guest Services. How can we help you?\",\"resizable=no,width=500,height=650,top=100,left=200\"); return false;'><img alt='kipsu chat' src='http://assets.codecloudapp.com/sites/57b22f546e6f6476c6020000/image/jpeg/1474642437000/KIPSU_Carousel_vFNL.jpeg' /></a></li>")
             show_content();
+            $('#home_banner').prepend("<li class='item chat_banner'><a href='#' onclick='window.open(\"https://secure.kipsu.com/acct/guestchat/oxford-scarborough-town-centre/guest-chat-page\",\"Hi, this is STC Guest Services. How can we help you?\",\"resizable=no,width=500,height=650,top=100,left=200\"); return false;'><img alt='kipsu chat' src='http://assets.codecloudapp.com/sites/57b22f546e6f6476c6020000/image/jpeg/1474642437000/KIPSU_Carousel_vFNL.jpeg' /></a></li>")
+            
             $('.flexslider').flexslider({
                 animation: "slide",
                 after: function(slider) {
