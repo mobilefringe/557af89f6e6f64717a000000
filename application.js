@@ -1,7 +1,7 @@
 /*Created 2015-06-12  by Rajbir Karan Singh*/
 
 function init(e){
-    $('<div class="modal-backdrop custom_backdrop"><img src="http://kodekloud.s3.amazonaws.com/sites/554a79236e6f64713f000000/69e8cd982124dc73de1f5a67a627ee75/loading.gif" class="" alt=""></div>').appendTo(document.body);
+    $('<div class="modal-backdrop custom_backdrop"><img src="//kodekloud.s3.amazonaws.com/sites/554a79236e6f64713f000000/69e8cd982124dc73de1f5a67a627ee75/loading.gif" class="" alt=""></div>').appendTo(document.body);
     $('#open_search').click(function(e){
         $('#open_search').hide();
         $('#close_search').css('display','inline-block');
@@ -90,7 +90,7 @@ function init(e){
         $('#mobile_search_box').val('');
     });
     
-    get_instagram("http://stc.mallmaverick.com/api/v2/stc/social.json", 10, 'thumbnail', render_instagram)
+    get_instagram("//stc.mallmaverick.com/api/v2/stc/social.json", 10, 'thumbnail', render_instagram)
 }
 
 function render_instagram(data){
