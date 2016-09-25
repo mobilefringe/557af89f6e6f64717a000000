@@ -3,36 +3,36 @@
 /* FONTS */
 @font-face {
     font-family: ChronicleTextG1-Bold;
-    src: url(http://cdn.mallmaverick.com/system/site_images/photos/000/010/027/original/ChronicleTextG1-Bold.otf?1434473503);
+    src: url(//cdn.mallmaverick.com/system/site_images/photos/000/010/027/original/ChronicleTextG1-Bold.otf?1434473503);
 }
 
 @font-face{
     font-family: ChronicleTextG1-Roman;  
-    src: url(http://cdn.mallmaverick.com/system/site_images/photos/000/010/028/original/ChronicleTextG1-Roman.otf?1434473504);
+    src: url(//cdn.mallmaverick.com/system/site_images/photos/000/010/028/original/ChronicleTextG1-Roman.otf?1434473504);
 }
 @font-face{
     font-family: CircularStd-Book;  
-    src: url(http://cdn.mallmaverick.com/system/site_images/photos/000/010/029/original/CircularStd-Book.otf?1434473504);
+    src: url(//cdn.mallmaverick.com/system/site_images/photos/000/010/029/original/CircularStd-Book.otf?1434473504);
 }
 @font-face{
     font-family: CircularStd-Bold;  
-    src: url(http://cdn.mallmaverick.com/system/site_images/photos/000/010/030/original/CircularStd-Bold.otf?1434473504);
+    src: url(//cdn.mallmaverick.com/system/site_images/photos/000/010/030/original/CircularStd-Bold.otf?1434473504);
 }
 @font-face{
     font-family: ChronicleDisplay-LightItalic;  
-    src: url(http://cdn.mallmaverick.com/system/site_images/photos/000/010/023/original/ChronicleDisplay-LightItalic.otf?1434473499);
+    src: url(//cdn.mallmaverick.com/system/site_images/photos/000/010/023/original/ChronicleDisplay-LightItalic.otf?1434473499);
 }
 @font-face{
     font-family: ChronicleDisplay-Roman;  
-    src: url(http://cdn.mallmaverick.com/system/site_images/photos/000/010/025/original/ChronicleDisplay-Roman.otf?1434473503);
+    src: url(//cdn.mallmaverick.com/system/site_images/photos/000/010/025/original/ChronicleDisplay-Roman.otf?1434473503);
 }
 @font-face{
     font-family: ChronicleDisplay-Light;  
-    src: url(http://cdn.mallmaverick.com/system/site_images/photos/000/010/022/original/ChronicleDisplay-Light.otf?1434473499);
+    src: url(//cdn.mallmaverick.com/system/site_images/photos/000/010/022/original/ChronicleDisplay-Light.otf?1434473499);
 }
 @font-face{
     font-family: ChronicleDisplay-Bold;  
-    src: url(http://cdn.mallmaverick.com/system/site_images/photos/000/010/024/original/ChronicleDisplay-Bold.otf?1434473499);
+    src: url(//cdn.mallmaverick.com/system/site_images/photos/000/010/024/original/ChronicleDisplay-Bold.otf?1434473499);
 }
 
 .separator2:last-child{
