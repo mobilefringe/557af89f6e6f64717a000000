@@ -30,7 +30,7 @@
                         <img class="share_img site_icons" alt="twitter share" src="//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_twitter.png" />
                     </a>
                     <a class="share_link" target="_blank" onclick="pinIt()" style="cursor:pointer" count-layout="horizontal">
-                        <img class="share_img site_icons" alt="pinterest share" src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_pin.png" />
+                        <img class="share_img site_icons" alt="pinterest share" src="//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_pin.png" />
                     </a>
                 </script>
             </p>
