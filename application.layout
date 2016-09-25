@@ -252,7 +252,7 @@
                     <a href="/"><img class="main_logo" src="http://assets.kodekloud.io/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/stc_logo_360.png" alt="logo"></a>
                     <p class="sub_menu">
                         <a href="/hours" class="site_open_now">
-                            <img src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/icon_hour.png" class="icon_top opacity_hover" alt="icob hours">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/icon_hour.png" class="icon_top opacity_hover" alt="icob hours">
                             <span id="home_hours_container">
                                 <script id="home_hours_template" type="x-tmpl-mustache/text">
                                     <span class="open_now">{% raw %}{{open}}{% endraw %}</span> 
