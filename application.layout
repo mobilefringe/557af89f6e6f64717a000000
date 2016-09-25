@@ -238,7 +238,7 @@
                                 
                                 
                                 
-                                <a class="menu_link menu_search" href="#" id="open_search"><img src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/btn_search.png" class="icon_search" alt="search"></a>
+                                <a class="menu_link menu_search" href="#" id="open_search"><img src="//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/btn_search.png" class="icon_search" alt="search"></a>
                                 <a class="menu_link menu_search" href="#" id="close_search"><img src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/f6d4ad056723ddc3166d15bebf043d67/btn_close.png" class="icon_search" alt="search"></a>
                             </li>
                         </ul>
