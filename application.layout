@@ -33,25 +33,25 @@
         
         <link rel="apple-touch-icon" sizes="72x72" href="//codecloud.cdn.speedyrails.net/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-72x72.png" />
         
-        <link rel="apple-touch-icon" sizes="114x114" href="//assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="//codecloud.cdn.speedyrails.net/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-114x114.png" />
         
-        <link rel="apple-touch-icon" sizes="144x144" href="//assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="//codecloud.cdn.speedyrails.net/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-144x144.png" />
         
-        <link rel="apple-touch-icon" sizes="180x180" href="//assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-180x180.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="//codecloud.cdn.speedyrails.net/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-180x180.png" />
 
-        <link rel="apple-touch-icon-precomposed" href="//assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" href="//codecloud.cdn.speedyrails.net/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-precomposed.png" />
         
         <!--<meta name="msapplication-TileColor" content="#16216A" />-->
         <!--<meta name="application-name" content="STC" />-->
-        <meta name="msapplication-square70x70logo" content="//assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-70x70.png" />
+        <meta name="msapplication-square70x70logo" content="//codecloud.cdn.speedyrails.net/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-70x70.png" />
         
-        <meta name="msapplication-square144x144logo" content="//assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-144x144.png" />
+        <meta name="msapplication-square144x144logo" content="//codecloud.cdn.speedyrails.net/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-144x144.png" />
         
         <meta name="msapplication-square150x150logo" content="//assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-150x150.png" />
         
-        <meta name="msapplication-wide310x150logo" content="//assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-310x150.png" />
+        <meta name="msapplication-wide310x150logo" content="//codecloud.cdn.speedyrails.net/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-310x150.png" />
         
-        <meta name="msapplication-square310x310logo" content="//assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-310x310.png" />
+        <meta name="msapplication-square310x310logo" content="//codecloud.cdn.speedyrails.net/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-310x310.png" />
         
         
         
@@ -97,7 +97,7 @@
                     <div class="navbar-header position_relative">
                         <a href="/"><img src="//assets.kodekloud.io/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/stc_logo_360.png" class="mobile_logo" alt="logo"></a>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile_nav">
-                            <img src="//assets.codecloudapp.com/sites/557af89f6e6f64717a000000/55869d6c28097dec0b8a32f5dc966bb2/mobile_menu.png" class="" alt="mobile_nav" style="width:20px">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/55869d6c28097dec0b8a32f5dc966bb2/mobile_menu.png" class="" alt="mobile_nav" style="width:20px">
                         </button>
                     </div>
                     <div class="collapse navbar-collapse" id="mobile_nav">
@@ -135,11 +135,11 @@
                                     <input id="mobile_search_box" type="text" placeholder="Type here to search" title="search" />
                                 </form>
                             </div>
-                            <div class="social_icon_mobile col-xs-2"><a target="_blank" class="menu_link " href="http://instagram.com/shopstc"><img src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_instagram.png" class="social_img" alt="insta"></a></div>
-                            <div class="social_icon_mobile col-xs-2"><a target="_blank" class="menu_link " href="https://www.facebook.com/ShopSTC"><img src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_facebook.png" class="social_img" alt="fb"></a></div>
-                            <div class="social_icon_mobile col-xs-2"><a target="_blank" class="menu_link " href="https://twitter.com/shopstc"><img src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_twitter.png" class="social_img" alt="twitter"></a></div>
+                            <div class="social_icon_mobile col-xs-2"><a target="_blank" class="menu_link " href="http://instagram.com/shopstc"><img src="http://codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_instagram.png" class="social_img" alt="insta"></a></div>
+                            <div class="social_icon_mobile col-xs-2"><a target="_blank" class="menu_link " href="https://www.facebook.com/ShopSTC"><img src="http://codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_facebook.png" class="social_img" alt="fb"></a></div>
+                            <div class="social_icon_mobile col-xs-2"><a target="_blank" class="menu_link " href="https://twitter.com/shopstc"><img src="http://codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_twitter.png" class="social_img" alt="twitter"></a></div>
                             
-                            <div class="social_icon_mobile col-xs-2"><a target="_blank" class="menu_link " href="https://www.youtube.com/channel/UCcbq-4qP4CX5yoj43JeyfFw"><img src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_youtube.png" class="social_img" alt="youtube"></a></div>
+                            <div class="social_icon_mobile col-xs-2"><a target="_blank" class="menu_link " href="https://www.youtube.com/channel/UCcbq-4qP4CX5yoj43JeyfFw"><img src="//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_youtube.png" class="social_img" alt="youtube"></a></div>
                             <div class="col-xs-2" id="m_search"><a class="menu_link menu_search" href="#" id="search_mobile"><img src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/btn_search.png" class="icon_search" alt="search"></a></div>
                             <div class="col-xs-2 hidden_now" id="m_search_close" ><a class="menu_link menu_search" href="#" id="close_search_mobile"><img src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/f6d4ad056723ddc3166d15bebf043d67/btn_close.png" class="icon_search" alt="search"></a></div>
                         </div>
