@@ -905,7 +905,7 @@ function renderSplPromos(container, template, collection){
                 }
                 val.store_name = store_details.name;
             } else {
-                val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
+                val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
             }
             
         } else {
