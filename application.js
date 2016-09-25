@@ -897,7 +897,7 @@ function renderSplPromos(container, template, collection){
             if (val.promotionable_type == "Store") {
                 var store_details = getStoreDetailsByID(val.promotionable_id);
                 if ((store_details.store_front_url_abs).indexOf('missing.png') > -1) {
-                    val.alt_promo_image_url = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
+                    val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
                     val.store_image = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
                 } else {
                     val.alt_promo_image_url = (store_details.store_front_url_abs); 
