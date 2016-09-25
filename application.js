@@ -646,7 +646,7 @@ function renderTrending(container, template, collection){
         val.post_title = post.title;
         val.post_slug = post.slug;
         if (post.image_url.indexOf('missing.png') > -1) {
-            val.post_image = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
+            val.post_image = "//codecloud.cdn.speedyrails.net/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
         } else {
             val.post_image = post.image_url;
         }
