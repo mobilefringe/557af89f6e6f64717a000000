@@ -29,29 +29,29 @@
         </script>
         
         <!-- css -->
-        <link rel='shortcut icon' href='http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/favicon.ico' type='image/icon' />
+        <link rel='shortcut icon' href='//assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/favicon.ico' type='image/icon' />
         
-        <link rel="apple-touch-icon" sizes="72x72" href="http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="//assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-72x72.png" />
         
-        <link rel="apple-touch-icon" sizes="114x114" href="http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="//assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-114x114.png" />
         
-        <link rel="apple-touch-icon" sizes="144x144" href="http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="//assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-144x144.png" />
         
-        <link rel="apple-touch-icon" sizes="180x180" href="http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-180x180.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="//assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-180x180.png" />
 
-        <link rel="apple-touch-icon-precomposed" href="http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" href="//assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-precomposed.png" />
         
         <!--<meta name="msapplication-TileColor" content="#16216A" />-->
         <!--<meta name="application-name" content="STC" />-->
-        <meta name="msapplication-square70x70logo" content="http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-70x70.png" />
+        <meta name="msapplication-square70x70logo" content="//assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-70x70.png" />
         
-        <meta name="msapplication-square144x144logo" content="http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-144x144.png" />
+        <meta name="msapplication-square144x144logo" content="//assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-144x144.png" />
         
-        <meta name="msapplication-square150x150logo" content="http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-150x150.png" />
+        <meta name="msapplication-square150x150logo" content="//assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-150x150.png" />
         
-        <meta name="msapplication-wide310x150logo" content="http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-310x150.png" />
+        <meta name="msapplication-wide310x150logo" content="//assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-310x150.png" />
         
-        <meta name="msapplication-square310x310logo" content="http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-310x310.png" />
+        <meta name="msapplication-square310x310logo" content="//assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-310x310.png" />
         
         
         
@@ -64,20 +64,20 @@
         
         <!-- js -->
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <script src="http://assets.kodekloud.io/sites/56056be06e6f641a1d020000/application/x-javascript/1404372988000/instagram.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="//assets.kodekloud.io/sites/56056be06e6f641a1d020000/application/x-javascript/1404372988000/instagram.js"></script>
         <!--MallMaverick v1.0-->
-        <script src="http://mallmaverick.codecloudapp.com/mallmaverick.js?v=0.3"></script>
-        <script src="http://mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
+        <script src="//mallmaverick.codecloudapp.com/mallmaverick.js?v=0.3"></script>
+        <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/jquery.flexslider.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
         <script src="//s3.amazonaws.com/kodekloud/sites/56056be06e6f641a1d020000/text/javascript/1446569669000/instafeed.min.js"></script>
         <script src="//s3.amazonaws.com/kodekloud/sites/56056be06e6f641a1d020000/application/x-javascript/1465227659000/moment.min.js"></script>
         <script>
-            setEndPoint('http://stc.mallmaverick.com/api/v2/stc/all.json');
+            setEndPoint('//stc.mallmaverick.com/api/v2/stc/all.json');
             sessionStorage.setItem('primary_locale', 'en-CA');
             sessionStorage.setItem('secondary_locale', 'fr-CA');
         </script>
@@ -95,9 +95,9 @@
             <div class="mobile_menu show_phone">
                 <div class="">
                     <div class="navbar-header position_relative">
-                        <a href="/"><img src="http://assets.kodekloud.io/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/stc_logo_360.png" class="mobile_logo" alt="logo"></a>
+                        <a href="/"><img src="//assets.kodekloud.io/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/stc_logo_360.png" class="mobile_logo" alt="logo"></a>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile_nav">
-                            <img src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/55869d6c28097dec0b8a32f5dc966bb2/mobile_menu.png" class="" alt="mobile_nav" style="width:20px">
+                            <img src="//assets.codecloudapp.com/sites/557af89f6e6f64717a000000/55869d6c28097dec0b8a32f5dc966bb2/mobile_menu.png" class="" alt="mobile_nav" style="width:20px">
                         </button>
                     </div>
                     <div class="collapse navbar-collapse" id="mobile_nav">
