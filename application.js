@@ -257,7 +257,7 @@ function renderStoreDetails(container, template, collection, slug){
             val.level = "Upper Level";
         }
         if ((val.store_front_url).indexOf('missing.png') > -1){
-            val.alt_store_front_url = "http://assets.codecloudapp.com/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
+            val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
         } else {
             val.alt_store_front_url = getImageURL(val.store_front_url); 
         }
