@@ -1,0 +1,129 @@
+<script src="//kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/92b82a88144a6207ab1a5e8e0f63d3d1/craftmap.js"></script>
+<style>
+    .demo_1{
+        height:650px;
+        width:740px;
+        margin: 0 auto;
+    }
+    .popup a:hover{
+        text-decoration:none;
+    }
+    @media only screen and (max-width: 1030px) {
+        .demo_1{
+            width:600px;
+        }
+    }
+    @media only screen and (max-width: 800px) { 
+        .demo_1{
+            height:400px;
+            width:340px;
+        }
+    }
+    @media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
+        .demo_1{
+            height:300px;
+            width:300px;
+        }
+    }
+</style>
+<div class="container-fluid container_60">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="show_phone">
+                <h1>Centre Map</h1>
+                <div class="line"></div>
+                <p class="mini_nav">
+                    <a href="/stores">STORE LIST</a>
+                    <a class="active" href="/map">CENTRE MAP</a>
+                    <a href="/new_stores">NEW STORES</a>
+                    <a href="/promotions">PROMOTIONS</a>
+                </p>
+            </div>
+            <div class="map_store_list" id="store_list_container">
+                <script id="store_list_template" type="x-tmpl-mustache/text">
+                    <p class="store_initial" style="{{show}}" id="{{initial}}">{{initial}}</p>
+                    <p class="store_name"><a href="#" store_id="store_{{id}}" onclick="return show_pin(this)"">{{name}}</a></p>
+                </script>
+            </div>
+        </div>
+        <!--<div class="col-md-1 hidden_phone">-->
+        <!--    <div style="width:50%;border-right:1px solid #ccc;height:100%" id="mid_div"></div>-->
+        <!--</div>-->
+        <div class="col-md-8 left_pad">
+            <div class="hidden_phone">
+                <h1>Centre Map</h1>
+                <div class="line"></div>
+                <p class="mini_nav">
+                    <a href="/stores">STORE LIST</a>
+                    <a class="active" href="/map">CENTRE MAP</a>
+                    <a href="/new_stores">NEW STORES</a>
+                    <a href="/promotions">PROMOTIONS</a>
+                </p>
+            </div>
+            <div class="map">
+                <div class="demo_1 map3" style="">            
+                    <img alt="map_image" id="map_image" src="//codecloud.cdn.speedyrails.net/sites/57fe89a56e6f643dc92f0100/image/png/undefined/STC Map 2016_July Update.png" />   
+                    	
+        		</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function show_pin(param){
+		store_id = $(param).attr('store_id');
+		if($("#"+store_id).is(":visible")){
+			$("."+store_id).hide();				
+			$("#"+store_id).hide();
+			$("#no_pin_"+store_id).show();
+			$("#show_pin_"+store_id).hide();
+			$("#m_no_pin_"+store_id).show();
+			$("#m_show_pin_"+store_id).hide();
+		}else{
+			$(".marker").hide();
+			$("#"+store_id).show();
+			$("#"+store_id).click();
+			$("#no_pin_"+store_id).hide();
+			$("#show_pin_"+store_id).show();
+			$("#m_no_pin_"+store_id).hide();
+			$("#m_show_pin_"+store_id).show();
+		}
+		$('#store_table').hide()
+		
+		return false;
+    }
+    $(function(){
+        $("#map_button").click(function(){
+            $("#store_table").toggle();
+        });
+        
+    });
+    function hide_table(){
+        $("#store_table").hide();
+        show_table = false;
+    }
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll(){
+            init_home_hours();
+            var stores = getStoresList();
+            renderStoreList('#store_list_container','#store_list_template', stores, "stores", "A", "Z");
+            show_content();    
+            $.each(stores, function(i, val){
+                x = val.x_coordinate - 19;
+                y = val.y_coordinate - 58;
+               $('#map_image').after('<div class="marker" id="store_' + val.id  + '" data-coords="' + x + ', ' + y + '" style="display:none"><a style="color:#fff" href=/stores/'+val.slug +'>' + val.name + '</a></div>')
+            });
+            $('.map3').craftmap({
+                image:{
+                    width:1650,
+                    height:1636
+                },
+                map: {
+                    position: 'center'
+                }
+            });
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
