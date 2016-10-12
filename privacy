@@ -1,0 +1,120 @@
+<style>
+    .pages_container p, .pages_container ul {
+        font-size: 18px;
+        line-height: 27px;
+        font-family: ChronicleTextG1-Roman;
+        margin-top: 10px;
+        margin-bottom:0;
+    }
+    .pages_container{
+        font-size:18px;
+        font-family: ChronicleTextG1-Roman;  
+        line-height:1.5;
+    }
+    .pages_container h1{
+        font-family:ChronicleDisplay-Light;
+        font-size:32px;
+        letter-spacing: 0;
+    }
+    .pages_container h2{
+        font-family: CircularStd-Bold !important;
+        font-size: 14px !important;
+        min-height: 27px !important;
+        color: rgb(230, 84, 0) !important;
+        letter-spacing: 2px !important;
+        text-transform: uppercase;
+        margin-bottom:0;
+    }
+    .pages_container h3{
+        font-family: CircularStd-Book;
+    }
+    .pages_container a{
+        
+        color: #000;
+        font-size:18px;
+        font-family: ChronicleTextG1-Roman;  
+        line-height:1.5;
+        text-decoration:none;
+        border-bottom: 1px solid;
+    }
+    
+        
+    .left_page_div h2{
+        font-size:12px;
+    }
+    .pages_container img{
+        width:100%;
+    }
+    .pages_container p a{
+        color: #000;
+        font-size:18px;
+        font-family: ChronicleTextG1-Roman;  
+        line-height:1.5;
+        border-bottom: 1px solid;
+        text-decoration:none;
+        
+    }
+</style>
+<div class="container-fluid container_60">
+    <!--<h1 id="mobile_page_title" class="show_phone"></h1>-->
+    <div class="row">
+        <div class="col-md-4">
+            <img id="side_img" src="//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC%20Security%20&%20Privacy.jpg" class="width_100" alt="">  
+        </div>
+        <div class="col-md-7 left_pad">
+            <h1>Privacy</h1>
+            <div class="line"></div>
+            <div class="pages_container" id="pages_container">
+                <script id="pages_template" type="x-tmpl-mustache/text">
+                    <a class="pages_inside_title" id="pages_{{slug}}" onclick="javascript:show_pages('{{slug}}')">
+                        <h2>{{title}} &nbsp;<i class="fa fa-long-arrow-down"></i> </h2>
+                    </a>
+                    <div class="page_inside_div" id="pages_{{slug}}_stores">
+                    {{{body}}}
+                    </div>
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e) {
+        init(e)
+        function renderAll (){
+            if (isIE () && isIE () <= 9) {
+                window.location.replace("/pages/stc-privacy-policy");
+            }
+            else{
+                init_home_hours();
+                renderpageHTML();
+                $("#pages_stc-privacy-online-privacy-policy_stores").show();
+                show_content();
+            }
+        }
+        
+        loadMallDataCached(renderAll); 
+		
+    });
+    function renderpageHTML(){
+        var prefix = get_prefix();
+        var page_array = ["stc-privacy-online-privacy-policy", "stc-privacy-what-is-personal-information", "stc-privacy-what-information-are-we-responsible-for-protecting", "stc-privacy-what-information-do-we-collect-and-why", "stc-privacy-surveys-contests", "stc-privacy-video-surveillance", "stc-privacy-when-do-we-share-your-personal-information", "stc-privacy-gift-card-program", "stc-privacy-cookies"]
+        full_page_array = [];
+        
+        $.each( page_array , function( key, val ) {
+            var pages_json = prefix+"/pages/" + val + ".json"
+            var jqXHR = $.ajax({
+                url:pages_json,
+                dataType: 'json',
+                async: false,
+                success: function(data){
+                    full_page_array.push(data);    
+                },
+            });
+        })
+        renderInsidePages("#pages_container","#pages_template", full_page_array)
+    }
+    
+    function add_to_page_array (data){
+        full_page_array.push(data);
+    }
+</script>
