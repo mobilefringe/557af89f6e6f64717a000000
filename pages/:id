@@ -1,0 +1,164 @@
+<style>
+    #pages_side_nav{
+        display:none;
+    }
+    #mm_page_content p, #mm_page_content ul {
+        font-size: 18px;
+        line-height: 27px;
+        font-family: ChronicleTextG1-Roman;
+        margin-top: 10px;
+        margin-bottom:0;
+    }
+    #mm_page_content{
+        font-size:18px;
+        font-family: ChronicleTextG1-Roman;  
+        line-height:1.5;
+    }
+    #mm_page_content h1{
+        font-family:ChronicleDisplay-Light;
+        font-size:32px;
+        letter-spacing: 0;
+    }
+    #mm_page_content h2, #mm_page_content h3{
+        font-family: CircularStd-Bold !important;
+        font-size: 14px !important;
+        min-height: 27px !important;
+        color: #EF1851 !important;
+        letter-spacing: 2px !important;
+        text-transform: uppercase;
+    }
+    #mm_page_content h3{
+        font-family: CircularStd-Book;
+    }
+    #mm_page_content a{
+        
+        color: #000;
+        font-size:18px;
+        font-family: ChronicleTextG1-Roman;  
+        line-height:1.5;
+        text-decoration:none;
+        border-bottom: 1px solid;
+    }
+    
+        
+    .left_page_div h2{
+        font-size:12px;
+    }
+    #mm_page_content img{
+        width:100%;
+    }
+    #mm_page_content p a{
+        color: #000;
+        font-size:18px;
+        font-family: ChronicleTextG1-Roman;  
+        line-height:1.5;
+        border-bottom: 1px solid;
+        text-decoration:none;
+        
+    }
+</style>
+<div class="container-fluid container_60">
+    <!--<h1 id="mobile_page_title" class="show_phone"></h1>-->
+    <div class="row">
+        <div class="col-md-4">
+            <img id="side_img" src="//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/304bed60a1b35abe8be1cec63fdb80de/STC Guest Services.png" class="width_100" alt="">  
+            <div class="margin_15px show_phone"></div>
+            <h1 id="mobile_page_title" class="show_phone" style=" margin-bottom: 20px; "></h1>
+            <div class="show_phone line"></div>
+            <div id="pages_side_nav">   
+                <ul class="nav side_nav" >
+                    <li><a class="hstc" href="/pages/stc-guest-services">GUEST SERVICES</a></li>
+                    <li><a class="hstc" href="/pages/stc-gift-cards">GIFT CARD</a></li>
+                    <li><a class="hstc" href="/feedback">SHARE YOUR THOUGHTS</a></li>
+                    <li><a class="hstc" href="/pages/stc-accessibility">ACCESSIBILITY</a></li>
+                    <li><a class="hstc" href="/security_and_safety" >SECURITY & SAFETY</a></li>
+                </ul>
+                <div class="line"></div>
+            </div>
+            <!--<div>-->
+            <!--    <h2 class="new_store_subheading">CONTACT SECURITY</h2>-->
+            <!--    <p class="side_p">If you see any suspicious activity and/or people, please notify a Scarborough Town Security Officer or Guest Service representative immediately</p>-->
+            <!--    <p class="side_p">To contact by phone, call Security at 416-296-4777 or Guest Services at 416-296-0296.</p>-->
+            <!--</div>-->
+        </div>
+        <!--<div class="col-md-1 hidden_phone">-->
+        <!--    <div style="width:50%;border-right:1px solid #ccc;height:100%"></div>-->
+        <!--</div>-->
+        <div class="col-md-7 left_pad">
+            <h1 id="page_title" class="hidden_phone"></h1>
+            <div class="hidden_phone line"></div>
+            <div class="page_content" id="mm_page_content">
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e) {
+        init(e)
+        function renderAll (){
+            init_home_hours();
+            renderpageHTML();
+            $(".modal-backdrop").remove();
+        }
+        
+        function renderpageHTML(){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            prefix = get_prefix();
+            var pages_json = prefix+"/pages/" + slug + ".json"
+            $.getJSON(pages_json).done(function(data) {
+                
+                $("#page_title").html(data.title)
+                $("#mobile_page_title").html(data.title)
+                $('#mm_page_content').html(data.body);
+                $('iframe').addClass('scrolloff')
+                $('#mm_page_content').on('click', function () {
+                    $('iframe').removeClass('scrolloff');
+                });
+                $("iframe").mouseleave(function () {
+                    $(this).addClass('scrolloff');
+                });
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+            show_content();
+            var side = ["/pages/stc-guest-services", "/pages/stc-gift-cards", "/pages/stc-", "/pages/stc-accessibility", "/pages/stc-security-safety-tips"]
+            
+            var path = window.location.pathname
+            if ($.inArray(path, side) >= 0){
+                $('#pages_side_nav').show()
+            }
+            switch(path){
+                case "/pages/stc-gift-cards":
+                    $('#side_img').attr('src', '//codecloud.cdn.speedyrails.net/sites/57fe89a56e6f643dc92f0100/image/jpeg/1456335813000/stc_Hours-web-1.jpg');
+                    break;
+                case "/pages/stc-accessibility":
+                    $('#side_img').attr('src', '//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/accessibility.jpg');
+                    break;
+                case "/pages/stc-security-safety-tips":
+                    $('#side_img').attr('src', '//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC Security & Privacy.jpg');
+                    break;
+                case "/pages/stc-media-centre":
+                    $('#side_img').attr('src', '//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC Share Your Thoughts & Media Centre.jpg');
+                    break;
+                case "/pages/stc-leasing--2":
+                    $('#side_img').attr('src', '//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/accessibility.jpg');
+                    break;
+                case "/pages/stc-contact-us":
+                    $('#side_img').attr('src', '//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC Contact Us.png');
+                    break;
+                case "/pages/stc-privacy":
+                    $('#side_img').attr('src', '//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC Security & Privacy.jpg');
+                    break;
+                case "/pages/stc-privacy-policy":
+                    $('#side_img').attr('src', '//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/STC Security & Privacy.jpg');
+                    break;
+            }
+            
+        }
+        loadMallDataCached(renderAll); 
+		
+    });
+</script>
