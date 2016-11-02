@@ -13,7 +13,7 @@
                 <a href="/map">CENTRE MAP</a>
                 <a href="/new_stores">NEW STORES</a>
                 <a href="/promotions">PROMOTIONS</a>
-                <a class="active" href="/taste_mrkt">Black Friday SPECIALS</a>
+                <a class="active" href="/taste_mrkt">BLACK FRIDAY SPECIALS</a>
             </p>
             <div id="promo_container">
                 <script id="promo_template" type="x-tmpl-mustache/text">
