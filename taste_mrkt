@@ -66,7 +66,7 @@
                 renderSplPromos("#promo_container","#promo_template", all_promos);
             }
             else{
-                $('#no_promos').html("There are currently no TASTE MRKT GRAND OPENING SPECIALS available, please check back again later.")
+                $('#no_promos').html("There are currently no BLACK FRIDAY SPECIALS available, please check back again later.")
             }
             show_content();
             more_less(e);
