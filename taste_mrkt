@@ -6,14 +6,14 @@
             </a>
         </div>
         <div class="col-md-8 left_pad" >
-            <h1>Taste Mrkt Specials</h1>
+            <h1>Black Friday Specials</h1>
             <div class="line"></div>
             <p class="mini_nav">
                 <a href="/stores">STORE LIST</a>
                 <a href="/map">CENTRE MAP</a>
                 <a href="/new_stores">NEW STORES</a>
                 <a href="/promotions">PROMOTIONS</a>
-                <a class="active" href="/taste_mrkt">TASTE MRKT SPECIALS</a>
+                <a class="active" href="/taste_mrkt">Black Friday SPECIALS</a>
             </p>
             <div id="promo_container">
                 <script id="promo_template" type="x-tmpl-mustache/text">
