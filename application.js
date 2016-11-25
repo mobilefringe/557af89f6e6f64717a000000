@@ -332,6 +332,7 @@ function renderGeneral(container, template, collection, type){
             }
             else{
                 val.store_name = "Scarborough Town Centre";
+                val.alt_promo_image_url = "//www.mallmaverick.com/system/stores/store_fronts/000/030/707/original/STC_2015_FALL_LOGO.png?1480026794"
             }
             start = new Date (val.start_date + "T05:00:00Z");
             end = new Date (val.end_date + "T05:00:00Z");
