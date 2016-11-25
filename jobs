@@ -48,7 +48,6 @@
         init(e);
         function renderAll (){
             var jobs = getJobsList();
-            console.log(jobs);
             var all_jobs = jobs.sortBy(function(o){ return new Date(o.end_date) }).reverse();
             renderGeneral($('#jobs_container'), $('#jobs_template'), jobs, "jobs");
             show_content();
