@@ -132,7 +132,7 @@
             }
             switch(path){
                 case "/pages/stc-gift-cards":
-                    $('#side_img').attr('src', '//codecloud.cdn.speedyrails.net/sites/57fe89a56e6f643dc92f0100/image/jpeg/1456335813000/stc_Hours-web-1.jpg');
+                    $('#side_img').attr('src', '//codecloud.cdn.speedyrails.net/sites/57fe89a56e6f643dc92f0100/image/jpeg/1480956772000/Giftcard_Retail_367x244.jpg');
                     break;
                 case "/pages/stc-accessibility":
                     $('#side_img').attr('src', '//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/accessibility.jpg');
