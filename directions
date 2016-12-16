@@ -147,7 +147,7 @@
             var hours_sun = [];
             var hours_today = []
             var d = moment();
-            var n = d.moment.day();
+            var n = d.moment().day();
             $.each(hours, function(key, val){
                 if(val.day_of_week == n){
                     if (val.is_closed == true ||val.is_holiday == true){
