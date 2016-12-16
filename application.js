@@ -806,11 +806,9 @@ function renderBlogs(container, template, collection){
     var template_html = $(template).html();
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
-        
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
-    
     $(container).show();
     $(container).html(item_rendered.join(''));
 }
@@ -824,14 +822,10 @@ function renderFeatureItems(feature_template,feature_items,featureList){
         val.alt_url = val.image_url;
         var featureitem_rendered = Mustache.render(feature_template_html,val);
         item_rendered.push(featureitem_rendered);
-       
     });
-    
-   
     $(feature_items).show();
     $(feature_items).html(item_rendered.join(''));
     $(".modal-backdrop").remove();
-    
 }
 
 function renderInsidePages(container, template, collection){
@@ -868,12 +862,10 @@ function renderPromos(container, template, collection){
                     val.alt_promo_image_url = (store_details.store_front_url_abs); 
                     val.store_image = store_details.store_front_url_abs
                 }
-                
                 val.store_name = store_details.name;
             } else {
                 val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
             }
-            
         } else {
             val.alt_promo_image_url = (val.promo_image_url_abs);
             if (val.promotionable_type == "Store") {
@@ -882,20 +874,27 @@ function renderPromos(container, template, collection){
                 val.store_name = store_details.name;
                 val.store_image = store_details.store_front_url_abs
             }
+        }
+        // start = new Date (val.start_date);
+        // end = new Date (val.end_date);
+        // start.setDate(start.getDate()+1);
+        // end.setDate(end.getDate()+1);
     
+        // if (start.toDateString() == end.toDateString()) {
+        //     val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
+        // } else {
+        //     val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();    
+        // }
+        
+        var start = moment(val.start_date).tz(getPropertyTimeZone());
+        var end = moment(val.end_date).tz(getPropertyTimeZone());
+        if (start.format("DMY") == end.format("DMY")){
+        	val.dates = start.format("MMM D");
+        }
+        else {
+        	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
         }
         
-        
-        start = new Date (val.start_date);
-        end = new Date (val.end_date);
-        start.setDate(start.getDate()+1);
-        end.setDate(end.getDate()+1);
-    
-        if (start.toDateString() == end.toDateString()) {
-            val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
-        } else {
-            val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();    
-        }
         if(val.is_special_promo != true){
             var rendered = Mustache.render(template_html,val);
         }
