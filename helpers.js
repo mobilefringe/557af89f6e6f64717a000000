@@ -126,7 +126,7 @@ function check_open_time(d, close){
         time = "OPEN NOW";
     }
     else{
-        time = open_time.format("h:mm A")
+        time = moment(open_time).format("h:mm A")
     }
     return time;
 }
