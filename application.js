@@ -130,7 +130,9 @@ function init_home_hours(){
             // var hours_day = new Date(v.holiday_date + "T05:00:00Z");
             
             var hours_day = moment(v.holiday_dtae).tz(getPropertyTimeZone());
-            if(hours_day.setHours(0, 0, 0, 0) == d.setHours(0, 0, 0, 0)){
+            // if(hours_day.setHours(0, 0, 0, 0) == d.setHours(0, 0, 0, 0)){
+            
+            if(hours_day == d){
                 $('#home_hours_container').text("Closed Today")
                 $('.chat_link').hide()
             }
