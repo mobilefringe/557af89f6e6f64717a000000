@@ -237,7 +237,7 @@ function renderStoreDetails(container, template, collection, slug){
         var open_time = moment(val.open_time).tz(getPropertyTimeZone());
         var close_time = moment(val.close_time).tz(getPropertyTimeZone());
         if(val.day_of_week == n){
-            todays_hours = open_time.format("h:mma") + " - " + close_time.format("h:mma");
+            todays_hours = open_time.format("h:mm a") + " - " + close_time.format("h:mm a");
         }
     });
     if (todays_hours.length < 1){
@@ -245,7 +245,7 @@ function renderStoreDetails(container, template, collection, slug){
     }
     Mustache.parse(template_html);   // optional, speeds up future uses
     item_list.push(collection);
-    $.each( item_list , function( key, val ) {
+    $.each(item_list , function( key, val ) {
         val.map_image = map_url;
         
         if (val.z_coordinate == 1){
@@ -266,9 +266,7 @@ function renderStoreDetails(container, template, collection, slug){
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
-    
     $(container).show();
-    
     $(container).html(item_rendered.join(''));
 }
 
@@ -288,12 +286,10 @@ function renderGeneral(container, template, collection, type){
                         val.alt_promo_image_url = (store_details.store_front_url_abs); 
                         val.store_image = store_details.store_front_url_abs
                     }
-                    
                     val.store_name = store_details.name;
                 } else {
                     val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
                 }
-                
             } else {
                 val.alt_promo_image_url = (val.promo_image_url_abs);
                 if (val.promotionable_type == "Store") {
@@ -302,19 +298,23 @@ function renderGeneral(container, template, collection, type){
                     val.store_name = store_details.name;
                     val.store_image = store_details.store_front_url_abs
                 }
-        
             }
+            // start = new Date (val.start_date + "T05:00:00Z");
+            // end = new Date (val.end_date + "T05:00:00Z");
+            // if (start.toDateString() == end.toDateString()) {
+            //     val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
+            // } else {
+            //     val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();    
+            // }
             
-            
-            start = new Date (val.start_date + "T05:00:00Z");
-            end = new Date (val.end_date + "T05:00:00Z");
-        
-            if (start.toDateString() == end.toDateString()) {
-                val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
-            } else {
-                val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();    
+            var start = moment(val.start_date).tz(getPropertyTimeZone());
+            var end = moment(val.end_date).tz(getPropertyTimeZone());
+            if (start.format("DMY") == end.format("DMY")){
+            	val.dates = start.format("MMM D");
             }
-            
+            else {
+            	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
+            }
         }
         if(type == "jobs"){
             val.alt_promo_image_url = (val.promo_image_url_abs);
@@ -332,9 +332,14 @@ function renderGeneral(container, template, collection, type){
                 val.store_name = "Scarborough Town Centre";
                 val.alt_promo_image_url = "//www.mallmaverick.com/system/stores/store_fronts/000/030/707/original/STC_2015_FALL_LOGO.png?1480026794"
             }
-            start = new Date (val.start_date + "T05:00:00Z");
-            end = new Date (val.end_date + "T05:00:00Z");
-            val.closing_date = (get_month(end.getMonth()))+" "+(end.getDate());  
+            // start = new Date (val.start_date + "T05:00:00Z");
+            // end = new Date (val.end_date + "T05:00:00Z");
+            // val.closing_date = (get_month(end.getMonth()))+" "+(end.getDate());  
+            
+            var start = moment(val.start_date).tz(getPropertyTimeZone());
+            var end = moment(val.end_date).tz(getPropertyTimeZone());
+            val.closing_date = end.format("MMM D");
+
             if (val.contact_name == ""){
                 val.contact_name = "N/A"                
             }
@@ -343,13 +348,23 @@ function renderGeneral(container, template, collection, type){
             }
         }
         if(type=="events"){
-            start = new Date (val.start_date + "T05:00:00Z");
-            end = new Date (val.end_date + "T05:00:00Z");
-            if (start.toDateString() == end.toDateString()) {
-                val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
-            } else {
-                val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();    
+            // start = new Date (val.start_date + "T05:00:00Z");
+            // end = new Date (val.end_date + "T05:00:00Z");
+            // if (start.toDateString() == end.toDateString()) {
+            //     val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
+            // } else {
+            //     val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();    
+            // }
+            
+            var start = moment(val.start_date).tz(getPropertyTimeZone());
+            var end = moment(val.end_date).tz(getPropertyTimeZone());
+            if (start.format("DMY") == end.format("DMY")){
+            	val.dates = start.format("MMM D");
             }
+            else {
+            	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
+            }
+
             if ((val.event_image_url_abs).indexOf('missing.png') > -1) {
                 val.event_image_url_abs = "//codecloud.cdn.speedyrails.net/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png"
             }
@@ -382,14 +397,25 @@ function renderStoreExtras(container, template, type, ids){
     var template_html = $(template).html();
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
-        start = new Date (val.start_date + "T05:00:00Z");
-        end = new Date (val.end_date + "T05:00:00Z");
-        if (start.toDateString() == end.toDateString()) {
-            val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
-        } else {
-            val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();    
+        // start = new Date (val.start_date + "T05:00:00Z");
+        // end = new Date (val.end_date + "T05:00:00Z");
+        // if (start.toDateString() == end.toDateString()) {
+        //     val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
+        // } else {
+        //     val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();    
+        // }
+        // val.closing_date = (get_month(end.getMonth()))+" "+(end.getDate());  
+        
+        var start = moment(val.start_date).tz(getPropertyTimeZone());
+        var end = moment(val.end_date).tz(getPropertyTimeZone());
+        if (start.format("DMY") == end.format("DMY")){
+        	val.dates = start.format("MMM D");
         }
-        val.closing_date = (get_month(end.getMonth()))+" "+(end.getDate());  
+        else {
+        	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
+        }
+        val.closing_date = end.format("MMM D");
+        
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
@@ -431,14 +457,18 @@ function renderHours(container, template, collection, type){
                 case 6:
                     val.day = "Saturday";
                     break;
-                
             }
             if (val.open_time && val.close_time && val.is_closed == false){
-                var open_time = new Date (val.open_time);
-                var close_time = new Date (val.close_time);
-                val.open_time = convert_hour(open_time);
-                val.close_time = convert_hour(close_time);    
-                val.h = val.open_time+ " - " + val.close_time;
+                // var open_time = new Date (val.open_time);
+                // var close_time = new Date (val.close_time);
+                // val.open_time = convert_hour(open_time);
+                // val.close_time = convert_hour(close_time);    
+                // val.h = val.open_time+ " - " + val.close_time;
+                
+                var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+                var close_time = moment(val.close_time).tz(getPropertyTimeZone());
+                val.h = open_time.format("h:mm a") + " - " + close_time.format("h:mm a");
+                } 
             } else {
                 "Closed";
             }
@@ -449,34 +479,57 @@ function renderHours(container, template, collection, type){
         collection = item_list;
     }
     
+    // if (type == "holiday_hours") {
+    //     $.each( collection , function( key, val ) {
+    //         if (!val.store_id && val.is_holiday == true) {
+    //             holiday = new Date (val.holiday_date + "T05:00:00Z");
+    //             var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    //             val.formatted_date = weekdays[holiday.getDay()]+ ", " + get_month(holiday.getMonth()) + " " +holiday.getDate()+ ", " + holiday.getFullYear();
+    //             if (val.open_time && val.close_time && val.is_closed == false){
+    //                 var open_time = new Date (val.open_time);
+    //                 var close_time = new Date (val.close_time);
+    //                 val.open_time = convert_hour(open_time);
+    //                 val.close_time = convert_hour(close_time);    
+    //                 if (val.open_time == "0:00 AM"){
+    //                     val.open_time = "12:00 AM";
+    //                 }
+    //                  if (val.close_time == "0:00 AM"){
+    //                     val.close_time = "12:00 AM";
+    //                 }
+    //                 val.h = val.open_time+ " - " + val.close_time;
+    //             } else {
+    //                 val.h = "Closed";
+    //             }
+    //             if (val.h != "Closed"){
+    //                 item_list.push(val);
+    //             }
+    //         }
+    //     });
+    
     if (type == "holiday_hours") {
-        $.each( collection , function( key, val ) {
-            if (!val.store_id && val.is_holiday == true) {
-                holiday = new Date (val.holiday_date + "T05:00:00Z");
-                var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-                val.formatted_date = weekdays[holiday.getDay()]+ ", " + get_month(holiday.getMonth()) + " " +holiday.getDate()+ ", " + holiday.getFullYear();
-                if (val.open_time && val.close_time && val.is_closed == false){
-                    var open_time = new Date (val.open_time);
-                    var close_time = new Date (val.close_time);
-                    val.open_time = convert_hour(open_time);
-                    val.close_time = convert_hour(close_time);    
-                    if (val.open_time == "0:00 AM"){
-                        val.open_time = "12:00 AM";
-                    }
-                     if (val.close_time == "0:00 AM"){
-                        val.close_time = "12:00 AM";
-                    }
-                    val.h = val.open_time+ " - " + val.close_time;
-                } else {
-                    val.h = "Closed";
+    $.each(collection, function(key, val) {
+        if (!val.store_id && val.is_holiday == true) {
+            holiday = moment(val.holiday_date).tz(getPropertyTimeZone());
+            var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            val.formatted_date = holiday.format("dddd MMM D YYYY");
+            if (val.open_time && val.close_time && val.is_closed == false){
+                var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+                var close_time = moment(val.close_time).tz(getPropertyTimeZone());
+                if (val.open_time == "0:00 AM"){
+                    val.open_time = "12:00 AM"
                 }
-                if (val.h != "Closed"){
-                    item_list.push(val);
+                 if (val.close_time == "0:00 AM"){
+                    val.close_time = "12:00 AM"
                 }
+                val.h = open_time.format("h:mm A") + " - " + close_time.format("h:mm A");
+            } else {
+                val.h = "Closed"
             }
-        });
-        collection = [];
-        collection = item_list;
+            item_list.push(val)
+        }
+    });
+    collection = [];
+    collection = item_list;
     }
     
     if (type == "closed_hours") {
