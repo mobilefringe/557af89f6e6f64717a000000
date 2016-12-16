@@ -157,7 +157,8 @@
                         hours_today.push(val);
                         var open_time = moment(val.open_time);
                         var close_time = moment(val.close_time);
-                        $('#hours_today').text(convert_hour(open_time) + " – " +convert_hour(close_time));
+                        // $('#hours_today').text(convert_hour(open_time) + " – " +convert_hour(close_time));
+                        $('#hours_today').text(open_time.format("h:mm A") + " - " + close_time.format("h:mm A"););
                     }
                     
                 }
