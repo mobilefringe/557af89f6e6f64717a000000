@@ -698,17 +698,16 @@ function renderPosts(container, template, collection){
             val.slug = val.video_link;
         }
         val.counter = counter;
-        var date_blog = new Date(val.publish_date);
-        val.published_on = get_month(date_blog.getMonth()) + " " + date_blog.getDate() + ", " + date_blog.getFullYear();
+        // var date_blog = new Date(val.publish_date);
+        // val.published_on = get_month(date_blog.getMonth()) + " " + date_blog.getDate() + ", " + date_blog.getFullYear();
         
         var date_blog = moment(val.publish_date);
-        val.published_on = date.blog.format("MMM DD, YYYY");
+        val.published_on = date_blog.format("MMM DD, YYYY");
         
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
         counter = counter+1;
     });
-    
     $(container).show();
     $(container).html(item_rendered.join(''));
 }
