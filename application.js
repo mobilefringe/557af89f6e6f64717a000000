@@ -136,7 +136,7 @@ function init_home_hours(){
             
             // if(hours_day.setHours(0, 0, 0, 0) == d.setHours(0, 0, 0, 0)){
             
-            // if(hours_day == d){
+            if(hours_day == d){
                 $('#home_hours_container').text("Closed Today")
                 $('.chat_link').hide()
             }
