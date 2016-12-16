@@ -133,6 +133,8 @@ function init_home_hours(){
             var hours_day = moment(v.holiday_date).tz(getPropertyTimeZone()).format("MMM DD YYYY");
             console.log(hours_day);
             
+            var today = moment().tz(getPropertyTimeZone()).format("MMM DD YYYY");
+            console.log(today);
             
             // if(hours_day.setHours(0, 0, 0, 0) == d.setHours(0, 0, 0, 0)){
             
