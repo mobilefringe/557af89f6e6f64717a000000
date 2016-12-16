@@ -118,10 +118,13 @@ function check_open_time(d, close){
     var time = "";
     var date = moment();
     var current_time = moment().format("h:mm A");
+    console.log(current_time);
     var open_time = getTodaysHours().open_time;
     var open = moment(open_time).format("h:mm A");
+    console.log(open);
     var close_time = getTodaysHours().close_time;
     var close = moment(close_time).format("h:mm A");
+    console.log(close);
     if (current_time >= open && current_time < close){
         time = "OPEN NOW";
     }
