@@ -123,11 +123,10 @@ function check_open_time(d, close){
     var close_time = getTodaysHours().close_time;
     var close = moment(close_time).format("HH:mm");
     if (current_time >= open && current_time < close){
-        time = "OPEN NOW UNTIL";
+        time = "OPEN NOW";
     }
     else{
-        time = "CLOSED"
-        $('.opacity_hover').hide();
+        time = convert_hour(d);
     }
     return time;
 }
