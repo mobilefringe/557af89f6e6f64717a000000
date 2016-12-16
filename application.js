@@ -111,7 +111,7 @@ function init_home_hours(){
     var item_rendered = [];
     var template_html = $('#home_hours_template').html();
     Mustache.parse(template_html);   // optional, speeds up future uses
-    $.each(hours_today , function( key, val ) {
+    $.each(hours_today, function(key, val) {
         // var open_time = new Date (val.open_time);
         // var close_time = new Date (val.close_time);
         // val.open = check_open_time(open_time, close_time);
@@ -130,11 +130,12 @@ function init_home_hours(){
     $.each(getPropertyHours(), function(i,v){
         if(v.is_holiday == true || v.is_closed == true){
             // var hours_day = new Date(v.holiday_date + "T05:00:00Z");
+            var hours_day = moment(v.holiday_date).tz(getPropertyTimeZone());
             
-            var hours_day = moment(v.holiday_dtae).tz(getPropertyTimeZone());
+            
             // if(hours_day.setHours(0, 0, 0, 0) == d.setHours(0, 0, 0, 0)){
             
-            if(hours_day.hour(0, 0, 0, 0) == d.hour(0, 0, 0, 0)){
+            if(hours_day == d){
                 $('#home_hours_container').text("Closed Today")
                 $('.chat_link').hide()
             }
