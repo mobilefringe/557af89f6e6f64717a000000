@@ -65,20 +65,18 @@
         <!-- js -->
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
-        <!--<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>-->
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <script src="//codecloud.cdn.speedyrails.net/sites/56056be06e6f641a1d020000/application/x-javascript/1404372988000/instagram.js"></script>
         <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507772000/moment.min.js"></script>
         <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
         <!--MallMaverick v1.0-->
-        <script src="//mallmaverick.codecloudapp.com/mallmaverick_v2.js"></script>
+        <script src="//mallmaverick.codecloudapp.com/mallmaverick_v3.js"></script>
         <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/jquery.flexslider.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
         <script src="//s3.amazonaws.com/kodekloud/sites/56056be06e6f641a1d020000/text/javascript/1446569669000/instafeed.min.js"></script>
-        <!--<script src="//s3.amazonaws.com/kodekloud/sites/56056be06e6f641a1d020000/application/x-javascript/1465227659000/moment.min.js"></script>-->
         <script>
-            setEndPoint('//stc.mallmaverick.com/api/v2/stc/all.json');
+            setEndPoint('//stc.mallmaverick.com/api/v3/stc/all.json');
         </script>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
