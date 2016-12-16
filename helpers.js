@@ -125,9 +125,9 @@ function check_open_time(d, close){
     if (current_time >= open && current_time < close){
         time = "OPEN NOW";
     }
-    // else{
-    //     time = "CLOSED";
-    // }
+    else{
+        $('#home_hours_container').text("Closed")
+    }
     return time;
 }
 
