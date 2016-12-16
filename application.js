@@ -94,8 +94,8 @@ function init(e){
 }
 
 function render_instagram(data){
-        $('#instafeed').html(data)
-    }
+    $('#instafeed').html(data)
+}
 
 function init_home_hours(){
     var hours = getPropertyHours();
@@ -119,8 +119,8 @@ function init_home_hours(){
         
         var open_time = moment(val.open_time).tz(getPropertyTimeZone());
         var close_time = moment(val.close_time).tz(getPropertyTimeZone());
-        val.open = check_open_time(open_time, close_time);
-        val.close = close_time.format("h:mm A");
+        // val.open = check_open_time(open_time, close_time);
+        // val.close = close_time.format("h:mm A");
        
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
