@@ -1,0 +1,60 @@
+<div class="container-fluid container_60">
+    <div class="row">
+        <div class="col-md-3 text-center hidden_phone">
+            <a href="/posts/holiday-information-at-stc">
+                <img alt="side image" class="width_100" src="//codecloud.cdn.speedyrails.net/sites/57fe89a56e6f643dc92f0100/image/png/1479496532000/Holiday-Information.png" />
+            </a>
+        </div>
+        <!--<div class="col-md-1 hidden_phone">-->
+        <!--    <div style="width:50%;border-right:1px solid #ccc;height:100%"></div>-->
+        <!--</div>-->
+        <div class="col-md-8 left_pad">
+            <h1>Events</h1>
+            <div class="line"></div>
+            <p class="description hidden_now" id="no_events" >No events going on at the moment. Please check back later.</p>
+            <div id="promo_container">
+                <script id="promo_template" type="x-tmpl-mustache/text">
+                    <h5 class="new_store_name">{{name}}</h5>
+                
+                    <a class="feature_read_more more" href="#" data-id = "{{id}}" id="more_{{id}}">MORE</a>
+                    <div class="show_accordion" id="show_{{id}}">
+                        <div class="new_store_desc">{{description}}</div>
+                        <div class="margin_15px"></div>
+                        <img class="width_100" alt="promo image" src="{{event_image_url_abs}}" /> 
+                        <div class="margin_15px"></div>
+                        <a class="feature_read_more less" href="#" id="less_{{id}}" data-id = "{{id}}">LESS</a>
+                    </div>
+                    <div class="separator2"></div>
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            init_home_hours();
+            var all_promos = getEventsList();
+            all_promos = all_promos.reverse();
+            promo_array = []
+            $.each( all_promos , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today >= webDate) {
+                    promo_array.push(val)
+                } 
+            });
+            all_promos = promo_array;
+            if (all_promos.length > 0 ){
+                renderGeneral("#promo_container","#promo_template", all_promos, "events");
+            }
+            else{
+                $('#no_events').fadeIn()
+            }
+            show_content();
+            more_less(e);
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
