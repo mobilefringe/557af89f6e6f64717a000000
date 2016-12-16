@@ -255,7 +255,7 @@
                             <span id="home_hours_container">
                                 <script id="home_hours_template" type="x-tmpl-mustache/text">
                                     <span class="open_now">{% raw %}{{open}}{% endraw %}</span> 
-                                    <span class="opacity_hover">{% raw %}{{close}}{% endraw %}</span>
+                                    <span class="opacity_hover">UNTIL {% raw %}{{close}}{% endraw %}</span>
                                 </script>
                             </span>
                         </a>
