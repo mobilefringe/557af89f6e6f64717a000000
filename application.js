@@ -132,13 +132,12 @@ function init_home_hours(){
             var hours_day = moment(v.holiday_dtae).tz(getPropertyTimeZone());
             // if(hours_day.setHours(0, 0, 0, 0) == d.setHours(0, 0, 0, 0)){
             
-            if(hours_day == d){
+            if(hours_day.hour(0, 0, 0, 0) == d.hour(0, 0, 0, 0)){
                 $('#home_hours_container').text("Closed Today")
                 $('.chat_link').hide()
             }
-            
         } 
-    })
+    });
 }
 
 function renderStoreList(container, template, collection, type,starter, breaker){
