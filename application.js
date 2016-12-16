@@ -473,7 +473,7 @@ function renderHours(container, template, collection, type){
                 "Closed";
             }
                 item_list.push(val);
-            }
+            // }
         });
         collection = [];
         collection = item_list;
