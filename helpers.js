@@ -118,13 +118,10 @@ function check_open_time(d, close){
     var time = "";
     var date = moment();
     var current_time = moment().format("HH:mm");
-    console.log(current_time);
     var open_time = getTodaysHours().open_time;
     var open = moment(open_time).format("HH:mm");
-    console.log(open);
     var close_time = getTodaysHours().close_time;
     var close = moment(close_time).format("HH:mm");
-    console.log(close);
     if (current_time >= open && current_time < close){
         time = "OPEN NOW";
     }
@@ -217,7 +214,6 @@ function get_month (id){
         case 11:
             month = "Dec";
             break;
-            
     }
     return month;
 }
