@@ -126,17 +126,17 @@ function init_home_hours(){
     $('#home_hours_container').html(item_rendered.join(''));
     
     $.each(getPropertyHours(), function(i,v){
-        if(v.is_holiday == true || v.is_closed == true){
-            // var hours_day = new Date(v.holiday_date + "T05:00:00Z");
+        // if(v.is_holiday == true || v.is_closed == true){
+        //     // var hours_day = new Date(v.holiday_date + "T05:00:00Z");
             
-            var hours_day = moment(v.holiday_dtae).tz(getPropertyTimeZone());
-            // if(hours_day.setHours(0, 0, 0, 0) == d.setHours(0, 0, 0, 0)){
+        //     var hours_day = moment(v.holiday_dtae).tz(getPropertyTimeZone());
+        //     // if(hours_day.setHours(0, 0, 0, 0) == d.setHours(0, 0, 0, 0)){
             
-            if(hours_day.hour(0, 0, 0, 0) == d.hour(0, 0, 0, 0)){
-                $('#home_hours_container').text("Closed Today")
-                $('.chat_link').hide()
-            }
-        } 
+        //     if(hours_day.hour(0, 0, 0, 0) == d.hour(0, 0, 0, 0)){
+        //         $('#home_hours_container').text("Closed Today")
+        //         $('.chat_link').hide()
+        //     }
+        // } 
     });
 }
 
