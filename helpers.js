@@ -127,6 +127,7 @@ function check_open_time(d, close){
     }
     else{
         time = "CLOSED"
+        $('.opacity_hover').hide();
     }
     return time;
 }
