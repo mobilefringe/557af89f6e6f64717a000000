@@ -115,11 +115,12 @@ function pinIt(){
 }
 
 function check_open_time(d, close){
+    var today_hours = getTodaysHours();
     var time = "";
     var date = moment();
     var current_time = moment().format("h:mm A");
-    var open = getTodaysHours(o.open_time).format("h:mm A");
-    var close = getTodaysHours(o.close_time).format("h:mm A");
+    var open = today_hours(val.open_time).format("h:mm A");
+    var close = today_hours(val.close_time).format("h:mm A");
     if (current_time >= open && current_time < close){
         time = "OPEN NOW";
     }
