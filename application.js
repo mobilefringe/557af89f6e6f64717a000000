@@ -119,7 +119,7 @@ function init_home_hours(){
         
         var open_time = moment(val.open_time).tz(getPropertyTimeZone());
         var close_time = moment(val.close_time).tz(getPropertyTimeZone());
-        // val.open = check_open_time(open_time, close_time);
+        val.open = check_open_time(open_time, close_time);
         // val.close = close_time.format("h:mm A");
        
         var rendered = Mustache.render(template_html,val);
