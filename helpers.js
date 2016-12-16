@@ -117,13 +117,13 @@ function pinIt(){
 function check_open_time(d, close){
     var time = "";
     var date = moment();
-    var current_time = moment().format("h:mm A");
+    var current_time = moment().format("h:mm");
     console.log(current_time);
     var open_time = getTodaysHours().open_time;
-    var open = moment(open_time).format("h:mm A");
+    var open = moment(open_time).format("h:mm");
     console.log(open);
     var close_time = getTodaysHours().close_time;
-    var close = moment(close_time).format("h:mm A");
+    var close = moment(close_time).format("h:mm");
     console.log(close);
     if (current_time >= open && current_time < close){
         time = "OPEN NOW";
