@@ -879,7 +879,6 @@ function renderPromos(container, template, collection){
         // end = new Date (val.end_date);
         // start.setDate(start.getDate()+1);
         // end.setDate(end.getDate()+1);
-    
         // if (start.toDateString() == end.toDateString()) {
         //     val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
         // } else {
@@ -924,7 +923,6 @@ function renderSplPromos(container, template, collection){
             } else {
                 val.promo_image_url_abs = "//codecloud.cdn.speedyrails.net/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
             }
-            
         } else {
             val.alt_promo_image_url = (val.promo_image_url_abs);
             if (val.promotionable_type == "Store") {
@@ -940,20 +938,26 @@ function renderSplPromos(container, template, collection){
             } else {
                 val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
             }
-    
+        }
+        // start = new Date (val.start_date);
+        // end = new Date (val.end_date);
+        // start.setDate(start.getDate()+1);
+        // end.setDate(end.getDate()+1);
+        // if (start.toDateString() == end.toDateString()) {
+        //     val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
+        // } else {
+        //     val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();    
+        // }
+        
+        var start = moment(val.start_date).tz(getPropertyTimeZone());
+        var end = moment(val.end_date).tz(getPropertyTimeZone());
+        if (start.format("DMY") == end.format("DMY")){
+        	val.dates = start.format("MMM D");
+        }
+        else {
+        	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
         }
         
-        
-        start = new Date (val.start_date);
-        end = new Date (val.end_date);
-        start.setDate(start.getDate()+1);
-        end.setDate(end.getDate()+1);
-    
-        if (start.toDateString() == end.toDateString()) {
-            val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
-        } else {
-            val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();    
-        }
         if(val.is_special_promo == true){
             var rendered = Mustache.render(template_html,val);
         }
