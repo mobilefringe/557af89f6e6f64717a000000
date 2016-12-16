@@ -614,19 +614,15 @@ function renderBanner(banner_template,home_banner,banners){
          } else {
              item_list.push(val);
          }
-       
-        
        }
     });
-
     $.each( item_list , function( key, val ) {
         var repo_rendered = Mustache.render(banner_template_html,val);
         item_rendered.push(repo_rendered);
-       
     });
     $(home_banner).html(item_rendered.join(''));
-    
 }
+
 function renderFashion(container, template, collection){
     var item_list = [];
     var item_rendered = [];
@@ -755,8 +751,6 @@ function renderPosts2(container, template, collection){
     $(container).html(item_rendered.join(''));
 }
 
-
-
 function renderPostDetails(container, template, collection){
     var item_list = [];
     var item_rendered = [];
@@ -843,15 +837,11 @@ function renderInsidePages(container, template, collection){
     var template_html = $(template).html();
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
-        
         var title = val.title.split(" - ");
         val.title = title[1]
-        
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
-
     });
-    
     $(container).show();
     $(container).html(item_rendered.join(''));
 };
