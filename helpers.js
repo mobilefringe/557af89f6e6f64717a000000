@@ -116,7 +116,7 @@ function pinIt(){
 
 function check_open_time(d, close){
     var time = "";
-    var date = new Date();
+    var date = moment();
     var current_time = date.getHours();
     var open = d.getUTCHours();
     var close = close.getUTCHours();
@@ -148,21 +148,21 @@ function more_less(e){
 }
 
 
-function convert_hour(d){
-    var h = addZero(d.getUTCHours());
-    var m = addZero(d.getUTCMinutes());
-    var s = addZero(d.getUTCSeconds());
-    if (h >= 12) {
-        if ( h != 12) {
-            h = h - 12;    
-        }
+// function convert_hour(d){
+//     var h = addZero(d.getUTCHours());
+//     var m = addZero(d.getUTCMinutes());
+//     var s = addZero(d.getUTCSeconds());
+//     if (h >= 12) {
+//         if ( h != 12) {
+//             h = h - 12;    
+//         }
         
-        i = "PM"
-    } else {
-        i = "AM"
-    }
-    return h+":"+m+" "+i;
-}
+//         i = "PM"
+//     } else {
+//         i = "AM"
+//     }
+//     return h+":"+m+" "+i;
+// }
 
 
 
