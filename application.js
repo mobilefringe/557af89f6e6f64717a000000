@@ -207,21 +207,23 @@ function renderStoreListCatetories(container, template, category_list,stores){
         var count = 0;
         
         $.each( stores , function( i, store ) {
-            var store_category = store.categories;
-            log(store)
-            var a = store.categories.indexOf(category_id);
-            
-            if(a > -1){
-                if (count == 0){
-                    store.show  = "display:block"; 
-                }else{
-                    store.show  = "display:none"; 
+            if(store.categories != null){
+                var store_category = store.categories;
+                
+                var a = store.categories.indexOf(category_id);
+                
+                if(a > -1){
+                    if (count == 0){
+                        store.show  = "display:block"; 
+                    }else{
+                        store.show  = "display:none"; 
+                    }
+                    store.header = category_name;
+                    store.block = category.id;
+                    var rendered = Mustache.render(template_html,store);
+                    item_rendered.push(rendered);
+                    count += 1;
                 }
-                store.header = category_name;
-                store.block = category.id;
-                var rendered = Mustache.render(template_html,store);
-                item_rendered.push(rendered);
-                count += 1;
             }
             
         });
