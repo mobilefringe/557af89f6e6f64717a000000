@@ -81,7 +81,7 @@
             renderStoreDetails("#map_container", "#map_template", store_details, slug);
             renderStoreDetails("#level_container", "#level_template", store_details, slug);
             renderStoreDetails("#store_details_container", "#store_details_template", store_details, slug);
-            if(store_details.jobs != null0){
+            if(store_details.jobs != null){
                 renderStoreExtras($('#jobs_container'), $('#jobs_template'), "jobs", store_details.jobs);
             }
             else{
