@@ -238,7 +238,7 @@ function renderStoreDetails(container, template, collection, slug){
     var map_url = prop.mm_host + prop.map_url;
     // var d = new Date();
     var n = moment().day();
-    var hours = getHoursForIds(collection.store_hours);
+    var hours = getHoursForStoreSlug(slug);
     var todays_hours = "";
     $.each(hours, function( key, val ) {
         var open_time = moment(val.open_time).tz(getPropertyTimeZone());
