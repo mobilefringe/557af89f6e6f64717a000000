@@ -1,0 +1,101 @@
+<style>
+    .feature_text{
+        max-width: 410px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<!--<div class="popup_home hidden_now">-->
+<!--    <img src="http://assets.codecloudapp.com/sites/55e7179b6e6f645163010000/b07dc47bacffa41a8577b97cc6cd4122/STC_Pop-Up 750x750.png" />-->
+<!--    <i class="fa fa-remove close_popup"></i>-->
+<!--</div>-->
+<div class="flexslider">
+    <ul class="slides" id="home_banner">
+        <script id="banner_template" type="x-tmpl-mustache/text">
+            <li class="item">
+                <a href="{{url}}" {{css}} onclick="{{noLink}}">
+                    <img src="{{image_url}}"  class="{{gif_class}}" />
+                </a>
+            </li>
+        </script>
+    </ul>
+</div>
+<div class="section_feature">
+    <div class="container-fluid">
+        <div class="row">
+            <div id="feature_items">
+                <script id="feature_template" type="x-tmpl-mustache/text">
+                    <div class="col-md-6 feature_box">
+                        <h4 class="feature_header"><a class="inherit_a" href="{{url}}">{{name}}</a></h4>
+                        <a href="{{url}}"><img src="{{image_url}}" class="" alt="feat1"></a>
+                        <hr class="chevron_line" />
+                        <div class="triangle-down"></div>
+                        <div class="triangle-down-inside"></div>
+                        <h3 class="feature_text"><a class="inherit_a" href="{{url}}">{{description}}</a></h3>
+                        <p class="text-center"><a class="feature_read_more" href="{{url}}">MORE</a></p>
+                    </div>
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section_feature">
+    <div class="container-fluid">
+        <div class="row">
+            <div id="feature_items2">
+                <script id="feature_template2" type="x-tmpl-mustache/text">
+                    <div class="col-md-4 feature_box no_margin">
+                        <h4 class="feature_header"><a class="inherit_a" href="{{url}}">{{name}}</a></h4>
+                        <a class="inherit_a" href="{{url}}"><img src="{{image_url}}" class="" alt="feature "></a>
+                        <hr class="chevron_line" />
+                        <div class="triangle-down"></div>
+                        <div class="triangle-down-inside"></div>
+                        <h3 class="feature_text"><a class="inherit_a" href="{{url}}">{{description}}</a></h3>
+                        <p class="text-center"><a class="feature_read_more" href="{{url}}">MORE</a></p>
+                    </div>
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            init_home_hours();
+            var banners = getBanners();
+            renderBanner('#banner_template','#home_banner',banners);
+            var featureList = getFeatureList();
+            var featureList2 = featureList.splice(2)
+            renderFeatureItems('#feature_template', '#feature_items', featureList)
+            renderFeatureItems('#feature_template2', '#feature_items2', featureList2)
+            // $('#home_banner').append("<li class='item chat_banner'><a href='#' onclick='window.open(\"https://secure.kipsu.com/acct/guestchat/oxford-scarborough-town-centre/guest-chat-page\",\"Hi, this is STC Guest Services. How can we help you?\",\"resizable=no,width=500,height=650,top=100,left=200\"); return false;'><img alt='kipsu chat' src='//codecloud.cdn.speedyrails.net/sites/57b22f546e6f6476c6020000/image/jpeg/1474642437000/KIPSU_Carousel_vFNL.jpeg' /></a></li>")
+            show_content();
+            $('.flexslider').flexslider({
+                animation: "slide",
+                after: function(slider) {
+                    $('.gif_class').attr('src', $('.gif_class').attr('src'))
+                },
+                start: function(slider) {
+                    $('.gif_class').attr('src', $('.gif_class').attr('src'))
+                }
+            });
+            $.get('//stc.mallmaverick.com/is_chat_available', function(data){
+                if (data.status == false){
+                    $('.chat_banner').hide()
+                }
+            })
+        //     if($.cookie("popup_viewed") != "true"){
+        //         // $.cookie("popup_viewed", "true", { expires: 1 });
+        //         $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
+        //         $('.popup_home').show()
+        //     }
+        //     $('.close_popup, .custom_backdrop').click(function(){
+        //         $(".modal-backdrop").remove();
+		      //  $(".popup_home").remove();
+        //     })
+        }
+        loadMallData(renderAll); 
+    })
+</script>
