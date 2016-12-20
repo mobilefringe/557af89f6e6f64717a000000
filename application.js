@@ -211,7 +211,6 @@ function renderStoreListCatetories(container, template, category_list,stores){
             if(store.categories != null){
                 
                 var store_category = store.categories;
-                log(store_category)
                 var a = store.categories.indexOf(category_id);
                 
                 if(a > -1){
