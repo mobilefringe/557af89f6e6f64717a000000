@@ -1,2 +1,6 @@
-
+<style>
+.yield {
+    display: block !important;
+}
+</style>
 <iframe src="https://stc-web.mappedin.com/?mall=oxford-scarborough-town-centre"></iframe>
