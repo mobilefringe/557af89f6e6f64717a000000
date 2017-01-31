@@ -1,5 +1,39 @@
-<script data-x-lastpass="">(function(){var c=0;if("undefined"!==typeof CustomEvent&&"function"===typeof window.dispatchEvent){var a=function(a){try{if("object"===typeof a&&(a=JSON.stringify(a)),"string"===typeof a)return window.dispatchEvent(new CustomEvent("lprequeststart",{detail:{data:a,requestID:++c}})),c}catch(f){}},b=function(a){try{window.dispatchEvent(new CustomEvent("lprequestend",{detail:a}))}catch(f){}};"undefined"!==typeof XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.send&&(XMLHttpRequest.prototype.send=
-function(c){return function(f){var d=this,e=a(f);e&&d.addEventListener("loadend",function(){b({requestID:e,statusCode:d.status})});return c.apply(d,arguments)}}(XMLHttpRequest.prototype.send));"function"===typeof fetch&&(fetch=function(c){return function(f,d){var e=a(d),g=c.apply(this,arguments);if(e){var h=function(a){b({requestID:e,statusCode:a&&a.status})};g.then(h)["catch"](h)}return g}}(fetch))}})();
-(function(){if("undefined"!==typeof CustomEvent){var c=function(a){if(a.lpsubmit)return a;var b=function(){try{this.dispatchEvent(new CustomEvent("lpsubmit"))}catch(k){}return a.apply(this,arguments)};b.lpsubmit=!0;return b};window.addEventListener("DOMContentLoaded",function(){if(document&&document.forms&&0<document.forms.length)for(var a=0;a<document.forms.length;++a)document.forms[a].submit=c(document.forms[a].submit)},!0);document.createElement=function(a){return function(){var b=a.apply(this,
-arguments);b&&"FORM"===b.nodeName&&b.submit&&(b.submit=c(b.submit));return b}}(document.createElement)}})();
-</script>
+<div id="mi-map-container">
+        <div id="mi-three-map" style="overflow: hidden;"><div class="labeled-location" style="position: absolute; top: 0px; left: 0px; pointer-events: none; transform: translate(572px, 189px);">Walmart</div><canvas width="2526" height="1256" style="width: 100%; height: 100%;"></canvas></div>
+        <div id="mi-location-profile">
+          <div class="location-profile-close-icon"><i title="Close Store Details" class="mi-icon mi-close"></i> Close</div>
+          <div id="mi-location-profile-content"></div>
+          <div id="mi-navigation-modal" class="mobile-hide">
+            <h4>Navigation</h4>
+            <form id="mi-store-navigation-form">
+              <div id="mi-departure-field">
+                <label for="departure">Starting From</label>
+                <input type="text" id="departure" class="departure" placeholder="Search for starting point" autocomplete="off">
+                <div class="tooltip"></div>
+                <ul id="mi-departure-location-suggest"></ul>
+              </div>
+              <div id="mi-destination-field">
+                <label for="destination">Going to</label>
+                <input type="text" id="destinaiton" class="destination" placeholder="Search for ending point" autocomplete="off">
+                <div class="tooltip"></div>
+                <ul id="mi-destination-location-suggest"></ul>
+              </div>
+              <input type="submit" class="submit" title="Get Directions Now" value="Get Directions">
+            </form>
+          </div>
+        </div>
+        <div id="mi-controls">
+          <ul>
+            <li id="mi-control__reset"><i title="Reset Map" class="mi-icon mi-reset"></i></li>
+            <li id="mi-control__zoomin"><i title="Zoom In" class="mi-icon mi-zoom-in"></i></li>
+            <li id="mi-control__zoomout"><i title="Zoom Out" class="mi-icon mi-zoom-out"></i></li>
+          </ul>
+        </div>
+        <div id="mi-floor-selector">
+          <ul><li class="selected" id="5851a32ae97f480480000002">Upper Level</li><li id="585198c3e97f480480000000">Lower Level</li></ul>
+        </div>
+        <div id="mi-toast"></div>
+        <div id="mi-loading" style="opacity: 0; display: none;">
+          <p>Loading map...</p>
+        </div>
+      </div>
