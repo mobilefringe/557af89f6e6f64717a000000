@@ -4,7 +4,7 @@
 }
 
 iframe {
-    border-width: 100%;
+    border-width: 100% !important;
     border-style: inset;
     border-color: initial;
     border-image: initial;
