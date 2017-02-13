@@ -17,6 +17,6 @@ $(document).ready(function(){
         // Validate iframe URL to prevet xss attacks
         
         
+        return true;        
     }
-    
 });
