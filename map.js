@@ -10,7 +10,7 @@ $(document).ready(function(){
             alert("This does not appear to be whitelisted url.");
         }
         
-        $('.')
+        $('#mappedIn').attr('src', url);
     }
     
     function isValidMappedInURL(url) {
