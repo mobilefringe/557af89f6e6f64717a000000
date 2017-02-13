@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var uriWhitelist = ['stc-web.mappedin.com'];
+    var urlWhiteList = ['stc-web.mappedin.com'];
     
     var iframeURL = window.location.search.match(/\?mappedin\=(.*)/)[1];
     
@@ -25,6 +25,6 @@ $(document).ready(function(){
         var parser = document.createElement('a');
         parser.href = url;
         
-        return uriWhitelist.inArray(parser.hostname) !== -1;
+        return urlWhiteList.inArray(parser.hostname) !== -1;
     }
 });
