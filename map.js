@@ -23,7 +23,7 @@ $(document).ready(function(){
         var parser = document.createElement('a');
         parser.href = url;
         
-        console.log(parse.hostname);
+        console.log(parser.hostname);
         // parser.hostname
         
         return true;        
