@@ -25,6 +25,6 @@ $(document).ready(function(){
         var parser = document.createElement('a');
         parser.href = url;
         
-        return urlWhiteList.inArray(parser.hostname) !== -1;
+        return urlWhiteList.indexOf(parser.hostname) !== -1;
     }
 });
