@@ -11,4 +11,6 @@ iframe {
     border-image: initial;
 }
 </style>
-<iframe src="https://stc-web.mappedin.com/?mall=oxford-scarborough-town-centre"></iframe>
+<iframe id="mappedIn" src="https://stc-web.mappedin.com/?mall=oxford-scarborough-town-centre"></iframe>
+
+$/
