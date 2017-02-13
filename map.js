@@ -19,7 +19,7 @@ $(document).ready(function(){
      * @return bool true if valid url false if not.
      */
     function isValidMappedInURL(url) {
-        var url = decodeURL(url) ;
+        var url = decodeURI(url) ;
         var parser = document.createElement('a');
         parser.href = url;
         
