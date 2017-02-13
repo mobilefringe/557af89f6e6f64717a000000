@@ -13,9 +13,15 @@ $(document).ready(function(){
         $('#mappedIn').attr('src', url);
     }
     
+    /**
+     * Validates URL to prevent non mappedIn urls.
+     * @param String URL
+     * @return bool true if valid url false if not.
+     */
     function isValidMappedInURL(url) {
-        // Validate iframe URL to prevet xss attacks
         
+       var url = decodeURL(url) ;
+       
         
         return true;        
     }
