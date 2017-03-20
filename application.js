@@ -680,7 +680,7 @@ function renderPosts(container, template, collection){
         val.description_short = val.description_short.replace("&amp;", "&");
         val.slug = "posts/" +val.slug;
         var lb = getBlogDataBySlug("stc-lookbook");
-     
+        var contest = getBlogDataBySlug("stc-contest");
         var out_blog = lb.posts.concat(contest.posts);
         var id = val.id;
         var result = $.grep(out_blog, function(e){ return e.id == id; });
