@@ -1,6 +1,6 @@
 <style>
 .yield {
-    display: block !important;
+    display: block;
 }
 
 iframe {
