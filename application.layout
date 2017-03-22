@@ -87,6 +87,17 @@
         <![endif]-->
         <script src="/helpers.js"></script>
         <script src="/application.js"></script>
+        <style>
+            .yield {
+                display: block;
+            }
+            
+            iframe {
+                width: 100% !important;
+                height:800px;
+                border: none;
+            }
+        </style>
     </head>
     <body>
         <header class="header navbar-fixed-top">
