@@ -1,7 +1,5 @@
 <style>
-.yield {
-    display: block;
-}
+
 
 iframe {
     width: 100% !important;
