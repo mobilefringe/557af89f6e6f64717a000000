@@ -287,7 +287,7 @@
                 </div>
             </div>
             <div class="">
-                
+                {{yield}}
             </div>
         </div>
         <footer class="footer hidden_phone">
