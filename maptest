@@ -6,9 +6,6 @@
 iframe {
     width: 100% !important;
     height:800px;
-    border-style: inset;
-    border-color: initial;
-    border-image: initial;
 }
 </style>
 <iframe id="mappedIn" src="https://stc-web.mappedin.com/?mall=oxford-scarborough-town-centre"></iframe>
