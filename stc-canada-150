@@ -16,7 +16,7 @@
                 </ul>
             </div>
             <p>
-                We live in an amazing country that offers us so many opportunities, diversities and national parks to visit for free this year! To honour Canada’s 150th birthday, we’d love to know the reason you love Canada – submit your reason in the form below to spread the awareness of #150Reasons.
+                We live in an amazing country that offers us so many opportunities and diversities. To honour Canada’s 150th birthday, we’d love to know the reason you love Canada – submit your reason in the form below to spread the awareness of #150Reasons.
  <br><br>
 #150Reasons is an initiative brought to you by VIBE Arts, an innovative and award-winning charitable organization that provides young people across the country with the opportunity to share their voice through art.
  <br><br>
@@ -51,8 +51,8 @@ For the month of June, Scarborough Town Centre will be exhibiting hand-painted m
                             <div class="margin_30"></div> 
                         </div>
                         <div class="col-md-6" >
-                            <center>><input type = "submit" value="SUBMIT" class="btn_submit_stc "/>
-                    </center>    </div>
+                            <input type = "submit" value="SUBMIT" class="btn_submit_stc "/>
+                        </div>
                         
                     </form>
                 </div>
