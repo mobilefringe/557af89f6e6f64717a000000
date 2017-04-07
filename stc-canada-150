@@ -1,3 +1,8 @@
+<style>
+    .wrapper {
+    text-align: center;
+}
+</style>
  <script src="http://snapwidget.com/js/snapwidget.js"></script>
 <div class="container-fluid container_60">
     <div class="row">
@@ -50,10 +55,11 @@ For the month of June, Scarborough Town Centre will be exhibiting hand-painted m
                             <textarea name="feedback[comment]" id="comments" class="form-control" style="height:200px; resize:none"></textarea>
                             <div class="margin_30"></div> 
                         </div>
+                        <div class="wrapper">
                         <div class="col-md-6" >
                             <input type = "submit" value="SUBMIT" class="btn_submit_stc "/>
                         </div>
-                        
+                        </div>
                     </form>
                 </div>
                 <br>
