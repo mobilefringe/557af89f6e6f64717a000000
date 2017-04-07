@@ -23,6 +23,44 @@
 For the month of June, Scarborough Town Centre will be exhibiting hand-painted murals that express the unique spirit of Canada, created by youth from every Province and Territory. Visit the centre to take in the meaningful stories expressed in each mural that tells the story of our country through the eyes of Canada’s youth and honours the diversity, culture, character and strength of our great nation.
  
             </p>
+            <div class="margin_30"></div>
+                <div class="row">
+                    <form id="feedback_form" class="description">
+                        <div class="col-md-6">
+                            <label for="first_name">First Name</label>
+                            <input name="feedback[first_name]" type="text" class="form-control" id="first_name" />
+                            <div class="margin_30"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="last_name">Last Name</label>
+                            <input name="feedback[last_name]" type="text" class="form-control" id="last_name" />
+                            <div class="margin_30"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email">Email*</label>
+                            <input name="feedback[email]" type="text" class="form-control" id="email" required/>
+                            <div class="margin_30"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone">Phone Number</label>
+                            <input name="feedback[phone]" type="text" class="form-control" id="phone" />
+                            <div class="margin_30"></div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="comments">Comments</label>
+                            <textarea name="feedback[comment]" id="comments" class="form-control" style="height:200px; resize:none"></textarea>
+                            <div class="margin_30"></div> 
+                        </div>
+                        <div class="col-md-6">
+                            <input type = "submit" value="SUBMIT" class="btn_submit_stc "/>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            <p><span>Vibe arts logo (attached)</span></p>
+
+<p><span>Link to their website:&nbsp;<a href="https://vibearts.ca/"><span><strong>www.vibearts.ca</strong></span></a></span></p>
             <hr class="chevron_line" />
             <div class="triangle-down"></div>
             <div class="triangle-down-inside"></div>
