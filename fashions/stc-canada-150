@@ -4,7 +4,7 @@
         <div class="col-md-8 right_pad">
             <div id="fashion_container">
                 <script id="fashion_template" type="x-tmpl-mustache/text">
-                    <h1>Tell us what you love about Canada}</h1>
+                    <h1>Tell us what you love about Canada</h1>
                 </script>
             </div>
             <div class="line"></div>
