@@ -114,6 +114,7 @@ For the month of June, Scarborough Town Centre will be exhibiting hand-painted m
             var slug = pathArray[pathArray.length-1];
             console.log(slug)
             var fashion = getFashionBySlug(slug);
+            console.log(fashion)
             var fashion_images = fashion.fashion_images;
             var posts = getAllPublishedPosts();
             var published_posts = posts.sortBy(function(o){ return o.publish_date }).reverse();
