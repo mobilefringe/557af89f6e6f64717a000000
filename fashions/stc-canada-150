@@ -46,7 +46,7 @@
             <p class="new_store_subheading">RECENT POSTS</p>
             <div id="side_links_container">
                 <script id="side_links_template" type="x-tmpl-mustache/text">
-                    <p><a href="/{{slug}}" class="trending_side_link">{{title}}</a></p>
+                    <p><a href="/{{slug}}" class="trending_side_link">asdasd</a></p>
                 </script>
             </div>
             <p class="new_store_subheading">CATEGORIES</p>
