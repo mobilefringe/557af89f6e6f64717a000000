@@ -50,9 +50,9 @@ For the month of June, Scarborough Town Centre will be exhibiting hand-painted m
                             <textarea name="feedback[comment]" id="comments" class="form-control" style="height:200px; resize:none"></textarea>
                             <div class="margin_30"></div> 
                         </div>
-                        <div class="col-md-6" ><center>
-                            <input type = "submit" value="SUBMIT" class="btn_submit_stc "/>
-                        </div></center>
+                        <div class="col-md-6" >
+                            <center>><input type = "submit" value="SUBMIT" class="btn_submit_stc "/>
+                    </center>    </div>
                         
                     </form>
                 </div>
