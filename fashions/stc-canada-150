@@ -4,7 +4,7 @@
         <div class="col-md-8 right_pad">
             <div id="fashion_container">
                 <script id="fashion_template" type="x-tmpl-mustache/text">
-                    <h1>{{name}}</h1>
+                    <h1>test</h1>
                 </script>
             </div>
             <div class="line"></div>
@@ -46,7 +46,7 @@
             <p class="new_store_subheading">RECENT POSTS</p>
             <div id="side_links_container">
                 <script id="side_links_template" type="x-tmpl-mustache/text">
-                    <p><a href="/{{slug}}" class="trending_side_link">asdasd</a></p>
+                    <p><a href="/{{slug}}" class="trending_side_link">{{title}}</a></p>
                 </script>
             </div>
             <p class="new_store_subheading">CATEGORIES</p>
