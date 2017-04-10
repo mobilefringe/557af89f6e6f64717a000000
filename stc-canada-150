@@ -75,7 +75,7 @@ For the month of June, Scarborough Town Centre will be exhibiting hand-painted m
                             <input type = "submit" value="SUBMIT" class="btn_submit_stc "/>
                         </div>
                          <div id="success_subscribe" style="display:none">
-                <p class="description">Thank you for your feedback.</p>
+                <p class="description"><br>Thank you for your feedback.</p>
             </div>
                         </div>
                     </form>
