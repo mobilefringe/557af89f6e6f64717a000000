@@ -141,22 +141,7 @@ For the month of June, Scarborough Town Centre will be exhibiting hand-painted m
             renderFashionImages("#fashion_images_container", "#fashion_images_template", fashion_images);
             renderPosts("#side_links_container", "#side_links_template", published_posts.slice(0,3));
             renderBlogs("#blog_links_container", "#blog_links_template", blogs);
-            show_content();
-            $('.flexslider').flexslider({
-                animation: "slide",
-            });
-        }
-        loadMallDataCached(renderAll); 
-    })
-</script>
-<script>
-    $(document).ready(function(e) {
-        init(e);
-        function renderAll (){
-            init_home_hours();
-            show_content();
-        }
-        $('#feedback_form').submit(function(e){
+             $('#feedback_form').submit(function(e){
             e.preventDefault();
             $.post("http://stc.mallmaverick.com/email_feedback", $(this).serialize(), function(data, status, xhr){
                 if(status == "success"){
@@ -168,6 +153,11 @@ For the month of June, Scarborough Town Centre will be exhibiting hand-painted m
                 }
             });
         })
+            show_content();
+            $('.flexslider').flexslider({
+                animation: "slide",
+            });
+        }
         loadMallDataCached(renderAll); 
     })
 </script>
