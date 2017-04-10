@@ -40,11 +40,12 @@
 For the month of June, Scarborough Town Centre will be exhibiting hand-painted murals that express the unique spirit of Canada, created by youth from every Province and Territory. Visit the centre to take in the meaningful stories expressed in each mural that tells the story of our country through the eyes of Canada’s youth and honours the diversity, culture, character and strength of our great nation.
  
             </p><br>
-             <div class="row">
-               <div class="col-md-7 left_pad">
+              <div class="col-md-7 left_pad">
             <div id="success_subscribe" style="display:none">
                 <p class="description">Thank you for your feedback.</p>
             </div>
+             <div class="row">
+             
                     <form id="feedback_form" class="description">
                         <div class="col-md-6">
                             <label for="first_name">First Name</label>
