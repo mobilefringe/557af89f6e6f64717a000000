@@ -830,6 +830,7 @@ h1 {
 }
 
 .store_details_logo {
+    margin-bottom: 20px;
     background: center center no-repeat;
     background-size: contain;
     width: 200px;
