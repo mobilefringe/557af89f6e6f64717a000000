@@ -835,7 +835,7 @@ h1 {
     background-size: contain;
     width: 200px;
     height: 200px;
-    border: 1px solid #EF1851;
+    border: 1px solid #ccc;
 }
 .new_store_subheading{
     font-family: CircularStd-Book;
