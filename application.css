@@ -829,6 +829,12 @@ h1 {
     color:#BFBEBD;
 }
 
+.store_details_logo {
+    background: center center no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+}
 .new_store_subheading{
     font-family: CircularStd-Book;
     font-size: 14px;
