@@ -92,7 +92,7 @@ For the month of June, Scarborough Town Centre will be exhibiting hand-painted m
             <div class="margin_15px"></div>
             <p class="text-center" id="share_container">
                 <script id="share_template" type="x-tmpl-mustache/text">
-                    <a class="share_link" target="_blank" href="http://www.facebook.com/sharer.php?u=http://scarboroughtowncentre.com/fashion/{{slug}}">
+                    <a class="share_link" target="_blank" href="http://www.facebook.com/sharer.php?u=http://scarboroughtowncentre.com/stc-canada-150">
                         <img class="share_img site_icons" alt="fb share" src="//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_facebook.png" />
                     </a>
                     <a class="share_link" target="_blank" href="http://twitter.com/share?url=http://scarboroughtowncentre.com/fashion/{{slug}}">
