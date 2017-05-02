@@ -231,17 +231,14 @@ function renderStoreDetails(container, template, collection, slug){
     var template_html = $(template).html();
     var prop = getPropertyDetails(getPropertyID());
     var map_url = prop.mm_host + prop.map_url;
-    var d = new Date();
-    var n = d.getDay();
+    var n = moment().day();
     var hours = getHoursForIds(collection.store_hours);
     var todays_hours = "";
     $.each( hours , function( key, val ) {
-        var open_time = new Date (val.open_time);
-        var close_time = new Date (val.close_time);
-        val.open_time = convert_hour(open_time);
-        val.close_time = convert_hour(close_time);
-        if (val.day_of_week == n){
-            todays_hours = val.open_time + " - " + val.close_time;
+        var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+        var close_time = moment(val.close_time).tz(getPropertyTimeZone());
+        if(val.day_of_week == n){
+            todays_hours = open_time.format("h:mm a") + " - " + close_time.format("h:mm a");
         }
     });
     if (todays_hours.length < 1){
