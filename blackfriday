@@ -1,0 +1,84 @@
+<div class="container-fluid container_60">
+    <div class="row">
+        <div class="col-md-3 text-center hidden_phone">
+            <a href="/posts/holiday-information-at-stc">
+                <img alt="side image" class="width_100" src="//codecloud.cdn.speedyrails.net/sites/57fe89a56e6f643dc92f0100/image/png/1479496532000/Holiday-Information.png" />
+            </a>
+        </div>
+        <div class="col-md-8 left_pad" >
+            <h1>Black Friday Specials</h1><br>
+            <div class="line"></div>
+             <p style="font-size:16px;"><strong>IT'S TIME<br>Win 1 of 14 Apple Watches Every Hour at STC</strong>
+<br>
+<a href="http://www.scarboroughtowncentre.com/posts/win-1-of-14-apple-watches-every-hour--2">View Complete Rules & Regulations</a></p><br>
+            
+            <p class="mini_nav">
+                <a href="/stores">STORE LIST</a>
+                <a href="/map">CENTRE MAP</a>
+                <a href="/new_stores">NEW STORES</a>
+                <a href="/promotions">PROMOTIONS</a>
+                <a class="active" href="/blackfriday">BLACK FRIDAY SPECIALS</a>
+                <br><br>
+                
+            </p>
+           
+            <div id="promo_container">
+                <script id="promo_template" type="x-tmpl-mustache/text">
+                    <div class="row new_store_box">
+                        <div class="col-md-3 new_store_img_div text-center">
+                            <img alt="new store" class="new_store_image" src="{{store_image}}" />
+                        </div>
+                        <div class="col-md-8">
+                            <a style=" position: absolute; top: -55px; " id="{{slug}}"></a>
+                            <h5 class="new_store_name">{{store_name}}</h5>
+                            <h5 class="promo_name">{{name}}</h5>
+                            <a class="feature_read_more more" href="#" data-id = "{{id}}" id="more_{{id}}">MORE</a>
+                            <div class="show_accordion" id="show_{{id}}" style="font-size:18px">
+                                <p class="new_store_desc">{{dates}}</p>
+                                <div class="new_store_desc">{{{rich_description}}}</div>
+                                <div class="margin_15px"></div>
+                                <img class="width_100" alt="promo image" src="{{promo_image_url_abs}}" /> 
+                                <div class="margin_15px"></div>
+                                <a class="feature_read_more less" href="#" id="less_{{id}}" data-id = "{{id}}">LESS</a>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="separator2"></div>
+                </script>
+            </div>
+            <br />
+            <h5 id="no_promos" class="promo_name"></h5>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            init_home_hours();
+            var all_promos = getPromotionsList();
+            all_promos = all_promos.sortBy(function(o){ return o.name });
+            console.log(all_promos);
+            promo_array = []
+            $.each( all_promos , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date);
+                if (today >= webDate && val.is_special_promo == true) {
+                    promo_array.push(val)
+                } 
+            });
+            all_promos = promo_array;
+            if (all_promos.length >0){
+                renderSplPromos("#promo_container","#promo_template", all_promos);
+            }
+            else{
+                $('#no_promos').html("There are currently no BLACK FRIDAY SPECIALS available, please check back again later.")
+            }
+            show_content();
+            more_less(e);
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
