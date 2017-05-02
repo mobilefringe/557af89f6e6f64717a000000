@@ -1,0 +1,110 @@
+<script src="//kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/92b82a88144a6207ab1a5e8e0f63d3d1/craftmap.js"></script>
+<style>
+    .demo1{
+        height:300px;
+    }
+</style>
+<div class="container-fluid container_60">
+    <div class="row">
+        <div class="col-md-4 text-center" >
+            <div id="map_container">
+                <script id="map_template" type="x-tmpl-mustache/text">
+                    <div class="store_map" id="store_map">
+                        <div class="demo1">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/57fe89a56e6f643dc92f0100/image/png/undefined/STC Map 2016_July Update.png" class="imgMap" id="map_image" />                
+                        	<div class="marker" id='scroll_to_marker' data-coords="{{map_x_coordinate}}, {{map_y_coordinate}}">
+                        	    {{name}}
+                            </div>
+                        </div>   
+                    </div>
+                </script>
+            </div>
+            <div id="level_container">
+                <script id="level_template" type="x-tmpl-mustache/text">
+                    <p class="description">{{level}}</p>
+                </script>
+            </div>
+        </div>
+        <!--<div class="col-md-1 hidden_phone">-->
+        <!--    <div style="width:50%;border-right:1px solid #ccc;height:100%"></div>-->
+        <!--</div>-->
+        <div class="col-md-7 left_pad">
+            <div id="store_details_container">
+                <script id="store_details_template" type="x-tmpl-mustache/text">
+                    <h1>{{name}}</h1>
+                    <div class="line"></div>
+                    <div class="store_details_logo" style="background-image: url({{alt_store_front_url}})"></div>
+                    <p class="description">{{{rich_description}}}</p>
+                    
+                    <h3 style="{{todays_hours}}" class="new_store_subheading no_margin">HOURS</h3>
+                    <p style="{{todays_hours}}" class="description">{{todays_hours}}</p>
+                    <br />
+                    <h3 class="new_store_subheading no_margin">CONTACT</h3>
+                    <p class="description">{{phone}}</p>
+                    <br />
+                    <h3 class="new_store_subheading no_margin">CATEGORIES</h3>
+                    <p class="description">{{category_list}}</p>
+                </script>
+            </div>
+            <br />
+            <h3 class="new_store_subheading no_margin">JOB OPPORTUNITIES</h3>
+            <p class="description hidden_now" id="no_jobs" >No job postings at the moment. Please check back later.</p>
+            <div id="jobs_container">
+                <script id="jobs_template" type="x-tmpl-mustache/text">
+                    <p class="description font_italic">{{name}}</p>
+                    <p class="new_store_name">Closing Date: <span class="description">{{closing_date}}</span></p>
+                    <p class="new_store_subheading no_margin">{{job_type}}</p>
+                    <div class="margin_15px"></div>
+                    <a class="feature_read_more more" href="#" data-id = "{{id}}" id="more_{{id}}">MORE</a>
+                    <div class="margin_15px"></div>
+                    <div class="show_accordion" id="show_{{id}}">
+                        <div class="description">{{{rich_description}}}</div>
+                        <p class="new_store_name">Contact Name<br /><span class="description">{{contact_name}}</span></p>
+                        <p class="new_store_name">Contact Email<br /><span class="description">{{contact_email}}</span></p>
+                        <a class="feature_read_more less" href="#" id="less_{{id}}" data-id = "{{id}}">LESS</a>
+                    </div>
+                    <div class="margin_15px"></div>
+                    <hr class="separator2" />
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            init_home_hours();
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var store_details = getStoreDetailsBySlug(slug);
+            renderStoreDetails("#map_container", "#map_template", store_details, slug);
+            renderStoreDetails("#level_container", "#level_template", store_details, slug);
+            renderStoreDetails("#store_details_container", "#store_details_template", store_details, slug);
+            if(store_details.jobs.length >0){
+                renderStoreExtras($('#jobs_container'), $('#jobs_template'), "jobs", store_details.jobs);
+            }
+            else{
+                $('#no_jobs').fadeIn();
+            }
+            var dimension = (store_details.x_coordinate - 460 )  + " " + (store_details.y_coordinate - 230);
+            
+            $('.demo1').craftmap({
+                image: {
+        			width: 1650,
+    				height: 1636,
+    				name: 'imgMap'
+    			},
+    			map: {
+    				position: dimension
+    			}
+    		});
+            show_content();
+            $("#anchor_id").click();
+           	$("#scroll_to_marker").click();
+            more_less(e);
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
