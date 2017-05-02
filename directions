@@ -146,7 +146,6 @@
             var hours_sat = [];
             var hours_sun = [];
             var hours_today = []
-            var d = new Date();
             var n = moment().day();
             $.each(hours, function(key, val){
                 if(val.day_of_week == n){
