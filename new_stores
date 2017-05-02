@@ -68,7 +68,6 @@
             var coming_soon_stores = getComingSoonList();
             var new_stores = coming_soon_stores.concat(getNewStoresList());
             var nn = new_stores.sortBy(function(o){ return moment( o.new_store_open_date ) });
-            console.log(nn);
             if (new_stores.length > 0){
                 renderGeneral("#new_store_container","#new_store_template", new_stores);
             }
