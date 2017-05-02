@@ -294,7 +294,6 @@ function renderGeneral(container, template, collection, type){
                 } else {
                     val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/57fe89a56e6f643dc92f0100/image/jpeg/1491330939000/STC_LOGO.jpeg";
                 }
-                
             } else {
                 val.alt_promo_image_url = (val.promo_image_url_abs);
                 if (val.promotionable_type == "Store") {
@@ -303,19 +302,15 @@ function renderGeneral(container, template, collection, type){
                     val.store_name = store_details.name;
                     val.store_image = store_details.store_front_url_abs
                 }
-        
             }
-            
-            
-            start = new Date (val.start_date + "T05:00:00Z");
-            end = new Date (val.end_date + "T05:00:00Z");
-        
-            if (start.toDateString() == end.toDateString()) {
-                val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
-            } else {
-                val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();    
+            var start = moment(val.start_date).tz(getPropertyTimeZone());
+            var end = moment(val.end_date).tz(getPropertyTimeZone());
+            if (start.format("DMY") == end.format("DMY")){
+            	val.dates = start.format("MMM D");
             }
-            
+            else {
+            	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
+            }
         }
         if(type == "jobs"){
             val.alt_promo_image_url = (val.promo_image_url_abs);
@@ -333,9 +328,9 @@ function renderGeneral(container, template, collection, type){
                 val.store_name = "Scarborough Town Centre";
                 val.alt_promo_image_url = "//www.mallmaverick.com/system/stores/store_fronts/000/030/707/original/STC_2015_FALL_LOGO.png?1480026794"
             }
-            start = new Date (val.start_date + "T05:00:00Z");
-            end = new Date (val.end_date + "T05:00:00Z");
-            val.closing_date = (get_month(end.getMonth()))+" "+(end.getDate());  
+            var start = moment(val.start_date).tz(getPropertyTimeZone());
+            var end = moment(val.end_date).tz(getPropertyTimeZone());
+            val.closing_date = end.format("MMM D");
             if (val.contact_name == ""){
                 val.contact_name = "N/A"                
             }
@@ -344,15 +339,13 @@ function renderGeneral(container, template, collection, type){
             }
         }
         if(type=="events"){
-            start = new Date (val.start_date + "T05:00:00Z");
-            end = new Date (val.end_date + "T05:00:00Z");
-            if (start.toDateString() == end.toDateString()) {
-                val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
-            } else {
-                val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();    
+            var start = moment(val.start_date).tz(getPropertyTimeZone());
+            var end = moment(val.end_date).tz(getPropertyTimeZone());
+            if (start.format("DMY") == end.format("DMY")){
+            	val.dates = start.format("MMM D");
             }
-            if ((val.event_image_url_abs).indexOf('missing.png') > -1) {
-                val.event_image_url_abs = "//codecloud.cdn.speedyrails.net/sites/57fe89a56e6f643dc92f0100/image/jpeg/1491330939000/STC_LOGO.jpeg"
+            else {
+            	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
             }
         }
         var rendered = Mustache.render(template_html,val);
@@ -383,14 +376,16 @@ function renderStoreExtras(container, template, type, ids){
     var template_html = $(template).html();
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
-        start = new Date (val.start_date + "T05:00:00Z");
-        end = new Date (val.end_date + "T05:00:00Z");
-        if (start.toDateString() == end.toDateString()) {
-            val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
-        } else {
-            val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();    
+        var start = moment(val.start_date).tz(getPropertyTimeZone());
+        var end = moment(val.end_date).tz(getPropertyTimeZone());
+        if (start.format("DMY") == end.format("DMY")){
+        	val.dates = start.format("MMM D");
         }
-        val.closing_date = (get_month(end.getMonth()))+" "+(end.getDate());  
+        else {
+        	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
+        }
+        val.closing_date = end.format("MMM D"); 
+        
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
