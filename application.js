@@ -113,8 +113,8 @@ function init_home_hours(){
     var template_html = $('#home_hours_template').html();
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( hours_today , function( key, val ) {
-        var open_time = new Date (val.open_time);
-        var close_time = new Date (val.close_time);
+        var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+        var close_time = moment(val.close_time).tz(getPropertyTimeZone());
         val.open = check_open_time(open_time, close_time);
         val.close = convert_hour(close_time);
        
