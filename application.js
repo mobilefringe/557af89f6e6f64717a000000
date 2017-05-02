@@ -99,7 +99,8 @@ function render_instagram(data){
 
 function init_home_hours(){
     var hours = getPropertyHours();
-    var d = new Date();
+    console.log(hours)
+    var d = moment();
     var n = d.getDay();
     var hours_today = [];
     $.each(hours, function(key, val){
