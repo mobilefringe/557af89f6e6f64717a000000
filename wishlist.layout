@@ -1,0 +1,104 @@
+<html lang="en">
+    <head>
+        <meta property="og:title" content="{{meta_title}}">
+        <meta property="og:description" content="{{meta_description}}">
+        <meta property="og:image" content="{{meta_image}}">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="{{meta_description}}">
+        <meta name="keywords" content="{{meta_keywords}}">
+        <meta name="author" content="">
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@shopstc" />
+        <meta name="twitter:title" content="{{meta_title}}" />
+        <meta name="twitter:description" content="{{meta_description}}" />
+        <meta name="twitter:image" content="{{meta_image}}" />
+    
+        <title>{{meta_title}}</title>
+        
+        <script>
+             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            
+             ga('create', 'UA-40014802-9', 'auto');
+             ga('send', 'pageview');
+    
+        </script>
+        
+        <!-- css -->
+        <link rel='shortcut icon' href='http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/favicon.ico' type='image/icon' />
+        
+        <link rel="apple-touch-icon" sizes="72x72" href="http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-72x72.png" />
+        
+        <link rel="apple-touch-icon" sizes="114x114" href="http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-114x114.png" />
+        
+        <link rel="apple-touch-icon" sizes="144x144" href="http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-144x144.png" />
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-180x180.png" />
+
+        <link rel="apple-touch-icon-precomposed" href="http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-precomposed.png" />
+        
+        <!--<meta name="msapplication-TileColor" content="#16216A" />-->
+        <!--<meta name="application-name" content="STC" />-->
+        <meta name="msapplication-square70x70logo" content="http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-70x70.png" />
+        
+        <meta name="msapplication-square144x144logo" content="http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-144x144.png" />
+        
+        <meta name="msapplication-square150x150logo" content="http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-150x150.png" />
+        
+        <meta name="msapplication-wide310x150logo" content="http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-310x150.png" />
+        
+        <meta name="msapplication-square310x310logo" content="http://assets.codecloudapp.com/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/mstile-310x310.png" />
+        
+        
+        
+        
+        <link type="text/css" rel="stylesheet" href="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/540373d34a616d0cccaf0000/368584aaeda8ec2d1f80a5f777235d72/font-awesome.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/flexslider.css" rel="stylesheet">
+        <link rel="stylesheet" href="/application.css">
+        <link rel="stylesheet" href="/wishlist.css">
+        
+        <!-- js -->
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="//codecloud.cdn.speedyrails.net/sites/56056be06e6f641a1d020000/application/x-javascript/1404372988000/instagram.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/jquery.flexslider.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script src="//s3.amazonaws.com/kodekloud/sites/56056be06e6f641a1d020000/text/javascript/1446569669000/instafeed.min.js"></script>
+        <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507772000/moment.min.js"></script>
+        <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
+        <script src="/helpers.js"></script>
+        <script src="/application.js"></script>
+        
+        <!--MallMaverick v1.0-->
+        <script src="//mallmaverick.codecloudapp.com/mallmaverick_v3.js"></script>
+        <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
+
+        <script>
+            setEndPoint('//stc.mallmaverick.com/api/v3/stc/all.json');
+        </script>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script src="/helpers.js"></script>
+        <script src="/application.js"></script>
+    </head>
+    <body>
+        <div class="content_container">
+            <div class="yield">
+                {{yield}}
+            </div>
+        </div>
+        
+    </body>
+</html>
