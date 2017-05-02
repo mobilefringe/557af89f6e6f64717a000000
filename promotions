@@ -13,7 +13,6 @@
                 <a href="/map">CENTRE MAP</a>
                 <a href="/new_stores">NEW STORES</a>
                 <a class="active" href="/promotions">PROMOTIONS</a>
-                
             </p>
             <div id="promo_container">
                 <script id="promo_template" type="x-tmpl-mustache/text">
