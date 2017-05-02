@@ -862,17 +862,15 @@ function renderPromos(container, template, collection){
     
         }
         
-        
-        start = new Date (val.start_date);
-        end = new Date (val.end_date);
-        start.setDate(start.getDate()+1);
-        end.setDate(end.getDate()+1);
-    
-        if (start.toDateString() == end.toDateString()) {
-            val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
-        } else {
-            val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();    
+        var start = moment(val.start_date).tz(getPropertyTimeZone());
+        var end = moment(val.end_date).tz(getPropertyTimeZone());
+        if (start.format("DMY") == end.format("DMY")){
+        	val.dates = start.format("MMM D");
         }
+        else {
+        	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
+        }
+
         if(val.is_special_promo != true){
             var rendered = Mustache.render(template_html,val);
         }
@@ -921,17 +919,15 @@ function renderSplPromos(container, template, collection){
     
         }
         
-        
-        start = new Date (val.start_date);
-        end = new Date (val.end_date);
-        start.setDate(start.getDate()+1);
-        end.setDate(end.getDate()+1);
-    
-        if (start.toDateString() == end.toDateString()) {
-            val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
-        } else {
-            val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();    
+        var start = moment(val.start_date).tz(getPropertyTimeZone());
+        var end = moment(val.end_date).tz(getPropertyTimeZone());
+        if (start.format("DMY") == end.format("DMY")){
+        	val.dates = start.format("MMM D");
         }
+        else {
+        	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
+        }
+        
         if(val.is_special_promo == true){
             var rendered = Mustache.render(template_html,val);
         }
