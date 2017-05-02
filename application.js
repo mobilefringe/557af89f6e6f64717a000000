@@ -101,7 +101,7 @@ function init_home_hours(){
     var hours = getPropertyHours();
     console.log(hours)
     var d = moment();
-    var n = d.getDay();
+    var n = moment().day();
     var hours_today = [];
     $.each(hours, function(key, val){
         if (val.day_of_week == n && val.is_closed == false && val.is_holiday == false){
