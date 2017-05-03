@@ -77,7 +77,7 @@
         <script src="//s3.amazonaws.com/kodekloud/sites/56056be06e6f641a1d020000/text/javascript/1446569669000/instafeed.min.js"></script>
         <script src="//s3.amazonaws.com/kodekloud/sites/56056be06e6f641a1d020000/application/x-javascript/1465227659000/moment.min.js"></script>
         <script>
-            setEndPoint('//stc.mallmaverick.com/api/v2/stc/all.json');
+            setEndPoint('//twinpines.mallmaverick.com/api/v2/twinpines/all.json');
             sessionStorage.setItem('primary_locale', 'en-CA');
             sessionStorage.setItem('secondary_locale', 'fr-CA');
         </script>
