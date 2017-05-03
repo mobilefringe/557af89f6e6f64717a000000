@@ -82,9 +82,9 @@
             // var blog_lifestyle = getBlogDataBySlug('stc-happenings');
             // var blog_mens = getBlogDataBySlug('stc-lookbook');
             
-            blog_beauty.posts = blog_beauty.posts.sortBy(function(o){ return new Date(o.publish_date) }).reverse();
-            blog_lifestyle.posts = blog_lifestyle.posts.sortBy(function(o){ return new Date(o.publish_date) }).reverse();
-            blog_mens.posts = blog_mens.posts.sortBy(function(o){ return new Date(o.publish_date) }).reverse();
+            // blog_beauty.posts = blog_beauty.posts.sortBy(function(o){ return new Date(o.publish_date) }).reverse();
+            // blog_lifestyle.posts = blog_lifestyle.posts.sortBy(function(o){ return new Date(o.publish_date) }).reverse();
+            // blog_mens.posts = blog_mens.posts.sortBy(function(o){ return new Date(o.publish_date) }).reverse();
             var top_blogs = [];
             top_blogs.push(blog_beauty);
             top_blogs.push(blog_lifestyle);
