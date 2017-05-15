@@ -832,14 +832,13 @@ function renderPromos(container, template, collection){
         if ((val.promo_image_url_abs).indexOf('missing.png') > -1){
             if (val.promotionable_type == "Store") {
                 var store_details = getStoreDetailsByID(val.promotionable_id);
-                if (store_details.store_front_url_abs.indexOf('missing.png') > -1) {
+                if ((store_details.store_front_url_abs).indexOf('missing.png') > -1) {
                     val.store_image = "//codecloud.cdn.speedyrails.net/sites/5908e5636e6f643ee1010000/image/jpeg/1491330939000/STC_LOGO.jpeg";
                     val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/5908e5636e6f643ee1010000/image/jpeg/1491330939000/STC_LOGO.jpeg";
                 } else {
                     val.alt_promo_image_url = (store_details.store_front_url_abs); 
                     val.store_image = store_details.store_front_url_abs;
                 }
-                
                 val.store_name = store_details.name;
             } else {
                 val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/5908e5636e6f643ee1010000/image/jpeg/1491330939000/STC_LOGO.jpeg";
@@ -850,9 +849,13 @@ function renderPromos(container, template, collection){
                 var store_details = getStoreDetailsByID(val.promotionable_id);
                 val.store_detail_btn = store_details.slug;
                 val.store_name = store_details.name;
-                val.store_image = store_details.store_front_url_abs
+                // val.store_image = store_details.store_front_url_abs
+                if ((store_details.store_front_url_abs).indexOf('missing.png') > -1) {
+                    val.store_image = "//codecloud.cdn.speedyrails.net/sites/5908e5636e6f643ee1010000/image/jpeg/1491330939000/STC_LOGO.jpeg";
+                } else {
+                    val.store_image = store_details.store_front_url_abs;
+                }
             }
-    
         }
         
         var start = moment(val.start_date).tz(getPropertyTimeZone());
