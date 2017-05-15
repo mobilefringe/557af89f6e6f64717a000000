@@ -11,7 +11,7 @@
                 <script id="map_template" type="x-tmpl-mustache/text">
                     <div class="store_map" id="store_map">
                         <div class="demo1">
-                            <img src="//codecloud.cdn.speedyrails.net/sites/57fe89a56e6f643dc92f0100/image/png/undefined/STC Map 2016_July Update.png" class="imgMap" id="map_image" />                
+                            <img src="//codecloud.cdn.speedyrails.net/sites/5908e5636e6f643ee1010000/image/png/1494862912000/STC Map - May-15-2017 copy 2.png" class="imgMap" id="map_image" />                
                         	<div class="marker" id='scroll_to_marker' data-coords="{{map_x_coordinate}}, {{map_y_coordinate}}">
                         	    {{name}}
                             </div>
