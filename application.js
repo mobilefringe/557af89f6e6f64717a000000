@@ -832,6 +832,7 @@ function renderPromos(container, template, collection){
         if ((val.promo_image_url_abs).indexOf('missing.png') > -1){
             if (val.promotionable_type == "Store") {
                 var store_details = getStoreDetailsByID(val.promotionable_id);
+                console.log(store_details)
                 if ((store_details.store_front_url_abs).indexOf('missing.png') > -1) {
                     val.store_image = "//codecloud.cdn.speedyrails.net/sites/5908e5636e6f643ee1010000/image/jpeg/1491330939000/STC_LOGO.jpeg";
                     val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
