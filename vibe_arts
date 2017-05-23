@@ -7,6 +7,9 @@
 <script>
     $(document).ready(function(e){
         init(e);
+        function renderAll(){
+            
+        }
         loadMallDataCached(renderAll); 
     })
 </script>
