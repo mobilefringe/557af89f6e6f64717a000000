@@ -1,14 +1,1 @@
-<style>
-    body{
-        margin:0;
-    }
-</style>test
-<script>
-    $(document).ready(function(e){
-        init(e);
-        function renderAll(){
-            show_content();
-        }
-        loadMallDataCached(renderAll); 
-    })
-</script>
+<iframe style="width:100%;height:3060px;outline:none;border:0" src="http://stc.beyondcb.com/" ></iframe>
