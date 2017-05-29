@@ -14,17 +14,19 @@
             <p class="description hidden_now" id="no_events" >No events going on at the moment. Please check back later.</p>
             <div id="promo_container">
                 <script id="promo_template" type="x-tmpl-mustache/text">
-                    <h5 class="new_store_name">{{name}}</h5>
-                
-                    <a class="feature_read_more more" href="#" data-id = "{{id}}" id="more_{{id}}">MORE</a>
-                    <div class="show_accordion" id="show_{{id}}">
-                        <div class="new_store_desc">{{{rich_description}}}</div>
-                        <div class="margin_15px"></div>
-                        <img class="width_100" alt="promo image" src="{{event_image_url_abs}}" /> 
-                        <div class="margin_15px"></div>
-                        <a class="feature_read_more less" href="#" id="less_{{id}}" data-id = "{{id}}">LESS</a>
+                    <div class="new_store_box">
+                        <h5 class="new_store_name">{{name}}</h5>
+                    
+                        <a class="feature_read_more more" href="#" data-id = "{{id}}" id="more_{{id}}">MORE</a>
+                        <div class="show_accordion" id="show_{{id}}">
+                            <div class="new_store_desc">{{{rich_description}}}</div>
+                            <div class="margin_15px"></div>
+                            <img class="width_100" alt="promo image" src="{{event_image_url_abs}}" /> 
+                            <div class="margin_15px"></div>
+                            <a class="feature_read_more less" href="#" id="less_{{id}}" data-id = "{{id}}">LESS</a>
+                        </div>
+                        <div class="separator2"></div>
                     </div>
-                    <div class="separator2"></div>
                 </script>
             </div>
         </div>
