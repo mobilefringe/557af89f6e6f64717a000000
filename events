@@ -25,7 +25,6 @@
                             <div class="margin_15px"></div>
                             <a class="feature_read_more less" href="#" id="less_{{id}}" data-id = "{{id}}">LESS</a>
                         </div>
-                        
                     </div>
                     <div class="separator2"></div>
                 </script>
