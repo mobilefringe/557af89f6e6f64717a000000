@@ -18,7 +18,7 @@
                 
                     <a class="feature_read_more more" href="#" data-id = "{{id}}" id="more_{{id}}">MORE</a>
                     <div class="show_accordion" id="show_{{id}}">
-                        <div class="new_store_desc">{{description}}</div>
+                        <div class="new_store_desc">{{rich_description}}</div>
                         <div class="margin_15px"></div>
                         <img class="width_100" alt="promo image" src="{{event_image_url_abs}}" /> 
                         <div class="margin_15px"></div>
