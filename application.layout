@@ -131,9 +131,11 @@
                             </li>
                             <li><a class="menu_link" href="/posts">TRENDING</a></li>
                             <li class="dropdown menu_link">
-                                <a href="#" data-toggle="dropdown" class="menu_link dropdown-toggle">GUEST SERVICES +</a>
+                                <a href="#" data-toggle="dropdown" class="menu_link dropdown-toggle">GUEST EXPERIENCE</a>
                                 <ul class="dropdown-menu ">
-                                    <li><a class="mobile_inside_nav" href="/pages/stc-guest-services">GUEST SERVICES</a></li>
+                                    <li><a class="mobile_inside_nav" href="/pages/stc-guest-services">GUEST EXPERIENCE</a></li>
+                                    <li><a class="mobile_inside_nav" href="/events">EVENTS</a></li>
+                                        <li><a class="mobile_inside_nav" href="/pages/stc-shop-and-stay">SHOP & STAY</a></li>
                                     <li><a class="mobile_inside_nav" href="/pages/stc-gift-cards">GIFT CARD</a></li>
                                     <li><a class="mobile_inside_nav" href="/feedback">SHARE YOUR THOUGHTS</a></li>
                                     <li><a class="mobile_inside_nav" href="/pages/stc-accessibility">ACCESSIBILITY</a></li>
@@ -181,12 +183,14 @@
                             </li>
                             <li><a class="menu_link" href="/posts">TRENDING</a></li>
                             <li class="desktop_menu dropdown menu_link">
-                                <a href="#" data-toggle="dropdown" class="menu_link dropdown-toggle menu_dropdown_parent">GUEST SERVICES</a>
+                                <a href="#" data-toggle="dropdown" class="menu_link dropdown-toggle menu_dropdown_parent">GUEST EXPERIENCE</a>
                                 <div class="dropdown-menu invisible_dropdown_div dropdown-menu-hover">
                                     <ul class="dd_guest">
                                         <div class="triangle-up"></div>
                                         <div class="triangle-up-inside"></div>
-                                        <li><a href="/pages/stc-guest-services">GUEST SERVICES</a></li>
+                                        <li><a href="/pages/stc-guest-services">GUEST EXPERIENCE</a></li>
+                                         <li><a href="/events">EVENTS</a></li>
+                                        <li><a href="/pages/stc-shop-and-stay">SHOP & STAY</a></li>
                                         <li><a href="/pages/stc-gift-cards">GIFT CARD</a></li>
                                         <li><a href="/feedback">SHARE YOUR THOUGHTS</a></li>
                                         <li><a href="/pages/stc-accessibility">ACCESSIBILITY</a></li>
