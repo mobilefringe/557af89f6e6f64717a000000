@@ -25,6 +25,52 @@
             width:300px;
         }
     }
+    
+    //map
+
+.smooth_zoom_preloader {
+	background-image: url(//codecloud.cdn.speedyrails.net/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/preloader.gif);
+}	
+.smooth_zoom_icons {
+	background-image: url(//codecloud.cdn.speedyrails.net/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/icons.png);
+}
+
+#zoom_container .landmarks{
+	position:absolute;
+	z-index:10;	
+	top:0px;
+	left:0px;
+	font-family: Helvetica, Arial, Verdana;
+	font-size:12px;
+	color: #ffffff;
+}	
+#zoom_container .landmarks .item {
+	position:absolute;		
+	text-align:center;		
+	/*display: none;	*/
+}	
+#zoom_container .landmarks .lable div {
+	width: 100px;
+	padding: 4px;		
+}	
+#zoom_container .landmarks .mark .text{
+	background-color:transparent;
+	padding:2px 6px;
+}	
+
+.mark a{
+    color:black;
+    display:none;
+}
+
+#zoom_container .landmarks .mark .text {
+    background-color: #6e6e6e;
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-top: 12px;
+}
 </style>
 <div class="container-fluid container_60">
     <div class="row">
