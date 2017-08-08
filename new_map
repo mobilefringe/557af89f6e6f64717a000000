@@ -112,6 +112,12 @@
             renderStoreList('#store_list_container','#store_list_template', stores, "stores", "A", "Z");
             show_content();    
             
+            $.each(stores, function(i, val){
+                x = val.x_coordinate - 19;
+                y = val.y_coordinate - 58;
+               $('#map_image').after('<div class="marker" id="store_' + val.id  + '" data-coords="' + x + ', ' + y + '" style="display:none"><a style="color:#fff" href=/stores/'+val.slug +'>' + val.name + '</a></div>')
+            });
+            
             $("#png_map").attr("src", getPNGMapURL())
     		$('#png_map').smoothZoom({
     		    height: 1650,
