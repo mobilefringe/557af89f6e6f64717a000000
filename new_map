@@ -183,6 +183,7 @@
     		});
 		
 		    show_png_pin(".map_pin_a", "#png_map", store_slug);
+		    console.log(store_slug)
         }
         loadMallDataCached(renderAll); 
         
