@@ -141,7 +141,6 @@ function init_home_hours(){
             var today = moment().tz(getPropertyTimeZone()).format("MMM DD YYYY");
             
             if(hours_day === today){
-                console.log(v.holiday_date);
                 var open_time = moment(v.open_time).tz(getPropertyTimeZone());
                 var close_time = moment(v.close_time).tz(getPropertyTimeZone());
                 v.open = check_open_time(open_time, close_time);
