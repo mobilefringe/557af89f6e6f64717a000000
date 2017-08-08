@@ -61,11 +61,6 @@
 	padding:2px 6px;
 }	
 
-.mark a{
-    color:black;
-    display:none;
-}
-
 #zoom_container .landmarks .mark .text {
     background-color: #6e6e6e;
     padding: 10px;
