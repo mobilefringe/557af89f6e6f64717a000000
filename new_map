@@ -34,7 +34,9 @@
 .smooth_zoom_icons {
 	background-image: url(//codecloud.cdn.speedyrails.net/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/icons.png);
 }
-
+.noSel {
+    z-index: 1;
+}
 #zoom_container .landmarks{
 	position:absolute;
 	z-index:10;	
