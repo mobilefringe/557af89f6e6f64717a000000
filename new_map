@@ -57,6 +57,7 @@
     background-color: transparent;
 }
 #zoom_container .landmarks .mark .text {
+    margin-bottom: 10px;
     padding-top: 8px;
     padding-bottom: 8px;
     width: 200px;
