@@ -158,6 +158,7 @@
         function renderAll(){
             init_home_hours();
             var stores = getStoresList();
+            console.log(stores)
             renderStoreList('#store_list_container','#store_list_template', stores, "stores", "A", "Z");
             show_content();    
             
@@ -204,7 +205,7 @@
         			'<div class="item mark" data-show-at-zoom="0" data-position="' + x_coord + ',' + y_coord + '">\
         				<div>\
         					<div class="text">\
-        					    <a style="color:#fff" href=/stores/' + val.slug + '>' + val.name + '</a>\
+        					    <a style="color:#fff" href=/stores/' + val.slug + '>' + name + '</a>\
         				    </div>\
         				    <img src="//kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/7760d28d65f477cd66bd4756f9204c15/map_pin2.png" width="45px" height="65px" alt="marker" />\
         				</div>\
