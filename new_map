@@ -198,7 +198,7 @@
                 
                 $(map).smoothZoom('addLandmark', 
         			[
-        			'<div class="marker" id="store_' + val.id  + '" data-coords="' + x + ', ' + y + '" style="display:none"><a style="color:#fff" href=/stores/'+val.slug +'>' + val.name + '</a></div>'
+        			'<div class="marker" id="store_' + val.id  + '" data-coords="' + x_coord + ', ' + y_coord + '" style="display:none"><a style="color:#fff" href=/stores/'+val.slug +'>' + val.name + '</a></div>'
         			]
         		);
             });
