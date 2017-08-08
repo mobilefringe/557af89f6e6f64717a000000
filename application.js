@@ -147,7 +147,7 @@ function init_home_hours(){
                 v.open = check_open_time(open_time, close_time);
                 v.close = close_time.format("h:mm A");
                
-                $('#home_hours_container').text("Until")
+                $('#home_hours_container').text("Until" + );
             }
             
         }
