@@ -73,6 +73,7 @@
 <script>
     function show_pin(param){
 		store_id = $(param).attr('store_id');
+		console.log(store_id)
 		if($("#"+store_id).is(":visible")){
 			$("."+store_id).hide();				
 			$("#"+store_id).hide();
