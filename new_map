@@ -91,7 +91,7 @@
             <div class="map_store_list" id="store_list_container">
                 <script id="store_list_template" type="x-tmpl-mustache/text">
                     <p class="store_initial" style="{{show}}" id="{{initial}}">{{initial}}</p>
-                    <p class="store_name"><a class="map_pin_a" href="#" data-value='{{x_coordinate}},{{y_coordinate}},{{id}},{{slug}}'>{{name}}</a></p>
+                    <p class="store_name"><a class="map_pin_a" href="#" data-value='{{x_coordinate}},{{y_coordinate}},{{id}}' value='{{slug}}'>{{name}}</a></p>
                 </script>
             </div>
         </div>
@@ -158,10 +158,6 @@
         function renderAll(){
             init_home_hours();
             var stores = getStoresList();
-            console.log(stores)
-            if(stores.slug != undefined){
-                var store_slug = stores.slug
-            }
             
             renderStoreList('#store_list_container','#store_list_template', stores, "stores", "A", "Z");
             show_content();    
