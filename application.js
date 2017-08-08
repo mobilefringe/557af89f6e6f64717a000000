@@ -140,10 +140,10 @@ function init_home_hours(){
             var today = moment().tz(getPropertyTimeZone()).format("MMM DD YYYY");
             var open_time = moment(val.open_time).tz(getPropertyTimeZone());
             var close_time = moment(val.close_time).tz(getPropertyTimeZone());
-            val.open = check_open_time(open_time, close_time);
-            val.close = close_time.format("h:mm A");
+            v.open = check_open_time(open_time, close_time);
+            v.close = close_time.format("h:mm A");
            
-            var rendered = Mustache.render(template_html,val);
+            var rendered = Mustache.render(template_html,v);
             item_rendered.push(rendered);
         }
     });
