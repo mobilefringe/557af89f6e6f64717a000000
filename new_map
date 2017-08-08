@@ -186,7 +186,7 @@
         }
         loadMallDataCached(renderAll); 
         
-        function show_png_pin(trigger, map){
+        function show_png_pin(trigger, map, slug){
             $(trigger).click(function(e) {
                 e.preventDefault()
                 var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) );
@@ -197,6 +197,7 @@
                 floor = (coords[3])
                 
                 name = $(this).text();
+                store_slug = slug
                 $(map).smoothZoom('removeLandmark')
                 if (isMobile) {
                     $(map).smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:200});    
@@ -209,7 +210,7 @@
         			'<div class="item mark" data-show-at-zoom="0" data-position="' + x_coord + ',' + y_coord + '">\
         				<div>\
         					<div class="text">\
-        					    <a style="color:#fff" href=/stores/' + val.slug + '>' + name + '</a>\
+        					    <a style="color:#fff" href=/stores/' + slug + '>' + name + '</a>\
         				    </div>\
         				    <img src="//kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/7760d28d65f477cd66bd4756f9204c15/map_pin2.png" width="45px" height="65px" alt="marker" />\
         				</div>\
