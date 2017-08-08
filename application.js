@@ -123,7 +123,7 @@ function init_home_hours(){
     
     $.each(getPropertyHours(), function(i,v){
         if(v.is_holiday == true && v.is_closed == true){
-            console.log(v.holiday_date);
+           
             var hours_day = moment(v.holiday_date).tz(getPropertyTimeZone()).format("MMM DD YYYY");
             
             var today = moment().tz(getPropertyTimeZone()).format("MMM DD YYYY");
@@ -133,7 +133,7 @@ function init_home_hours(){
                 $('.chat_link').hide()
             }
         }
-        else  if(v.is_holiday == true && v.is_closed == false){
+        else if(v.is_holiday == true && v.is_closed == false){
             var hours_day = moment(v.holiday_date).tz(getPropertyTimeZone()).format("MMM DD YYYY");
             
             var today = moment().tz(getPropertyTimeZone()).format("MMM DD YYYY");
