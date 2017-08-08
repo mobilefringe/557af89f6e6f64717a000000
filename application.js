@@ -130,7 +130,6 @@ function init_home_hours(){
             var today = moment().tz(getPropertyTimeZone()).format("MMM DD YYYY");
 
             if(hours_day === today){
-                console.log(v.is_holiday, v.is_closed);
                 $('#home_hours_container').text("Closed Today")
                 $('.chat_link').hide()
             }
