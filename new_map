@@ -178,8 +178,7 @@
     			container: 'zoom_container'
     		});
 		
-		    show_png_pin(".map_pin_a", "#png_map", store_slug);
-		    console.log(store_slug)
+		    show_png_pin(".map_pin_a", "#png_map");
         }
         loadMallDataCached(renderAll); 
         
