@@ -53,6 +53,9 @@
 	width: 100px;
 	padding: 4px;		
 }	
+#zoom_container .landmarks .mark {
+    background-color: transparent;
+}
 #zoom_container .landmarks .mark .text{
 	background-color:transparent;
 	padding:2px 6px;
