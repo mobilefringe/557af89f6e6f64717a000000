@@ -122,6 +122,7 @@ function init_home_hours(){
     });
     
     $.each(getPropertyHours(), function(i,v){
+        console.log(v);
         if(v.is_holiday == true && v.is_closed == true){
            
             var hours_day = moment(v.holiday_date).tz(getPropertyTimeZone()).format("MMM DD YYYY");
