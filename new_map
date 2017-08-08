@@ -128,7 +128,7 @@
     			container: 'zoom_container'
     		});
 		
-		  //  show_png_pin(".map_pin_a", "#png_map");
+		    show_png_pin(".map_pin_a", "#png_map");
         }
         loadMallDataCached(renderAll); 
         
