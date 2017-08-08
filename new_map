@@ -206,7 +206,7 @@
         					<div class="text">\
         					<strong>'+ name+ '</strong>\
         				</div>\
-        				<img src="//codecloud.cdn.speedyrails.net/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png" width="40px" height="59px" alt="marker" />\
+        				<img src="//kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/7760d28d65f477cd66bd4756f9204c15/map_pin2.png" width="45px" height="65px" alt="marker" />\
         				</div>\
         			</div>'
         			]
