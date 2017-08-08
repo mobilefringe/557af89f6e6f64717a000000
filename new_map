@@ -194,7 +194,7 @@
                 floor = (coords[3])
                 
                 name = $(this).text();
-                store_slug = slug
+                slug = $(this).val();
                 $(map).smoothZoom('removeLandmark')
                 if (isMobile) {
                     $(map).smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:200});    
