@@ -120,7 +120,7 @@ function init_home_hours(){
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
-    
+    $('#home_hours_container').html(item_rendered.join(''));
     $.each(getPropertyHours(), function(i,v){
         
         if(v.is_holiday && v.is_closed){
@@ -152,7 +152,7 @@ function init_home_hours(){
             
         }
     });
-    $('#home_hours_container').html(item_rendered.join(''));
+    
     
     
 }
