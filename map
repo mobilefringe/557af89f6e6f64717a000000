@@ -87,39 +87,6 @@
 </div>
 <script src="//kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/jquery.smoothZoom.min.js"></script>
 <script>
-    function show_pin(param){
-		store_id = $(param).attr('store_id');
-		console.log(store_id)
-		if($("#"+store_id).is(":visible")){
-			$("."+store_id).hide();				
-			$("#"+store_id).hide();
-			$("#no_pin_"+store_id).show();
-			$("#show_pin_"+store_id).hide();
-			$("#m_no_pin_"+store_id).show();
-			$("#m_show_pin_"+store_id).hide();
-		}else{
-			$(".marker").hide();
-			$("#"+store_id).show();
-			$("#"+store_id).click();
-			$("#no_pin_"+store_id).hide();
-			$("#show_pin_"+store_id).show();
-			$("#m_no_pin_"+store_id).hide();
-			$("#m_show_pin_"+store_id).show();
-		}
-		$('#store_table').hide()
-		
-		return false;
-    }
-    $(function(){
-        $("#map_button").click(function(){
-            $("#store_table").toggle();
-        });
-        
-    });
-    function hide_table(){
-        $("#store_table").hide();
-        show_table = false;
-    }
     $(document).ready(function(e) {
         init(e);
         function renderAll(){
