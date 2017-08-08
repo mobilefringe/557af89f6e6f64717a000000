@@ -135,7 +135,7 @@ function init_home_hours(){
             }
         }
         else if(v.is_holiday == true && v.is_closed == false){
-             console.log(v.holiday_date);
+            console.log(v.holiday_date);
             var hours_day = moment(v.holiday_date).tz(getPropertyTimeZone()).format("MMM DD YYYY");
             
             var today = moment().tz(getPropertyTimeZone()).format("MMM DD YYYY");
