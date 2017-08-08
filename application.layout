@@ -81,7 +81,7 @@
         <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
 
         <script>
-            setEndPoint('//stc.mallmaverick.com/api/v3/stc/all.json');
+            setEndPoint('//twinpines.mallmaverick.com/api/v3/stc/all.json');
         </script>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
