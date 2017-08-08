@@ -123,7 +123,7 @@
                 coords = $(this).attr('data-value').split(",");
                 var zoomData = $(map).smoothZoom('getZoomData');
                 x_coord = parseInt(coords[0]) + 5
-                y_coord = parseInt(coords[1]) + 10
+                y_coord = parseInt(coords[1]) + 5
                 floor = (coords[3])
                 
                 name = $(this).text();
