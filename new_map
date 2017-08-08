@@ -159,6 +159,10 @@
             init_home_hours();
             var stores = getStoresList();
             console.log(stores)
+            if(stores.slug != undefined){
+                var store_slug = stores.slug
+            }
+            
             renderStoreList('#store_list_container','#store_list_template', stores, "stores", "A", "Z");
             show_content();    
             
@@ -178,7 +182,7 @@
     			container: 'zoom_container'
     		});
 		
-		    show_png_pin(".map_pin_a", "#png_map");
+		    show_png_pin(".map_pin_a", "#png_map", store_slug);
         }
         loadMallDataCached(renderAll); 
         
