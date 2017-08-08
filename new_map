@@ -42,7 +42,7 @@
             <div class="map_store_list" id="store_list_container">
                 <script id="store_list_template" type="x-tmpl-mustache/text">
                     <p class="store_initial" style="{{show}}" id="{{initial}}">{{initial}}</p>
-                    <p class="store_name"><a href="#" store_id="store_{{id}}" onclick="return show_pin(this)"">{{name}}</a></p>
+                    <p class="store_name"><a class="map_pin_a" href="#" data-value='{{x_coordinate}},{{y_coordinate}},{{id}}'>{{name}}</a></p>
                 </script>
             </div>
         </div>
@@ -111,12 +111,6 @@
             var stores = getStoresList();
             renderStoreList('#store_list_container','#store_list_template', stores, "stores", "A", "Z");
             show_content();    
-            
-            $.each(stores, function(i, val){
-                x = val.x_coordinate - 19;
-                y = val.y_coordinate - 58;
-               $('#map_image').after('<div class="marker" id="store_' + val.id  + '" data-coords="' + x + ', ' + y + '" style="display:none"><a style="color:#fff" href=/stores/'+val.slug +'>' + val.name + '</a></div>')
-            });
             
             $("#png_map").attr("src", getPNGMapURL())
     		$('#png_map').smoothZoom({
