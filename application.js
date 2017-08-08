@@ -142,14 +142,12 @@ function init_home_hours(){
             
             if(hours_day === today){
                 console.log(v.holiday_date);
-                console.log(v.is_holiday, v.is_closed);
                 var open_time = moment(v.open_time).tz(getPropertyTimeZone());
                 var close_time = moment(v.close_time).tz(getPropertyTimeZone());
                 v.open = check_open_time(open_time, close_time);
                 v.close = close_time.format("h:mm A");
                
-                var rendered = Mustache.render(template_html,v);
-                item_rendered.push(rendered);
+                $('#home_hours_container').text("Until")
             }
             
         }
