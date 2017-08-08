@@ -1,46 +1,30 @@
+<script src="//kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/92b82a88144a6207ab1a5e8e0f63d3d1/craftmap.js"></script>
 <style>
-.smooth_zoom_preloader {
-	background-image: url(//codecloud.cdn.speedyrails.net/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/preloader.gif);
-}	
-.smooth_zoom_icons {
-	background-image: url(//codecloud.cdn.speedyrails.net/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/icons.png);
-}
-.noSel {
-    z-index: 1;
-}
-#zoom_container .landmarks{
-	position:absolute;
-	z-index:10;	
-	top:0px;
-	left:0px;
-	font-size:12px;
-	color: #ffffff;
-}	
-#zoom_container .landmarks .item {
-	position:absolute;		
-	text-align:center;		
-}	
-#zoom_container .landmarks .lable div {
-	width: 100px;
-	padding: 4px;		
-}	
-#zoom_container .landmarks .mark {
-    background-color: transparent;
-}
-#zoom_container .landmarks .mark .text {
-    margin-bottom: 5px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    width: 200px;
-    border: 1px solid #808080;
-    border-radius: 6px;
-    background: none repeat scroll 0 0 #000000;
-    box-shadow: -1px 1px 4px 1px #000;
-    font-size: 18px;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-}
+    .demo_1{
+        height:650px;
+        width:740px;
+        margin: 0 auto;
+    }
+    .popup a:hover{
+        text-decoration:none;
+    }
+    @media only screen and (max-width: 1030px) {
+        .demo_1{
+            width:600px;
+        }
+    }
+    @media only screen and (max-width: 800px) { 
+        .demo_1{
+            height:400px;
+            width:340px;
+        }
+    }
+    @media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
+        .demo_1{
+            height:300px;
+            width:300px;
+        }
+    }
 </style>
 <div class="container-fluid container_60">
     <div class="row">
@@ -58,7 +42,7 @@
             <div class="map_store_list" id="store_list_container">
                 <script id="store_list_template" type="x-tmpl-mustache/text">
                     <p class="store_initial" style="{{show}}" id="{{initial}}">{{initial}}</p>
-                    <p class="store_name"><a class="map_pin_a" href="#" data-value='{{x_coordinate}},{{y_coordinate}},{{id}}' data-name='{{slug}}'>{{name}}</a></p>
+                    <p class="store_name"><a href="#" store_id="store_{{id}}" onclick="return show_pin(this)"">{{name}}</a></p>
                 </script>
             </div>
         </div>
@@ -77,19 +61,17 @@
                 </p>
             </div>
             <div class="map">
-                <div id="zoom_container">
-                    <img id="png_map" class="png_map" alt="center map" src="" />
-                    <div class="landmarks" data-show-at-zoom="100" data-allow-drag="true"></div>    
-                </div>
+                <div class="demo_1 map3" style="">            
+                    <img alt="map_image" id="map_image" src="//codecloud.cdn.speedyrails.net/sites/5908e5636e6f643ee1010000/image/png/1494862912000/STC Map - May-15-2017 copy 2.png" />   
+                    	
+        		</div>
             </div>
         </div>
     </div>
 </div>
-<script src="//kodekloud.s3.amazonaws.com/sites/54d4e9206e6f64691f000000/d9e054e28dd1bad70a952dd85777e93f/jquery.smoothZoom.min.js"></script>
 <script>
     function show_pin(param){
 		store_id = $(param).attr('store_id');
-		console.log(store_id)
 		if($("#"+store_id).is(":visible")){
 			$("."+store_id).hide();				
 			$("#"+store_id).hide();
@@ -125,62 +107,23 @@
         function renderAll(){
             init_home_hours();
             var stores = getStoresList();
-            
             renderStoreList('#store_list_container','#store_list_template', stores, "stores", "A", "Z");
             show_content();    
-            
-            $("#png_map").attr("src", getPNGMapURL())
-    		$('#png_map').smoothZoom({
-    		    height: 1650,
-    		    width: 1636,
-    		    initial_ZOOM: 0,
-    			zoom_MIN: 0,
-    			zoom_MAX: 100,
-    			responsive: true,
-    		    responsive_maintain_ratio: true,
-    			zoom_BUTTONS_SHOW : 'YES',
-    			pan_BUTTONS_SHOW : 'NO',
-    			pan_LIMIT_BOUNDARY : 'NO',
-    			button_ALIGN: "top left",
-    			container: 'zoom_container'
-    		});
-		
-		    show_png_pin(".map_pin_a", "#png_map");
-        }
-        loadMallDataCached(renderAll); 
-        
-        function show_png_pin(trigger, map, slug){
-            $(trigger).click(function(e) {
-                e.preventDefault()
-                var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) );
-                coords = $(this).attr('data-value').split(",");
-                var zoomData = $(map).smoothZoom('getZoomData');
-                x_coord = parseInt(coords[0])
-                y_coord = parseInt(coords[1])
-                floor = (coords[3])
-                
-                name = $(this).text();
-                slug = $(this).attr('data-name')
-                $(map).smoothZoom('removeLandmark')
-                if (isMobile) {
-                    $(map).smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:200});    
-                } else {
-                    $(map).smoothZoom('focusTo', {x:x_coord, y:y_coord, zoom:300});
+            $.each(stores, function(i, val){
+                x = val.x_coordinate - 19;
+                y = val.y_coordinate - 58;
+               $('#map_image').after('<div class="marker" id="store_' + val.id  + '" data-coords="' + x + ', ' + y + '" style="display:none"><a style="color:#fff" href=/stores/'+val.slug +'>' + val.name + '</a></div>')
+            });
+            $('.map3').craftmap({
+                image:{
+                    width:1650,
+                    height:1636
+                },
+                map: {
+                    position: 'center'
                 }
-                
-                $(map).smoothZoom('addLandmark', 
-        			[
-        			'<div class="item mark" data-show-at-zoom="0" data-position="' + x_coord + ',' + y_coord + '">\
-        				<div>\
-        					<div class="text">\
-        					    <a style="color:#fff" href=/stores/' + slug + '>' + name + '</a>\
-        				    </div>\
-        				    <img src="//kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/7760d28d65f477cd66bd4756f9204c15/map_pin2.png" width="45px" height="65px" alt="marker" />\
-        				</div>\
-        			</div>'
-        			]
-        		);
             });
         }
+        loadMallDataCached(renderAll); 
     })
 </script>
