@@ -120,7 +120,6 @@ function init_home_hours(){
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
-    $('#home_hours_container').html(item_rendered.join(''));
     
     $.each(getPropertyHours(), function(i,v){
         if(v.is_holiday == true && v.is_closed == true){
@@ -138,15 +137,22 @@ function init_home_hours(){
             var hours_day = moment(v.holiday_date).tz(getPropertyTimeZone()).format("MMM DD YYYY");
             
             var today = moment().tz(getPropertyTimeZone()).format("MMM DD YYYY");
-            var open_time = moment(val.open_time).tz(getPropertyTimeZone());
-            var close_time = moment(val.close_time).tz(getPropertyTimeZone());
+            
+            if(hours_day == today){
+                var open_time = moment(v.open_time).tz(getPropertyTimeZone());
+            var close_time = moment(v.close_time).tz(getPropertyTimeZone());
             v.open = check_open_time(open_time, close_time);
             v.close = close_time.format("h:mm A");
            
             var rendered = Mustache.render(template_html,v);
             item_rendered.push(rendered);
+            }
+            
         }
     });
+    $('#home_hours_container').html(item_rendered.join(''));
+    
+    
 }
 
 function renderStoreList(container, template, collection, type,starter, breaker){
