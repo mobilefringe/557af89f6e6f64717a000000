@@ -225,7 +225,7 @@ function renderStoreListCatetories(container, template, category_list,stores){
                 if(a > -1){
                     if (count == 0){
                         store.show  = "display:block"; 
-                    }else{
+                    } else {
                         store.show  = "display:none"; 
                     }
                     store.header = category_name;
