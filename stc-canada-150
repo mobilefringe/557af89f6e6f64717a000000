@@ -139,13 +139,13 @@ For the month of June, Scarborough Town Centre will be exhibiting hand-painted m
             
             var fashion = getFashionBySlug(slug);
             var fashion_images = fashion.fashion_images;
-            // var posts = getAllPublishedPosts();
-            // var published_posts = posts.sortBy(function(o){ return o.publish_date }).reverse();
+            var posts = getAllPublishedPosts();
+            var published_posts = posts.sortBy(function(o){ return o.publish_date }).reverse();
             renderFashion("#fashion_container", "#fashion_template", fashion);
             renderFashion("#share_container", "#share_template", fashion);
             renderFashion("#fashion_desc_container", "#fashion_desc_template", fashion);
             renderFashionImages("#fashion_images_container", "#fashion_images_template", fashion_images);
-            // renderPosts("#side_links_container", "#side_links_template", published_posts.slice(0,3));
+            renderPosts("#side_links_container", "#side_links_template", published_posts.slice(0,3));
             renderBlogs("#blog_links_container", "#blog_links_template", blogs);
             
             $('#feedback_form').submit(function(e){
