@@ -182,7 +182,7 @@ function renderStoreList(container, template, collection, type,starter, breaker)
             val.show = "display:block;";
         }
         
-        if (val.promotions.length > 0){
+        if (val.promotions != null){
             val.promotion_exist = "display:inline-block";
         } else {
             val.promotion_exist = "display:none";
