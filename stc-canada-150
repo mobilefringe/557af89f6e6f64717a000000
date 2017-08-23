@@ -1,0 +1,169 @@
+<style>
+    .wrapper {
+    text-align: center;
+    }
+    .btn_submit_stc {
+    background: #EF1851;
+    border: 0;
+    width: 50%;
+    padding: 20px;
+    color: #fff;
+    font-family: CircularStd-Book;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    border-radius: 0;
+}
+}
+</style>
+ <script src="http://snapwidget.com/js/snapwidget.js"></script>
+<div class="container-fluid container_60">
+    <div class="row">
+        <div class="col-md-8 right_pad">
+            <div id="fashion_container">
+                <script id="fashion_template" type="x-tmpl-mustache/text">
+                    <h1>Share What You Love About Canada</h1>
+                </script>
+            </div>
+            <div class="line"></div>
+            <div class="flexslider">
+                <ul class="slides" id="fashion_images_container">
+                    <script id="fashion_images_template" type="x-tmpl-mustache/text">
+                       <li><img src="{{image_url}}" alt="fashion" /></li>
+                    </script>
+                </ul>
+            </div>
+            <p>
+                We live in an amazing country that offers us so many opportunities and diversities. To honour Canada’s 150th birthday, we’d love to know the reason you love Canada – submit your reason in the form below to spread the awareness of #150Reasons.
+ <br><br>
+#150Reasons is an initiative brought to you by VIBE Arts, an innovative and award-winning charitable organization that provides young people across the country with the opportunity to share their voice through art.
+ <br><br>
+For the month of June, Scarborough Town Centre will be exhibiting hand-painted murals that express the unique spirit of Canada, created by youth from every Province and Territory. Visit the centre to take in the meaningful stories expressed in each mural that tells the story of our country through the eyes of Canada’s youth and honours the diversity, culture, character and strength of our great nation.
+ 
+            </p><br>
+             
+           
+             <div class="row">
+             
+                    <form id="feedback_form" class="description">
+                        <div class="col-md-6">
+                            <label for="first_name">First Name</label>
+                            <input name="feedback[first_name]" type="text" class="form-control" id="first_name" />
+                            <div class="margin_30"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="last_name">Last Name</label>
+                            <input name="feedback[last_name]" type="text" class="form-control" id="last_name" />
+                            <div class="margin_30"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email">Email*</label>
+                            <input name="feedback[email]" type="text" class="form-control" id="email" required/>
+                            <div class="margin_30"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone">Phone Number</label>
+                            <input name="feedback[phone]" type="text" class="form-control" id="phone" />
+                            <div class="margin_30"></div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="comments">Comments</label>
+                            <textarea name="feedback[comment]" id="comments" class="form-control" style="height:200px; resize:none"></textarea>
+                            <div class="margin_30"></div> 
+                        </div>
+                        <div class="wrapper">
+                        <div class="col-md-12" >
+                            <input type = "submit" value="SUBMIT" class="btn_submit_stc "/>
+                        </div>
+                         <div id="success_subscribe" style="display:none">
+                <p class="description"><br>Thank you for your feedback.</p>
+            </div>
+                        </div>
+                    </form>
+                </div>
+                <br>
+                <p style="text-align:center"><span>&nbsp;<a href="http://150reasons.vibearts.ca/" target="_blank"><img alt="" class="uploaded-img-responsive" height="250" src="https://www.mallmaverick.com/system/site_images/photos/000/027/819/original/USE_Vibe_Arts_150__logo.png?1491594077" width="250" /></a></span></p>
+
+
+            <hr class="chevron_line" />
+            <div class="triangle-down"></div>
+            <div class="triangle-down-inside"></div>
+            <div class="margin_15px"></div>
+            <p class="text-center new_store_subheading no_margin">SHARE</p>
+            <div class="margin_15px"></div>
+            <p class="text-center" id="share_container">
+                <script id="share_template" type="x-tmpl-mustache/text">
+                    <a class="share_link" target="_blank" href="http://www.facebook.com/sharer.php?u=http://scarboroughtowncentre.com/stc-canada-150">
+                        <img class="share_img site_icons" alt="fb share" src="//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_facebook.png" />
+                    </a>
+                    <a class="share_link" target="_blank" href="http://twitter.com/share?url=http://scarboroughtowncentre.com/fashion/{{slug}}">
+                        <img class="share_img site_icons" alt="twitter share" src="//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_twitter.png" />
+                    </a>
+                    <a class="share_link" target="_blank" onclick="pinIt()" style="cursor:pointer" count-layout="horizontal">
+                        <img class="share_img site_icons" alt="pinterest share" src="//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_pin.png" />
+                    </a>
+                </script>
+            </p>
+        </div>
+        <!--<div class="col-md-1 hidden_phone">-->
+        <!--    <div style="width:50%;border-right:1px solid #ccc;height:100%"></div>-->
+        <!--</div>-->
+        <div class="col-md-3">
+            <!--<img class="share_img site_icons no_margin" alt="fb share" src="http://assets.codecloudapp.com/sites/557af89f6e6f64717a000000/3dbb78c8bf8493b2de511c175b2a425b/social_instagram.png" />-->
+            <!--<span class="new_store_subheading">@SHOPSTC</span>-->
+            <div class="margin_15px"></div>
+            <div id="instafeed"></div>
+            <p class="new_store_subheading">RECENT POSTS</p>
+            <div id="side_links_container">
+                <script id="side_links_template" type="x-tmpl-mustache/text">
+                    <p><a href="/{{slug}}" class="trending_side_link">{{title}}</a></p>
+                </script>
+            </div>
+            <p class="new_store_subheading">CATEGORIES</p>
+            <div id="blog_links_container">
+                <script id="blog_links_template" type="x-tmpl-mustache/text">
+                    <p><a href="/trending_categories/{{slug}}" class="trending_side_link">{{name}}</a></p>
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        
+        function renderAll (){
+            init_home_hours();
+            var blogs = getBlogList().sortBy(function(o){ return o.name });
+            // var pathArray = window.location.pathname.split( '/' );
+            var slug = "stc-canada-150";
+            
+            var fashion = getFashionBySlug(slug);
+            var fashion_images = fashion.fashion_images;
+            // var posts = getAllPublishedPosts();
+            var published_posts = posts.sortBy(function(o){ return o.publish_date }).reverse();
+            renderFashion("#fashion_container", "#fashion_template", fashion);
+            renderFashion("#share_container", "#share_template", fashion);
+            renderFashion("#fashion_desc_container", "#fashion_desc_template", fashion);
+            renderFashionImages("#fashion_images_container", "#fashion_images_template", fashion_images);
+            renderPosts("#side_links_container", "#side_links_template", published_posts.slice(0,3));
+            renderBlogs("#blog_links_container", "#blog_links_template", blogs);
+             $('#feedback_form').submit(function(e){
+            e.preventDefault();
+            $.post("http://stc.mallmaverick.com/email_feedback", $(this).serialize(), function(data, status, xhr){
+                if(status == "success"){
+                    $("#success_subscribe").fadeIn();
+                    $('#form_div').hide();
+                }
+                else{
+                    alert("Unable to process your request. Please try again later.")
+                }
+            });
+        })
+            show_content();
+            $('.flexslider').flexslider({
+                animation: "slide",
+            });
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
