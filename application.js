@@ -200,9 +200,7 @@ function renderStoreList(container, template, collection, type,starter, breaker)
         if (upper_current_initial.charCodeAt(0) <= breaker.charCodeAt(0) && upper_current_initial.charCodeAt(0) >= starter.charCodeAt(0)){
             item_rendered.push(rendered);
         }
-
     });
-    
     $(container).show();
     $(container).html(item_rendered.join(''));
 }
