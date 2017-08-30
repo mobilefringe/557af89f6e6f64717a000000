@@ -91,6 +91,7 @@
             var posts = getAllPublishedPosts();
             console.log(posts)
             var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
+            console.log(published_posts)
             renderTrending("#trending_container", "#trending_template", top_blogs);
             renderPosts("#blog_container", "#blog_template", published_posts);
             renderPosts2("#side_links_container", "#side_links_template", published_posts.slice(0,3));
