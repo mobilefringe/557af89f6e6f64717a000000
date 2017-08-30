@@ -89,6 +89,7 @@
             top_blogs.push(blog_lifestyle);
             top_blogs.push(blog_mens);
             var posts = getAllPublishedPosts();
+            console.log(posts)
             var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
             renderTrending("#trending_container", "#trending_template", top_blogs);
             renderPosts("#blog_container", "#blog_template", published_posts);
