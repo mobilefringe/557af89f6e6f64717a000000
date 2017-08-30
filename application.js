@@ -677,12 +677,13 @@ function renderPosts(container, template, collection){
         } else {
             val.post_image = val.image_url;
         }
+        
         if(val.body.length > 100){
             val.description_short = val.body.substring(0,100) + "...";
-        }
-        else{
+        } else {
             val.description_short = val.body;
         }
+        
         val.description_short = val.description_short.replace("&amp;", "&");
         val.slug = "posts/" +val.slug;
         var lb = getBlogDataBySlug("stc-lookbook");
