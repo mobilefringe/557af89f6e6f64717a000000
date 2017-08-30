@@ -79,7 +79,7 @@
             var blogs = getBlogList().sortBy(function(o){ return o.name });
             var blog_beauty = getBlogDataBySlug('stc-women-s-fashion');
             var blog_lifestyle = getBlogDataBySlug('stc-happenings');
-            // var blog_mens = getBlogDataBySlug('stc-canada-150');
+            var blog_mens = getBlogDataBySlug('stc-canada-150');
             
             blog_beauty.posts = blog_beauty.posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
             blog_lifestyle.posts = blog_lifestyle.posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
