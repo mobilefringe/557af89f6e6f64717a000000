@@ -684,6 +684,7 @@ function renderPosts(container, template, collection){
             val.description_short = val.body;
         }
         
+        console.log(collection)
         val.description_short = val.description_short.replace("&amp;", "&");
         val.slug = "posts/" +val.slug;
         var lb = getBlogDataBySlug("stc-lookbook");
