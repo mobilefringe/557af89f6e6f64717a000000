@@ -108,5 +108,4 @@
 
         loadMallDataCached(renderAll); 
     })
-    
 </script>
