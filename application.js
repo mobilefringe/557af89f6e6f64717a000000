@@ -692,9 +692,9 @@ function renderPosts(container, template, collection){
         var out_blog = lb.posts.concat(contest.posts);
         var id = val.id;
         // var result = $.grep(out_blog, function(e){ return e.id == id; });
-        if(result.length > 0){
-            val.slug = val.video_link;
-        }
+        // if(result.length > 0){
+        //     val.slug = val.video_link;
+        // }
         val.counter = counter;
         var date_blog = moment(val.publish_date).tz(getPropertyTimeZone());
         val.published_on = date_blog.format('MMM DD, YYYY');
