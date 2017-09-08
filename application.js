@@ -729,8 +729,7 @@ function renderPosts2(container, template, collection){
         
         if(val.body.length > 100){
             val.description_short = val.body.substring(0,100) + "...";
-        }
-        else{
+        } else {
             val.description_short = val.body;
         }
     
