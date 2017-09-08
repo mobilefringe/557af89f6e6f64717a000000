@@ -691,7 +691,7 @@ function renderPosts(container, template, collection){
         var out_blog = lb.posts.concat(contest.posts);
         var id = val.id;
         var result = $.grep(out_blog, function(e){ return e.id == id; });
-        if(result.length > 0){
+        if(result != null){
             val.slug = val.video_link;
         }
         val.counter = counter;
