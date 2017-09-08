@@ -26,8 +26,7 @@
             ga('create', 'UA-40014802-9', 'auto');
             ga('send', 'pageview');
         </script>
-        
-        <!-- css -->
+
         <link rel='shortcut icon' href='//codecloud.cdn.speedyrails.net/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/favicon.ico' type='image/icon' />
         
         <link rel="apple-touch-icon" sizes="72x72" href="//codecloud.cdn.speedyrails.net/sites/55e891ec6e6f644697010000/eb553b86d66ba0c8aa22f4cae34fabbb/apple-touch-icon-72x72.png" />
@@ -54,14 +53,14 @@
         
         
         
+        <!-- CSS -->
+        <link href="//testbucketblurt.s3-us-west-2.amazonaws.com/sites/540373d34a616d0cccaf0000/368584aaeda8ec2d1f80a5f777235d72/font-awesome.min.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/flexslider.css" rel="stylesheet">
+        <link href="/application.css" rel="stylesheet">
         
-        <link type="text/css" rel="stylesheet" href="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/540373d34a616d0cccaf0000/368584aaeda8ec2d1f80a5f777235d72/font-awesome.min.css">
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/flexslider.css" rel="stylesheet">
-        <link rel="stylesheet" href="/application.css">
-        
-        <!-- js -->
+        <!-- JS -->
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
@@ -75,7 +74,7 @@
         <script src="/helpers.js"></script>
         <script src="/application.js"></script>
         
-        <!--MallMaverick v1.0-->
+        <!-- MallMaverick -->
         <script src="//mallmaverick.codecloudapp.com/mallmaverick_v4.js"></script>
         <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
 
