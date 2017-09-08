@@ -689,14 +689,12 @@ function renderPosts(container, template, collection){
         var lb = getBlogDataBySlug("stc-lookbook");
         var contest = getBlogDataBySlug("stc-contest");
         var out_blog = lb.posts.concat(contest.posts);
-        console.log(out_blog)
         var id = val.id;
-        
         if(id != null){
             try {
                 var result = $.grep(out_blog, function(e){ return e.id == id; });
             } catch(err) {
-                console.log(err);
+                // console.log(err);
             }
         }
         // var result = $.grep(out_blog, function(e){ return e.id == id; });
@@ -728,14 +726,14 @@ function renderPosts2(container, template, collection){
         } else {
             val.post_image = val.image_url;
         }
+        
         if(val.body.length > 100){
             val.description_short = val.body.substring(0,100) + "...";
         }
         else{
             val.description_short = val.body;
         }
-        
-        
+    
         val.counter = counter;
         var date_blog = moment(val.publish_date).tz(getPropertyTimeZone());
         val.published_on = date_blog.format('MMM DD, YYYY');
@@ -749,8 +747,6 @@ function renderPosts2(container, template, collection){
     $(container).html(item_rendered.join(''));
 }
 
-
-
 function renderPostDetails(container, template, collection){
     var item_list = [];
     var item_rendered = [];
@@ -761,28 +757,28 @@ function renderPostDetails(container, template, collection){
         } else {
             val.post_image = val.image_url;
         }
+        
         if(val.body.length > 100){
             val.description_short = val.body.substring(0,100) + "...";
-        }
-        else{
+        } else {
             val.description_short = val.body;
         }
+        
         var date_blog = moment(val.publish_date).tz(getPropertyTimeZone());
         val.published_on = date_blog.format('MMM DD, YYYY');
         var next_p = getNextPublishedPostBySlug(val.slug);
         var prev_p = getPrevPublishedPostBySlug(val.slug);
         if (next_p == undefined){
             val.next_post_show = "display:none";
-        }
-        else{
+        } else {
             val.next_post = next_p.title;
             val.next_slug = next_p.slug;
             val.next_post_show = "display:inline-block";
         }
+        
         if (prev_p == undefined){
             val.prev_post_show = "display:none";
-        }
-        else{
+        } else {
             val.prev_post = prev_p.title;
             val.prev_slug = prev_p.slug;
             val.prev_post_show = "display:inline-block";
