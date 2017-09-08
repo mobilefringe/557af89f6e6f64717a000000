@@ -690,10 +690,11 @@ function renderPosts(container, template, collection){
         var contest = getBlogDataBySlug("stc-contest");
         var out_blog = lb.posts.concat(contest.posts);
         var id = val.id;
-        console.log(id)
+        
         if(id != null){
             try {
                 var result = $.grep(out_blog, function(e){ return e.id == id; });
+                console.log(result)
             } catch(err) {
                 console.log(err);
             }
