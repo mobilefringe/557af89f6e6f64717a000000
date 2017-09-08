@@ -687,6 +687,7 @@ function renderPosts(container, template, collection){
         val.description_short = val.description_short.replace("&amp;", "&");
         val.slug = "posts/" + val.slug;
         var lb = getBlogDataBySlug("stc-lookbook");
+        console.log(lb)
         var contest = getBlogDataBySlug("stc-contest");
         var out_blog = lb.posts.concat(contest.posts);
         var id = val.id;
@@ -694,7 +695,6 @@ function renderPosts(container, template, collection){
         if(id != null){
             try {
                 var result = $.grep(out_blog, function(e){ return e.id == id; });
-                console.log(result)
             } catch(err) {
                 console.log(err);
             }
