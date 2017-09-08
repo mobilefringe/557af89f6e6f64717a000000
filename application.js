@@ -692,7 +692,11 @@ function renderPosts(container, template, collection){
         var id = val.id;
         var result = $.grep(out_blog, function(e){ return e.id == id; });
         if(result != null){
-            val.slug = val.video_link;
+            try {
+                val.slug = val.video_link;
+            } catch(err) {
+                console.log(err);
+            }
         }
         val.counter = counter;
         var date_blog = moment(val.publish_date).tz(getPropertyTimeZone());
