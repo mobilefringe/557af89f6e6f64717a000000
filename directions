@@ -59,7 +59,7 @@
             <p class="mini_nav_2 ">
              
                 <a style="padding-right: 20px;border-right: 1px solid #BFBEBD;padding-bottom: 13px !important;margin-right: 0;" class="active directions_toggler" href="#car" aria-controls="car" role="tab" data-toggle="tab">DIRECTIONS BY CAR</a>
-                <a style="margin-left:20px;padding-bottom:20px" class="directions_toggler" href="#transit" aria-controls="transit" role="tab" data-toggle="tab">PUBLIC TRANSIT</a>
+                <a style="padding-right: 20px;border-right: 1px solid #BFBEBD;padding-bottom: 13px !important;margin-right: 0;"  class="directions_toggler" href="#transit" aria-controls="transit" role="tab" data-toggle="tab">PUBLIC TRANSIT</a>
                 <a style="padding-right: 20px;border-right: 1px solid #BFBEBD;padding-bottom: 13px !important;margin-right: 0;" class="directions_toggler" href="#google" aria-controls="car" role="tab" data-toggle="tab">GOOGLE VIEW</a>
             </p>
             <div class="margin_15px"></div>
