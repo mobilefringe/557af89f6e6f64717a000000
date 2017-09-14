@@ -173,7 +173,7 @@
                                         <div class="triangle-up-inside"></div>
                                         <li><a href="/stores">STORE LIST</a></li>
                                         <li><a href="/map">CENTRE MAP</a></li>
-                                        <li><a href="/map#centre_tour">CENTRE TOUR</a></li>
+                                        <li><a href="/centre_tour">CENTRE TOUR</a></li>
                                         <li><a href="/new_stores">NEW STORES</a></li>
                                         <li><a href="/promotions">PROMOTIONS</a></li>
                                        
