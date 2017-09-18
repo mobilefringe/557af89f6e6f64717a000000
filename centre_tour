@@ -8,14 +8,14 @@
         <div class="col-md-8 left_pad">
             <h1>Centre Tour</h1>
             <div class="line"></div>
-            <p class="mini_nav ">
-                <a class="active" href="#tour1">Tour Angle 1</a>
-                <a href="#tour2">Tour Angle 2</a>
-                <a href="#tour3">Tour Angle 3</a>
-                <a href="#tour4">Tour Angle 4</a>
-                <a href="#tour5">Tour Angle 5</a>
-                <a href="#tour6">Tour Angle 6</a>
-            </p>
+            <!--<p class="mini_nav ">-->
+            <!--    <a class="active" href="#tour1">Tour Angle 1</a>-->
+            <!--    <a href="#tour2">Tour Angle 2</a>-->
+            <!--    <a href="#tour3">Tour Angle 3</a>-->
+            <!--    <a href="#tour4">Tour Angle 4</a>-->
+            <!--    <a href="#tour5">Tour Angle 5</a>-->
+            <!--    <a href="#tour6">Tour Angle 6</a>-->
+            <!--</p>-->
             <!--<div>-->
             <!--    <a id="tour1">-->
                   
