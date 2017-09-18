@@ -12,7 +12,7 @@
             <h1>Centre Tour</h1>
             <div class="line"></div>
             <p class="mini_nav ">
-                <a class="active" href="/stores">STORE LIST</a>
+                <a class="active" href="/stores">Tour Angle #1</a>
                 <a href="/map">CENTRE MAP</a>
                 <a href="/new_stores">NEW STORES</a>
                 <a href="/promotions">PROMOTIONS</a>
