@@ -5,8 +5,8 @@
     }
     @media screen and (min-width: 480px) {
         #tours iframe{
-            width=750px;
-            height=500px;
+            width=auto;
+            height=75%;
         }
     }
 </style>
