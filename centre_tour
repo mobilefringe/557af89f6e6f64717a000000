@@ -60,12 +60,12 @@
             <!--</div>-->
             
             <p class="mini_nav_2">
-                <a class="active hstc" href="#tour1" aria-controls="tour1" role="tab" data-toggle="tab">Tour Angle 1</a>
-                <a class="hstc" href="#tour2" aria-controls="tour2" role="tab" data-toggle="tab">Tour Angle 2</a>
-                <a class="hstc" href="#tour3" aria-controls="tour3" role="tab" data-toggle="tab">Tour Angle 3</a>
-                <a class="hstc" href="#tour4" aria-controls="tour4" role="tab" data-toggle="tab">Tour Angle 4</a>
-                <a class="hstc" href="#tour5" aria-controls="tour5" role="tab" data-toggle="tab">Tour Angle 5</a>
-                <a class="hstc" href="#tour6" aria-controls="tour6" role="tab" data-toggle="tab">Tour Angle 6</a>
+                <a class="active directions_toggler" href="#tour1" aria-controls="tour1" role="tab" data-toggle="tab">Tour Angle 1</a>
+                <a class="directions_toggler" href="#tour2" aria-controls="tour2" role="tab" data-toggle="tab">Tour Angle 2</a>
+                <a class="directions_toggler" href="#tour3" aria-controls="tour3" role="tab" data-toggle="tab">Tour Angle 3</a>
+                <a class="directions_toggler" href="#tour4" aria-controls="tour4" role="tab" data-toggle="tab">Tour Angle 4</a>
+                <a class="directions_toggler" href="#tour5" aria-controls="tour5" role="tab" data-toggle="tab">Tour Angle 5</a>
+                <a class="directions_toggler" href="#tour6" aria-controls="tour6" role="tab" data-toggle="tab">Tour Angle 6</a>
             </p>
              <div class="tab-content ">
                 <div role="tabpanel" class="tab-pane active" id="tour1">
