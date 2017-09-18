@@ -16,48 +16,48 @@
                 <a href="#tour5">Tour Angle 5</a>
                 <a href="#tour6">Tour Angle 6</a>
             </p>
-            <div>
-                <a id="tour1">
+            <!--<div>-->
+            <!--    <a id="tour1">-->
                   
                   
-              </a>
-              <div class="line"></div>
-            </div>
-            <div>
-                <a id="tour2">
+            <!--  </a>-->
+            <!--  <div class="line"></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--    <a id="tour2">-->
                   
                   
-              </a>
-              <div class="line"></div>
-            </div>
-            <div>
-                <a id="tour3">
+            <!--  </a>-->
+            <!--  <div class="line"></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--    <a id="tour3">-->
                   
                   
-              </a>
-              <div class="line"></div>
-            </div>
-            <div>
-                <a id="tour4">
+            <!--  </a>-->
+            <!--  <div class="line"></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--    <a id="tour4">-->
                  
                   
-              </a>
-              <div class="line"></div>
-            </div>
-            <div>
-                <a id="tour5">
+            <!--  </a>-->
+            <!--  <div class="line"></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--    <a id="tour5">-->
                   
                   
-              </a>
-              <div class="line"></div>
-            </div>
-            <div>
-                <a id="tour6">
+            <!--  </a>-->
+            <!--  <div class="line"></div>-->
+            <!--</div>-->
+            <!--<div>-->
+            <!--    <a id="tour6">-->
                   
                   
-              </a>
-              <div class="line"></div>
-            </div>
+            <!--  </a>-->
+            <!--  <div class="line"></div>-->
+            <!--</div>-->
             
             <p class="mini_nav_2">
                 <a class="active hstc" href="#alphabetical" aria-controls="alphabetical" role="tab" data-toggle="tab">ALPHABETICAL</a>
