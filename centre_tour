@@ -8,56 +8,6 @@
         <div class="col-md-8 left_pad">
             <h1>Centre Tour</h1>
             <div class="line"></div>
-            <!--<p class="mini_nav ">-->
-            <!--    <a class="active" href="#tour1">Tour Angle 1</a>-->
-            <!--    <a href="#tour2">Tour Angle 2</a>-->
-            <!--    <a href="#tour3">Tour Angle 3</a>-->
-            <!--    <a href="#tour4">Tour Angle 4</a>-->
-            <!--    <a href="#tour5">Tour Angle 5</a>-->
-            <!--    <a href="#tour6">Tour Angle 6</a>-->
-            <!--</p>-->
-            <!--<div>-->
-            <!--    <a id="tour1">-->
-                  
-                  
-            <!--  </a>-->
-            <!--  <div class="line"></div>-->
-            <!--</div>-->
-            <!--<div>-->
-            <!--    <a id="tour2">-->
-                  
-                  
-            <!--  </a>-->
-            <!--  <div class="line"></div>-->
-            <!--</div>-->
-            <!--<div>-->
-            <!--    <a id="tour3">-->
-                  
-                  
-            <!--  </a>-->
-            <!--  <div class="line"></div>-->
-            <!--</div>-->
-            <!--<div>-->
-            <!--    <a id="tour4">-->
-                 
-                  
-            <!--  </a>-->
-            <!--  <div class="line"></div>-->
-            <!--</div>-->
-            <!--<div>-->
-            <!--    <a id="tour5">-->
-                  
-                  
-            <!--  </a>-->
-            <!--  <div class="line"></div>-->
-            <!--</div>-->
-            <!--<div>-->
-            <!--    <a id="tour6">-->
-                  
-                  
-            <!--  </a>-->
-            <!--  <div class="line"></div>-->
-            <!--</div>-->
             
             <p class="mini_nav_2">
                 <a class="active directions_toggler" href="#tour1" aria-controls="tour1" role="tab" data-toggle="tab">Tour Angle 1</a>
