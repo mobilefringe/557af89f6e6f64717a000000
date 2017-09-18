@@ -70,6 +70,18 @@
                 <div role="tabpanel" class="tab-pane" id="tour2">
                     
                 </div>
+                <div role="tabpanel" class="tab-pane" id="tour3">
+                    
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tour4">
+                    
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tour5">
+                    
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tour6">
+                    
+                </div>
             </div>
         </div>
     </div>
