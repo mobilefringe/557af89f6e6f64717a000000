@@ -1,13 +1,13 @@
 <style>
-    #tours iframe{
-        width:750px;
-        height:500px;
-    }
     @media screen and (min-width: 480px) {
         #tours iframe{
             width:auto;
             height:75%;
         }
+    }
+    #tours iframe{
+        width:750px;
+        height:500px;
     }
 </style>
 <div class="container-fluid container_60">
