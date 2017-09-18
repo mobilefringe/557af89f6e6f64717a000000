@@ -1,12 +1,12 @@
 <style>
     #tours iframe{
-        width=750px;
-        height=500px;
+        width:750px;
+        height:500px;
     }
     @media screen and (min-width: 480px) {
         #tours iframe{
-            width=auto;
-            height=75%;
+            width:auto;
+            height:5%;
         }
     }
 </style>
