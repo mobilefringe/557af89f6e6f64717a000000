@@ -51,7 +51,6 @@
                 <p class="mini_nav">
                     <a href="/stores">STORE LIST</a>
                     <a class="active" href="/map">CENTRE MAP</a>
-                    <a href="/centre_tour">CENTRE TOUR</a>
                     <a href="/new_stores">NEW STORES</a>
                     <a href="/promotions">PROMOTIONS</a>
                 </p>
@@ -73,6 +72,7 @@
                 <p class="mini_nav">
                     <a href="/stores">STORE LIST</a>
                     <a class="active" href="/map">CENTRE MAP</a>
+                      <a class="active" href="/map">CENTRE MAP</a>
                     <a href="/new_stores">NEW STORES</a>
                     <a href="/promotions">PROMOTIONS</a>
                 </p>
