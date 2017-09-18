@@ -64,10 +64,10 @@
                 <a class="hstc" href="#categories" aria-controls="categories" role="tab" data-toggle="tab">CATEGORY</a>
             </p>
              <div class="tab-content ">
-                <div role="tabpanel" class="tab-pane active" id="alphabetical">
+                <div role="tabpanel" class="tab-pane active" id="tour1">
                     
                 </div>
-                <div role="tabpanel" class="tab-pane" id="categories">
+                <div role="tabpanel" class="tab-pane" id="tour2">
                     
                 </div>
             </div>
