@@ -44,7 +44,7 @@
 </style>
 <div class="container-fluid container_60">
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-8">
             <div class="show_phone">
                 <h1>Centre Map</h1>
                 <div class="line"></div>
