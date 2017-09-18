@@ -60,7 +60,7 @@
             <!--</div>-->
             
             <p class="mini_nav_2">
-                <a class="active hstc" href="#alphabetical" aria-controls="alphabetical" role="tab" data-toggle="tab">ALPHABETICAL</a>
+                <a class="active hstc" href="#tour1" aria-controls="alphabetical" role="tab" data-toggle="tab">ALPHABETICAL</a>
                 <a class="hstc" href="#categories" aria-controls="categories" role="tab" data-toggle="tab">CATEGORY</a>
             </p>
              <div class="tab-content ">
