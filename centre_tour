@@ -60,8 +60,8 @@
             <!--</div>-->
             
             <p class="mini_nav_2">
-                <a class="active hstc" href="#tour1" aria-controls="alphabetical" role="tab" data-toggle="tab">ALPHABETICAL</a>
-                <a class="hstc" href="#categories" aria-controls="categories" role="tab" data-toggle="tab">CATEGORY</a>
+                <a class="active hstc" href="#tour1" aria-controls="alphabetical" role="tab" data-toggle="tab">Tour Angle 1</a>
+                <a class="hstc" href="#categories" aria-controls="categories" role="tab" data-toggle="tab">Tour Angle 1</a>
             </p>
              <div class="tab-content ">
                 <div role="tabpanel" class="tab-pane active" id="tour1">
