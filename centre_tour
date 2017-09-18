@@ -17,6 +17,9 @@
                 <a href="/new_stores">NEW STORES</a>
                 <a href="/promotions">PROMOTIONS</a>
             </p>
+            <div>
+                
+            </div>
             <iframe src="https://360.asecondglance.ca/stc/panorama.html?panorama=CAoSLEFGMVFpcE1Pc1p5QzFCY29tTm5GYUlhQVpSNUhVM1B0TGlWWTRkR1g3cDRE&compass=1&address=1&arrows=1&zoom=1&turn=1&zoomlevel=1&pitch=0&heading=50&noclick=0" width="750" height="500" frameborder="0"></iframe>
             <div class="line"></div>
             <!--<p class="mini_nav_2">-->
