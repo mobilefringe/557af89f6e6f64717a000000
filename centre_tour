@@ -9,7 +9,7 @@
         <!--    <div style="width:50%;border-right:1px solid #ccc;height:100%" id="mid_div"></div>-->
         <!--</div>-->
         <div class="col-md-8 left_pad">
-            <h1>Stores</h1>
+            <h1>Centre Tour</h1>
             <div class="line"></div>
             <p class="mini_nav ">
                 <a class="active" href="/stores">STORE LIST</a>
