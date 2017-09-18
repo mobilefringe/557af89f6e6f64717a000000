@@ -46,7 +46,7 @@
             </div>
             <div>
                 <a id="tour5">
-                  <iframe src="https://360.asecondglance.ca/stc/panorama.html?panorama=CAoSLEFGMVFpcE1Bd1o0bVdMejh4WmJfaUd1eHNwMUJGNGdZbjRsZTlyZTBMU1FP&compass=1&address=1&arrows=1&zoom=1&turn=1&zoomlevel=1&pitch=0&heading=150&noclick=0" width="750" height="500" frameborder="0"></iframe>
+                  
                   
               </a>
               <div class="line"></div>
@@ -77,7 +77,7 @@
                     
                 </div>
                 <div role="tabpanel" class="tab-pane" id="tour5">
-                    
+                    <iframe src="https://360.asecondglance.ca/stc/panorama.html?panorama=CAoSLEFGMVFpcE1Bd1o0bVdMejh4WmJfaUd1eHNwMUJGNGdZbjRsZTlyZTBMU1FP&compass=1&address=1&arrows=1&zoom=1&turn=1&zoomlevel=1&pitch=0&heading=150&noclick=0" width="750" height="500" frameborder="0"></iframe>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="tour6">
                     <iframe src="https://360.asecondglance.ca/stc/panorama.html?panorama=CAoSLEFGMVFpcE1JVWwzZlJINk5sa1VnbmxyLXdGaHJjUjA4akNRNWdwZkFiWXBm&compass=1&address=1&arrows=1&zoom=1&turn=1&zoomlevel=1&pitch=0&heading=300&noclick=0" width="750" height="500" frameborder="0"></iframe>
