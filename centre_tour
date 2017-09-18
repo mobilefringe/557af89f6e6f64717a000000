@@ -5,9 +5,7 @@
                 <img alt="side image" class="width_100" src="//codecloud.cdn.speedyrails.net/sites/57fe89a56e6f643dc92f0100/image/jpeg/1491857556000/STC_sidebar_270x775_v1-1.jpg" />
             </a>
         </div>
-        <!--<div class="col-md-1 hidden_phone">-->
-        <!--    <div style="width:50%;border-right:1px solid #ccc;height:100%" id="mid_div"></div>-->
-        <!--</div>-->
+       
         <div class="col-md-8 left_pad">
             <h1>Centre Tour</h1>
             <div class="line"></div>
