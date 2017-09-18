@@ -58,6 +58,19 @@
               </a>
               <div class="line"></div>
             </div>
+            
+            <p class="mini_nav_2">
+                <a class="active hstc" href="#alphabetical" aria-controls="alphabetical" role="tab" data-toggle="tab">ALPHABETICAL</a>
+                <a class="hstc" href="#categories" aria-controls="categories" role="tab" data-toggle="tab">CATEGORY</a>
+            </p>
+             <div class="tab-content ">
+                <div role="tabpanel" class="tab-pane active" id="alphabetical">
+                    
+                </div>
+                <div role="tabpanel" class="tab-pane" id="categories">
+                    
+                </div>
+            </div>
         </div>
     </div>
 </div>
