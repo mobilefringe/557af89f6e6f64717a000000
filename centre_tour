@@ -64,27 +64,3 @@
         </div>
     </div>
 </div>
-<script>
-    // $(document).ready(function(e) {
-    //     init(e);
-    //     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-    //         $('.mini_nav_2 a').removeClass('active')
-    //         $(this).addClass('active')
-    //     })
-    //     function renderAll (){
-    //         init_home_hours();
-    //         var stores = getStoresList();
-    //         var categories = getStoreCategories();
-    //         var half = Math.ceil(categories.length / 2)
-    //         var leftSide = categories.splice(0, half);
-    //         var rightSide = categories
-            
-    //         renderStoreList('#store_list_container','#store_list_template', stores, "stores", "A", "M");
-    //         renderStoreList('#store_list_container_right','#store_list_template_right', stores, "stores", "M", "Z");
-    //         renderStoreListCatetories('#category_list_container','#category_list_template', leftSide, stores);
-    //         renderStoreListCatetories('#category_list_container_right','#category_list_template_right', rightSide, stores);
-    //         show_content();
-    //     }
-    //     loadMallDataCached(renderAll); 
-    // })
-</script>
