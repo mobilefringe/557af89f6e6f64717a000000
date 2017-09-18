@@ -1,5 +1,7 @@
 <style>
-    
+    #tours iframe{
+        
+    }
 </style>
 <div class="container-fluid container_60">
     <div class="row">
