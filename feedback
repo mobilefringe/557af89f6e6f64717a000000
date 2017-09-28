@@ -1,0 +1,109 @@
+<style>
+    label{
+        font-weight:normal
+    }
+</style>
+<div class="container-fluid container_60">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="//codecloud.cdn.speedyrails.net/sites/599d919a6e6f6420f1c90000/image/jpeg/1506440906000/share-your-thoughts-image.jpg" alt="">
+            <div class="margin_15px show_phone"></div>
+            <h1 class="show_phone" style=" margin-bottom: 20px; ">Share your thoughts with us</h1>
+            <div class="show_phone line"></div>
+            <div id="pages_side_nav">   
+                <ul class="nav side_nav" >
+                     <li><a class="hstc" href="/pages/stc-guest-services">GUEST EXPERIENCE</a></li>
+                    <li><a class="hstc" href="/events">EVENTS</a></li>
+                     <li><a class="hstc" href="/pages/stc-shop-and-stay">SHOP & STAY</a></li>
+                    <li><a class="hstc" href="/pages/stc-gift-cards">GIFT CARD</a></li>
+                    <li><a class="hstc" href="/feedback">SHARE YOUR THOUGHTS</a></li>
+                    <li><a class="hstc" href="/pages/stc-accessibility">ACCESSIBILITY</a></li>
+                    <li><a class="hstc" href="/security_and_safety" >SECURITY & SAFETY</a></li>
+                </ul>
+                <div class="hidden_phone line"></div>
+            </div>
+        </div>
+        <!--<div class="col-md-1 hidden_phone">-->
+        <!--    <div style="width:50%;border-right:1px solid #ccc;height:100%"></div>-->
+        <!--</div>-->
+        <div class="col-md-7 left_pad">
+            <div id="success_subscribe" style="display:none">
+                <p class="description">Thank you for your feedback.</p>
+            </div>
+            <div id="form_div">
+                <h1 class="hidden_phone">Share your thoughts with us</h1>
+                <div class="line"></div>
+                <div class="description">
+                    <p>Take a moment to tell us how we’re doing. 
+                   Your feedback really matters.
+                It's how we know we're making your experience at STC the best it can be.</p>
+                    <br />
+                    <p>So please tell us:</p>
+                    <ul>
+                        <li>what's working</li>
+                        <li>if there's anything we could be doing better</li>
+                        <li>or if you'd like to recognize someone for providing exceptional customer service</li>
+                    </ul>
+                    <p>We welcome your comments and suggestions as much as we welcome your next visit.</p>
+                </div>
+                <div class="margin_30"></div>
+                <div class="row">
+                    <form id="feedback_form" class="description">
+                        <div class="col-md-6">
+                            <label for="first_name">First Name</label>
+                            <input name="feedback[first_name]" type="text" class="form-control" id="first_name" />
+                            <div class="margin_30"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="last_name">Last Name</label>
+                            <input name="feedback[last_name]" type="text" class="form-control" id="last_name" />
+                            <div class="margin_30"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email">Email*</label>
+                            <input name="feedback[email]" type="text" class="form-control" id="email" required/>
+                            <div class="margin_30"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone">Phone Number</label>
+                            <input name="feedback[phone]" type="text" class="form-control" id="phone" />
+                            <div class="margin_30"></div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="comments">Comments</label>
+                            <textarea name="feedback[comment]" id="comments" class="form-control" style="height:200px; resize:none"></textarea>
+                            <div class="margin_30"></div> 
+                        </div>
+                        <div class="col-md-6">
+                            <input type = "submit" value="SUBMIT" class="btn_submit_stc "/>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            init_home_hours();
+            show_content();
+        }
+        $('#feedback_form').submit(function(e){
+            e.preventDefault();
+            $.post("http://stc.mallmaverick.com/email_feedback", $(this).serialize(), function(data, status, xhr){
+                if(status == "success"){
+                    $("#success_subscribe").fadeIn();
+                    $('#form_div').hide();
+                }
+                else{
+                    alert("Unable to process your request. Please try again later.")
+                }
+            });
+        })
+        loadMallDataCached(renderAll); 
+    })
+</script>
