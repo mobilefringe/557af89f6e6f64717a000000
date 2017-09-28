@@ -1,0 +1,112 @@
+<div class="container-fluid container_60">
+    <div class="row">
+        <div class="col-md-5 text-center">
+            <img alt="side image" class="width_100" src="//codecloud.cdn.speedyrails.net/sites/599d919a6e6f6420f1c90000/image/jpeg/1506440906000/STC_Fall-newsletterbox.jpg" />
+        </div>
+        <!--<div class="col-md-1 hidden_phone">-->
+        <!--    <div style="width:50%;border-right:1px solid #ccc;height:100%"></div>-->
+        <!--</div>-->
+        <div class="col-md-6 left_pad">
+            <h1>Subscribe to the STC Newsletter</h1>
+            <div class="line"></div>
+            <form id="sub_form" method="post" action="https://campaign.eflyermaker.com">
+                <input type="hidden" name="action" value="Campaigns_subscribe" />
+                <input type="hidden" name="p" value="53616c7465645f5f42cbce77c41591389a87144b6bedf2cc" />
+                <input type="hidden" name="simple" value="1">
+                <input type="hidden" name="subscriber_source" value="eFlyerMaker Subscription Form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="first_name">First Name*</label>
+                        <input id="first_name" class="form-control" type="Text" name="firstname" placeholder="First Name" value="" required data-msg="Please enter your first name">
+                        <div class="margin_30"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="last_name">Last Name*</label>
+                        <input id="last_name" class="form-control" type="Text" name="lastname" placeholder="Last Name" value="" required data-msg="Please enter your last name">
+                        <div class="margin_30"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="email">Email*</label>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="address@email.com" value="" required data-msg="Please enter your email" data-rule-email="true" data-msg-email="Please enter a valid email address">
+                        <div class="margin_30"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="phone_number">Phone Number</label>
+                        <input id="phone_number" class="form-control" type="Text" name="phone_number" placeholder="Mobile number" value="">
+                        <div class="margin_30"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="postal">Postal Code</label>
+                        <input id="postal" class="form-control" type="Text" name="postalcode" placeholder="Postal code" value="">
+                        <div class="margin_30"></div>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="age">Age</label>
+                        <input id="age" class="form-control" type="Text" name="age" placeholder="Age" value="">
+                        <div class="margin_30"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="Gender">Gender</label>
+                        <select class="form-control" id="Gender" name="gender">
+                            <option value="Unknown"></option>
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                        </select>
+                        <div class="margin_30"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input style="vertical-align: top;" type="checkbox" name="publication_agreement" id="publication_agreement" value="1" required data-msg="Please agree to received newsletters from us" />
+                        <label for="publication_agreement" style="width:90%">I agree to receive newsletters from Scarborough Town Centre. You can unsubscribe anytime. </label>
+                        <label id="error_publication_agreement" for="publication_agreement" generated="true" class="text-danger error"></label>
+                        <br /><br />
+                        <input style="vertical-align: top;" type="checkbox" name="consent_policy" id="consent_policy" value="1" required data-msg="Please confirm your consent to receive electronic communications from us">
+                        <label for="consent_policy" style="width:95%">
+                            I agree to receive communications from Scarborough Town Centre.<br />
+                            You can unsubscribe at anytime.<br />
+                            For more details about personal data privacy, please read or <a href="http://scarboroughtowncentre.com/privacy" target="_blank">Privacy Policy</a>
+                            <br />
+                            or contact us: 300 Borough Drive, Scarborough, Ontario, M1P 4P5
+                        </label>  
+                        <label id="error_policy" for="consent_policy" generated="true" class="text-danger error"></label>
+                        <div class="margin_30"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="submit" value="SUBMIT" class="btn_submit_stc ">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+
+<script>
+$("#sub_form").validate();
+</script>
+
+<style>
+.error{color:#F00}
+</style>
+
+
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            init_home_hours();
+            show_content();
+            
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
