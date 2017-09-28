@@ -31,14 +31,14 @@
             </p>
              <div class="tab-content" id="tours">
                 <div role="tabpanel" class="tab-pane active" id="tour1">
-                    <iframe src="https://360.asecondglance.ca/stc/panorama.html?panorama=CAoSLEFGMVFpcE1Pc1p5QzFCY29tTm5GYUlhQVpSNUhVM1B0TGlWWTRkR1g3cDRE&compass=1&address=1&arrows=1&zoom=1&turn=1&zoomlevel=1&pitch=0&heading=50&noclick=0" frameborder="0"></iframe>
+                    <iframe src="https://360.asecondglance.ca/stc/panorama.html?panorama=CAoSLEFGMVFpcE5EQ3NDSnl6cWoyM3RSazRlNDRWMHpPSjJmc1h4OFd3MlRWbE9s&compass=1&address=1&arrows=1&zoom=1&turn=1&zoomlevel=1&pitch=0&heading=50&noclick=0" frameborder="0"></iframe>
                     <!--width="750" height="500" frameborder="0"></iframe>-->
                 </div>
                 <div role="tabpanel" class="tab-pane" id="tour2">
-                    <iframe src="https://360.asecondglance.ca/stc/panorama.html?panorama=CAoSLEFGMVFpcFBINFJJRTFDVWdZcGRPQjBxYlZpc3d1UHRhMV93eXdSWWJtRFVW&compass=1&address=1&arrows=1&zoom=1&turn=1&zoomlevel=1&pitch=0&heading=100&noclick=0" frameborder="0"></iframe>
+                    <iframe src="https://360.asecondglance.ca/stc/panorama.html?panorama=CAoSLEFGMVFpcE56NmdZdE5CMUlPWTk1TWNRV0xtS2Z3dU5fcThpa29NdGdxclp5&compass=1&address=1&arrows=1&zoom=1&turn=1&zoomlevel=1&pitch=0&heading=100&noclick=0" frameborder="0"></iframe>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="tour3">
-                    <iframe src="https://360.asecondglance.ca/stc/panorama.html?panorama=CAoSLEFGMVFpcE9Ra2VQMmtZTXc5Ui1Xb05yb2J5SlNaYWVtb3ZhM090YU1sYWVa&compass=1&address=1&arrows=1&zoom=1&turn=1&zoomlevel=1&pitch=0&heading=50&noclick=0" frameborder="0"></iframe>
+                    <iframe src="https://360.asecondglance.ca/stc/panorama.html?panorama=CAoSLEFGMVFpcE1ORVhhb3hsQ0tXNlhMbmlzcjh3blF3djFvc0JHOTV2NVpmY0xC&compass=1&address=1&arrows=1&zoom=1&turn=1&zoomlevel=1&pitch=0&heading=50&noclick=0" frameborder="0"></iframe>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="tour4">
                      <iframe src="https://360.asecondglance.ca/stc/panorama.html?panorama=CAoSLEFGMVFpcE9pdnFKWmNWUFFLY1lmc0V5T3F0OVJfQ01HSFVzTy0yc1dGa2RX&compass=1&address=1&arrows=1&zoom=1&turn=1&zoomlevel=1&pitch=0&heading=150&noclick=0" frameborder="0"></iframe>
