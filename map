@@ -54,7 +54,7 @@
                      <a href="/centre_tour">CENTRE TOUR</a>
                     <a href="/new_stores">NEW STORES</a>
                     <a href="/promotions">PROMOTIONS</a>
-                    <a href="/black_friday">BLACK FRIDAY</a>
+                    <a href="/blackfriday">BLACK FRIDAY</a>
                 </p>
             </div>
             <div class="map_store_list" id="store_list_container">
