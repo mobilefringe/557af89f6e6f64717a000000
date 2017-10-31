@@ -14,6 +14,7 @@
                 <a href="/centre_tour">CENTRE TOUR</a>
                 <a href="/new_stores">NEW STORES</a>
                 <a class="active" href="/promotions">PROMOTIONS</a>
+                <a class="/blackfriday" href="/promotions">BlACK FRIDAY</a>
             </p>
             <div id="promo_container">
                 <script id="promo_template" type="x-tmpl-mustache/text">
