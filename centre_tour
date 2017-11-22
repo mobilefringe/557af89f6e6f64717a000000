@@ -31,7 +31,7 @@
             </p>
              <div class="tab-content" id="tours">
                 <div role="tabpanel" class="tab-pane active" id="tour1">
-                    <iframe src="https://360.asecondglance.ca/stc/panorama.html?panorama=CAoSLEFGMVFpcE5EQ3NDSnl6cWoyM3RSazRlNDRWMHpPSjJmc1h4OFd3MlRWbE9s&compass=1&address=1&arrows=1&zoom=1&turn=1&zoomlevel=1&pitch=0&heading=50&noclick=0" frameborder="0"></iframe>
+                    <iframe src="https://360.asecondglance.ca/stc/panorama.html?panorama=CAoSLEFGMVFpcE5EQ3NDSnl6cWoyM3RSazRlNDRWMHpPSjJmc1h4OFd3MlRWbE9s&compass=1&address=1&arrows=1&zoom=1&turn=1&zoomlevel=1&pitch=0&heading=50&noclick=0" frameborder="0" allowfullscreen></iframe>
                     <!--width="750" height="500" frameborder="0"></iframe>-->
                 </div>
                 <div role="tabpanel" class="tab-pane" id="tour2">
