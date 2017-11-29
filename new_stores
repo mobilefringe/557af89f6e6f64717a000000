@@ -17,7 +17,6 @@
                 <a href="/centre_tour">CENTRE TOUR</a>
                 <a class="active" href="/new_stores">NEW STORES</a>
                 <a href="/promotions">PROMOTIONS</a>
-                <a href="/black_friday">BLACK FRIDAY</a>
             </p>
             <!--<h3 class="new_store_subheading">OPENING SOON</h3>-->
             <!--<p class="description hidden_now" id="no_opening_soon" >No new opening stores at the moment. Please check back later.</p>-->
