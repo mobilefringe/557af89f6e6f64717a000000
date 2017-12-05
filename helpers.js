@@ -1,9 +1,6 @@
 function init(e){
     $('<div class="modal-backdrop custom_backdrop"><img src="http://kodekloud.s3.amazonaws.com/sites/554a79236e6f64713f000000/69e8cd982124dc73de1f5a67a627ee75/loading.gif" class="" alt=""></div>').appendTo(document.body);
     
-    var current_year = moment().year();
-    $("#current_year").text(current_year);
-    
     $('#open_search').click(function(e){
         $('#open_search').hide();
         $('#close_search').css('display','inline-block');
@@ -105,6 +102,9 @@ function show_content(){
             $('.chat_banner').hide()
         }
     })
+    
+    var current_year = moment().year();
+    $("#current_year").text(current_year);
     
 }
 
