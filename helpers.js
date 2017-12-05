@@ -24,7 +24,6 @@ function init(e){
         $('#mobile_search_box').focus();
         e.preventDefault();
     });
-    
     $('#close_search_mobile').click(function(e){
         $('#mobile_search').hide();
         $('.social_icon_mobile').show();
@@ -66,8 +65,6 @@ function init(e){
     
     $('.close-search').click(function(){
     $('#search_results').hide();
-    
-    
 });
         
 $('#mobile_search_box').on('input', function() {
@@ -105,7 +102,6 @@ function show_content(){
     
     var current_year = moment().year();
     $("#current_year").text(current_year);
-    
 }
 
 function pinIt(){
