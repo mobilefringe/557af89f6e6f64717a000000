@@ -48,16 +48,8 @@
         function renderAll (){
             init_home_hours();
             var published_promos = getPublishedPromotionsList();
-            published_promos = all_promos.reverse();
-            promo_array = []
-            $.each( published_promos , function( key, val ){
-                today = moment();
-                webDate = moment(val.show_on_web_date);
-                if (today >= webDate) {
-                    promo_array.push(val)
-                } 
-            });
-            published_promos = promo_array;
+            published_promos = published_promos.reverse();
+            
             renderPromos("#promo_container","#promo_template", published_promos);
             show_content();
             more_less(e);
