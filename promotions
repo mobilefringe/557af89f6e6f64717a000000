@@ -1,0 +1,67 @@
+<div class="container-fluid container_60">
+    <div class="row">
+        <div class="col-md-3 text-center hidden_phone">
+              <a href="/posts">
+                <img alt="side image" class="width_100" src="//codecloud.cdn.speedyrails.net/sites/599d919a6e6f6420f1c90000/image/jpeg/1506440906000/STC_Fall-sidebanner.jpg" />
+            </a>
+        </div>
+        <div class="col-md-8 left_pad" >
+            <h1>Promotions</h1>
+            <div class="line"></div>
+            <p class="mini_nav">
+                <a href="/stores">STORE LIST</a>
+                <a href="/map">CENTRE MAP</a>
+                <a href="/centre_tour">CENTRE TOUR</a>
+                <a href="/new_stores">NEW STORES</a>
+                <a class="active" href="/promotions">PROMOTIONS</a>
+            </p>
+            <div id="promo_container">
+                <script id="promo_template" type="x-tmpl-mustache/text">
+                    <div class="row new_store_box">
+                        <div class="col-md-3 new_store_img_div text-center">
+                            <img alt="new store" class="new_store_image" src="{{store_image}}" />
+                        </div>
+                        <div class="col-md-8">
+                            <a style=" position: absolute; top: -55px; " id="{{slug}}"></a>
+                            <h5 class="new_store_name">{{store_name}}</h5>
+                            <h5 class="promo_name">{{name}}</h5>
+                            <a class="feature_read_more more" href="#" data-id = "{{id}}" id="more_{{id}}">MORE</a>
+                            <div class="show_accordion" id="show_{{id}}" style="font-size:18px">
+                                <p class="new_store_desc">{{dates}}</p>
+                                <div class="new_store_desc">{{{rich_description}}}</div>
+                                <div class="margin_15px"></div>
+                                <img class="width_100" alt="promo image" src="{{alt_promo_image_url}}" /> 
+                                <div class="margin_15px"></div>
+                                <a class="feature_read_more less" href="#" id="less_{{id}}" data-id = "{{id}}">LESS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="separator2"></div>
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            init_home_hours();
+            var published_promos = getPublishedPromotionsList();
+            published_promos = all_promos.reverse();
+            promo_array = []
+            $.each( published_promos , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date);
+                if (today >= webDate) {
+                    promo_array.push(val)
+                } 
+            });
+            published_promos = promo_array;
+            renderPromos("#promo_container","#promo_template", published_promos);
+            show_content();
+            more_less(e);
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
