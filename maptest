@@ -1,4 +1,19 @@
 
 <!--<iframe id="mappedIn" src="https://stc-web.mappedin.com/?mall=oxford-scarborough-town-centre"></iframe>-->
 
-
+<div class="mappedin_container">
+    <div id="mappedin-map"></div>
+    <main data-venue="10-dundas" data-key="" data-header="106" id="mappedin-app"></main> 
+</div>
+<script type="text/javascript">
+    window.mappedin = {
+        miKey: {
+            id: 'NQ8si2mbnbtJ6ticAUV37ByqstlkuC5M',
+            key: 'cwKTJ7lHEWz0fpLY'
+        },
+        searchKey: {
+            id: 'ki6v9TAb9HA2VK2A2OSaUCdXi0orCnxE',
+            secret: 'TIc9sMNtVrme4hik'
+        }
+    };
+</script>
