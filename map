@@ -20,13 +20,17 @@
 <script src="https://d1p5cqqchvbqmy.cloudfront.net/web/release/mappedin-web.js" type="text/javascript"></script>
 <style>
     .mappedin_container {
-    position: relative;
-    top: 0px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: 0 auto;
-    max-width: 1150px;
-    height: 80vh;
-}
+        position: relative;
+        top: 0px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0 auto;
+        max-width: 1150px;
+        height: 80vh;
+    }
+    .chat_link {
+        right:initial;
+        left:0px;
+    }
 </style>
