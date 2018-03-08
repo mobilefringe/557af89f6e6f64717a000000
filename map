@@ -33,5 +33,8 @@
         right:initial;
         left:0px;
         padding: 10px 20px;
+        @media only screen and (max-width: 800px) { 
+            max-width:100%;
+        }
     }
 </style>
