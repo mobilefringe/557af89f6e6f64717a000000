@@ -51,6 +51,7 @@
     .navbar-nav {
         float: none!important;
         margin: 7.5px -15px;
+        text-align: center;
     }
     .navbar-nav>li {
         float: none;
