@@ -36,6 +36,8 @@
         
     }
     @media only screen and (max-width: 800px) { 
+        .chat_link {
             max-width:100%;
         }
+    }
 </style>
