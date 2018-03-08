@@ -32,5 +32,6 @@
     .chat_link {
         right:initial;
         left:0px;
+        padding: 10px 20px;
     }
 </style>
