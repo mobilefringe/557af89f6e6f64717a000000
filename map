@@ -72,16 +72,20 @@
     }
     
     .dropdown-menu{
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
-        transform: translateX(-50%);
+        /*position:absolute !important;*/
+        /*border: 1px solid #BFBEBD !important;*/
+        /*background: #fff !important;*/
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        transform: translateX(0%);
     }
-       
-    body{
-        padding-top:50px;
+    .stc_nav li{
+        border:0;
+    }
+    .navbar-collapse.in{
+        overflow:visible !important;
     }
     @media only screen and (max-width: 800px) { 
         .chat_link {
