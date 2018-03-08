@@ -160,7 +160,7 @@
                     </div>
                 </div>
             </div>
-            <div class="content_container hidden_phone">
+            <div class="content_container hidden_now">
                 <div class="navbar stc_navbar">
                     <div class="collapse navbar-collapse" id="stc_menu">
                         <ul class="stc_nav nav navbar-nav">
