@@ -263,7 +263,7 @@
             </div>
         </header>
         <div class="content_container">
-            <div class="hidden_phone">
+            <div class="hidden_now">
                 <div class="text-center">
                     <a href="/"><img class="main_logo" src="//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/8145457936ef8cb613a266a0fefedb69/stc_logo_360.png" alt="logo"></a>
                     <p class="sub_menu">
