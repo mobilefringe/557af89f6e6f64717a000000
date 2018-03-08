@@ -27,7 +27,7 @@
         left: 0;
         margin: 0 auto;
         max-width: 1150px;
-        height: 80vh;
+        height: calc(100vh - 96px);
     }
     .chat_link {
         right:initial;
