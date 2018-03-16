@@ -1,0 +1,13 @@
+<h1 class="heading_404 container_60">404</h1>
+<div class="line2"></div>
+<p class="description text-center">We can't find the page you're looking for.</p>
+<p class="text-center"><a href="/" class="feature_read_more">TAKE ME TO STC HOMEPAGE</a></p>
+<script>
+    $(document).ready(function(){
+        function renderAll(){
+            init_home_hours();
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
