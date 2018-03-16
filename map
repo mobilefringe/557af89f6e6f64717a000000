@@ -107,7 +107,7 @@
 </style>
 <script>
     $(document).ready(function(){
-        if($( document ).width() > 768)
+        if($( document ).width() <= 768)
     })
     
 </script>
