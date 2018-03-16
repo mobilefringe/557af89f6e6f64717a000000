@@ -108,7 +108,7 @@
 <script>
     $(document).ready(function(){
         if($( document ).width() <= 768) {
-            $('#mappedin-app').attr('header', 130); 
+            $('#mappedin-app').attr('data-header', 130); 
             console.log($('#mappedin-app'))
         }
     })
