@@ -99,6 +99,9 @@
            /*padding: 10px 10px;*/
           display:none;
         }
+        .mappedin_container {
+            
+        }
     }
     
 </style>
