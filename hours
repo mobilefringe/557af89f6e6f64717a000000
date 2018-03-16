@@ -1,0 +1,87 @@
+<div class="container-fluid container_60">
+    <div class="row">
+        <div class="col-md-4 text-center hidden_phone">
+            <img alt="side image" class="width_100" src="//codecloud.cdn.speedyrails.net/sites/557af89f6e6f64717a000000/71ba44a20a9b040b3c83820e2b5a21b8/security_img.jpg" />
+        </div>
+        <!--<div class="col-md-1 hidden_phone">-->
+        <!--    <div style="width:50%;border-right:1px solid #ccc;height:100%"></div>-->
+        <!--</div>-->
+        <div class="col-md-7 left_pad">
+            <h1>Hours</h1>
+            <div class="line"></div>
+            <p class="hstc no_margin">STC SHOPPING HOURS</p>
+            <p class="new_store_name no_margin">Monday – Friday</p>
+            <div id="hours_mf_container">
+                <script id="hours_mf_template" type="x-tmpl-mustache/text">
+                    <p class="description no_margin">{{h}}</p>
+                </script>
+            </div>
+            <div class="margin_15px"></div>
+            <p class="new_store_name no_margin">Saturday</p>
+            <div id="hours_sat_container">
+                <script id="hours_sat_template" type="x-tmpl-mustache/text">
+                    <p class="description no_margin">{{h}}</p>
+                </script>
+            </div>
+            <div class="margin_15px"></div>
+            <p class="new_store_name no_margin">Sunday</p>
+            <div id="hours_sun_container">
+                <script id="hours_sun_template" type="x-tmpl-mustache/text">
+                    <p class="description no_margin">{{h}}</p>
+                </script>
+            </div>
+            <div class="margin_30"></div>
+            <p class="hstc no_margin">IMPORTANT DATES & CLOSURES</p>
+            <div id="holiday_hours_container">
+                <script id="holiday_hours_template" type="x-tmpl-mustache/text">
+                    <p class="new_store_name no_margin">{{holiday_name}}</p>
+                    <p class="description no_margin">{{formatted_date}}</p>
+                    <p class="description no_margin">(STC OPEN {{h}})</p>
+                </script>
+            </div>
+            <div class="margin_30"></div>
+            <p class="hstc no_margin">STC WILL BE CLOSED ON <br />THE FOLLOWING STATUTORY HOLIDAYS</p>
+            <div id="closed_hours_container">
+                <script id="closed_hours_template" type="x-tmpl-mustache/text">
+                    <p class="new_store_name no_margin">{{holiday_name}}</p>
+                    <p class="description no_margin">{{formatted_date}}</p>
+                    <div class="margin_15px"></div>
+                </script>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            init_home_hours();
+            var hours = getPropertyRegularHours();
+            var hours_mf = [];
+            var hours_sat = [];
+            var hours_sun = [];
+            $.each(hours, function(key, val){
+                if (val.day_of_week == 1 && val.is_holiday == false){
+                    hours_mf.push(val);
+                }
+                if (val.day_of_week == 6 && val.is_holiday == false){
+                    hours_sat.push(val);
+                }
+                if (val.day_of_week == 0 && val.is_holiday == false){
+                    hours_sun.push(val);
+                }
+            });
+            renderHours('#hours_mf_container','#hours_mf_template', hours_mf, 'reg_hours');
+            renderHours('#hours_sat_container','#hours_sat_template', hours_sat, 'reg_hours');
+            renderHours('#hours_sun_container','#hours_sun_template', hours_sun, 'reg_hours');
+            var holiday_hours = getPropertyHolidayHours();
+            renderHours('#holiday_hours_container','#holiday_hours_template', holiday_hours, 'holiday_hours');
+            renderHours('#closed_hours_container','#closed_hours_template', holiday_hours, 'closed_hours');
+            
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
