@@ -1,0 +1,64 @@
+<style>
+    @media screen and (min-width: 480px) {
+        #tours iframe{
+            width:auto;
+            height:75%;
+        }
+    }
+    #tours iframe{
+        width:750px;
+        height:500px;
+    }
+</style>
+<div class="container-fluid container_60">
+    <div class="row">
+        <div class="col-md-3 text-center hidden_phone">
+            <a href="/posts">
+                <img alt="side image" class="width_100" src="//codecloud.cdn.speedyrails.net/sites/599d919a6e6f6420f1c90000/image/jpeg/1506440906000/STC_Fall-sidebanner.jpg" />
+            </a>
+        </div>
+        <div class="col-md-8 left_pad">
+            <h1>Centre Tour</h1>
+            <div class="line"></div>
+            
+            <p class="mini_nav_2">
+                <a class="active directions_toggler" href="#tour1" aria-controls="tour1" role="tab" data-toggle="tab">H&M Court</a>
+                <a class="directions_toggler" href="#tour2" aria-controls="tour2" role="tab" data-toggle="tab">TASTE MRKT</a>
+                <a class="directions_toggler" href="#tour3" aria-controls="tour3" role="tab" data-toggle="tab">Upper Level</a>
+                <a class="directions_toggler" href="#tour4" aria-controls="tour4" role="tab" data-toggle="tab">Cineplex Entrance</a>
+                <a class="directions_toggler" href="#tour5" aria-controls="tour5" role="tab" data-toggle="tab">TTC Entrance</a>
+                <a class="directions_toggler" href="#tour6" aria-controls="tour6" role="tab" data-toggle="tab">Outdoor</a>
+            </p>
+             <div class="tab-content" id="tours">
+                <div role="tabpanel" class="tab-pane active" id="tour1">
+                    <iframe src="https://360.asecondglance.ca/stc/panorama.html?panorama=CAoSLEFGMVFpcE5EQ3NDSnl6cWoyM3RSazRlNDRWMHpPSjJmc1h4OFd3MlRWbE9s&compass=1&address=1&arrows=1&zoom=1&turn=1&zoomlevel=1&pitch=0&heading=50&noclick=0" frameborder="0" allowfullscreen></iframe>
+                    <!--width="750" height="500" frameborder="0"></iframe>-->
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tour2">
+                    <iframe src="https://360.asecondglance.ca/stc/panorama.html?panorama=CAoSLEFGMVFpcE56NmdZdE5CMUlPWTk1TWNRV0xtS2Z3dU5fcThpa29NdGdxclp5&compass=1&address=1&arrows=1&zoom=1&turn=1&zoomlevel=1&pitch=0&heading=100&noclick=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tour3">
+                    <iframe src="https://360.asecondglance.ca/stc/panorama.html?panorama=CAoSLEFGMVFpcE1ORVhhb3hsQ0tXNlhMbmlzcjh3blF3djFvc0JHOTV2NVpmY0xC&compass=1&address=1&arrows=1&zoom=1&turn=1&zoomlevel=1&pitch=0&heading=50&noclick=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tour4">
+                     <iframe src="https://360.asecondglance.ca/stc/panorama.html?panorama=CAoSLEFGMVFpcE9pdnFKWmNWUFFLY1lmc0V5T3F0OVJfQ01HSFVzTy0yc1dGa2RX&compass=1&address=1&arrows=1&zoom=1&turn=1&zoomlevel=1&pitch=0&heading=150&noclick=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tour5">
+                    <iframe src="https://360.asecondglance.ca/stc/panorama.html?panorama=CAoSLEFGMVFpcE1Bd1o0bVdMejh4WmJfaUd1eHNwMUJGNGdZbjRsZTlyZTBMU1FP&compass=1&address=1&arrows=1&zoom=1&turn=1&zoomlevel=1&pitch=0&heading=150&noclick=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="tour6">
+                    <iframe src="https://360.asecondglance.ca/stc/panorama.html?panorama=CAoSLEFGMVFpcE1JVWwzZlJINk5sa1VnbmxyLXdGaHJjUjA4akNRNWdwZkFiWXBm&compass=1&address=1&arrows=1&zoom=1&turn=1&zoomlevel=1&pitch=0&heading=300&noclick=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e) {
+        // init(e);
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            $('.mini_nav_2 a').removeClass('active')
+            $(this).addClass('active')
+        })
+    });
+</script>
