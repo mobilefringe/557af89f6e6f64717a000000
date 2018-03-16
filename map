@@ -106,7 +106,7 @@
     }
     @media only screen and (min-height: 700px) {
         .mappedin_container{
-            height: calc(100vh - 166px);
+            /*height: calc(100vh - 166px);*/
         }
     }
 </style>
