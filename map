@@ -98,5 +98,8 @@
                font-size: 0.9em;
                padding: 10px 10px;
         }
+        .mappedin_container{
+             height: calc(100vh - 166px);
+        }
     }
 </style>
