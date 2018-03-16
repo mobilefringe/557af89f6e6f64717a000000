@@ -111,6 +111,6 @@
             $('#mappedin-app').attr('data-header', 130); 
             // console.log($('#mappedin-app'))
         }
-    })
+    });
     
 </script>
