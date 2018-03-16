@@ -101,7 +101,7 @@
     }
     @media only screen and (max-width: 800px) {
         .mappedin_container{
-             height: calc(100vh - 166px);
+            height: calc(100vh - 166px);
         }
     }
 </style>
