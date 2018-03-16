@@ -3,7 +3,7 @@
 
 <div class="mappedin_container">
     <div id="mappedin-map"></div>
-    <main data-venue="oxford-scarborough-town-centre" data-key="" data-header="96" id="mappedin-app"></main> 
+    <main data-venue="oxford-scarborough-town-centre" data-key="" data-header="130" id="mappedin-app"></main> 
 </div>
 <script type="text/javascript">
     window.mappedin = {
