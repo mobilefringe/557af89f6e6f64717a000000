@@ -1,0 +1,68 @@
+<style>
+    .row a{
+        color:#000; 
+        border-bottom:1px solid #000;
+    }
+    .row a:hover{
+        text-decoration:none;
+    }
+</style>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="margin_15px"></div>
+            <h1 class="">Search Results</h1>
+            <div class="margin_30"></div>
+            <h4 class="new_store_subheading no_margin" id="stores_header">Stores</h4>
+            <div id="search_container_stores">
+                <script id="search_template_stores" type="x-tmpl-mustache/text">
+                    <p class="description"><a target="_blank" href="/stores/{{slug}}">{{name}}</a></p>
+                </script>
+            </div>
+            <div class="margin_30"></div>
+            <h4 class="new_store_subheading no_margin" id="promotions_header">Promotions</h4>
+            <div id="search_container_promotions">
+                <script id="search_template_promotions" type="x-tmpl-mustache/text">
+                    <p class="description"><a target="_blank" href="/promotions/{{slug}}">{{name}}</a></p>
+                </script>
+            </div>
+            <div class="margin_30"></div>
+            <h4 class="new_store_subheading no_margin" id="events_header">Events</h4>
+            <div id="search_container_events">
+                <script id="search_template_events" type="x-tmpl-mustache/text">
+                    <p class="description"><a target="_blank" href="/events/{{slug}}">{{name}}</a></p>
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            init_home_hours();
+            var params = getRequestParam('query');
+            var search_results = getSearchResults(params,10,100);
+            if (search_results.stores != undefined && search_results.stores.length > 0){
+                renderGeneral('#search_container_stores','#search_template_stores', search_results.stores);
+            }
+            else{
+                $('stores_header').hide()
+            }
+            if (search_results.promotions != undefined && search_results.promotions.length > 0){
+                renderGeneral('#search_container_promotions','#search_template_promotions', search_results.promotions);
+            }
+            else{
+                $('#promotions_header').hide()
+            }
+            if (search_results.events != undefined &&  search_results.events.length > 0){
+                renderGeneral('#search_container_events','#search_template_events', search_results.events);
+            }
+            else{
+                $('#events_header').hide()
+            }
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
