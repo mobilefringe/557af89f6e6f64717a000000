@@ -1,0 +1,197 @@
+<style>
+    .new_store_subheading {
+        font-size: 16px;
+    }
+</style>
+<div class="container-fluid container_60">
+    <h1>Directions</h1>
+    <div class="line"></div>
+    <div class="row">
+        <div class="col-md-9">
+            <div id="mm_page_content">
+                <iframe frameborder="0" height="500" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.8479796521947!2d-79.25978190000001!3d43.77601440000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d1a63c9c28db%3A0xd147ec9870be00a3!2sScarborough+Town+Centre!5e0!3m2!1sen!2sus!4v1440442276184" title="Location of mall on Google maps" width="100%" class="scrolloff">Location of mall on Google maps</iframe>
+            </div>
+        </div>
+        <div class="col-md-3">
+        <br class="show_phone" /><br class="show_phone" />
+        <h2 class="hstc no_margin" id="address">ADDRESS</h2>
+            <p class="description" style="margin-top:0">
+                
+                300 Borough Drive
+                <br />
+                Scarborough, Ontario
+                <br />
+                M1P 4P5
+                <br />
+                Canada
+            </p>
+            <div class="margin_15px"></div>
+            <h2 class="hstc no_margin" id="open_today">OPEN TODAY</h2>
+            <p class="description no_margin" id="hours_today"></p>
+            <div class="margin_30"></div>
+            <h2 class="hstc no_margin">STC SHOPPING HOURS</h2>
+            <p class="new_store_name no_margin">Monday – Friday</p>
+            <div id="hours_mf_container">
+                <script id="hours_mf_template" type="x-tmpl-mustache/text">
+                    <p class="description no_margin">{{h}}</p>
+                </script>
+            </div>
+            <div class="margin_15px"></div>
+            <p class="new_store_name no_margin">Saturday</p>
+            <div id="hours_sat_container">
+                <script id="hours_sat_template" type="x-tmpl-mustache/text">
+                    <p class="description no_margin">{{h}}</p>
+                </script>
+            </div>
+            <div class="margin_15px"></div>
+            <p class="new_store_name no_margin">Sunday</p>
+            <div id="hours_sun_container">
+                <script id="hours_sun_template" type="x-tmpl-mustache/text">
+                    <p class="description no_margin">{{h}}</p>
+                </script>
+            </div>
+            <div class="margin_30"></div>
+        </div>
+    </div>
+    <div class="margin_30"></div>
+    <div class="row">
+        <div class="col-md-9">
+            <p class="mini_nav_2 ">
+             
+                <a style="padding-right: 20px;border-right: 1px solid #BFBEBD;padding-bottom: 13px !important;margin-right: 0;" class="active directions_toggler" href="#car" aria-controls="car" role="tab" data-toggle="tab">DIRECTIONS BY CAR</a>
+                <a style="padding-right: 20px;border-right: 1px solid #BFBEBD;padding-bottom: 13px !important;margin-right: 0;"  class="directions_toggler" href="#transit" aria-controls="transit" role="tab" data-toggle="tab">PUBLIC TRANSIT</a>
+                <a style="padding-right: 20px;border-right: 1px solid #BFBEBD;padding-bottom: 13px !important;margin-right: 0;" class="directions_toggler" href="#google" aria-controls="car" role="tab" data-toggle="tab">GOOGLE VIEW</a>
+            </p>
+            <div class="margin_15px"></div>
+            <div class="tab-content ">
+                <div role="tabpanel" class="tab-pane active" id="car">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <p class="description">
+                                STC is located in the east end of Toronto, directly off of HWY. 401, between Mccowan Road and Brimley Road.
+                            </p>
+                            <a class="feature_read_more" href="#">CLICK HERE TO PLAN YOUR ROUTE ON GOOGLE MAPS</a>
+                            <div class="margin_30"></div>
+                            <h2 class="hstc no_margin">FOR THOSE ARRIVING FROM THE WEST ON THE 401</h2>
+                            <p class="description">
+                                While travelling east on the 401, exit at Brimley Road and drive south to Triton Road. At Triton Road turn left and it will take you into the Centre.
+                            </p>
+                            <div class="margin_30"></div>
+                            <h2 class="hstc no_margin">FOR THOSE ARRIVING FROM THE EAST ON THE 401</h2>
+                            <p class="description">
+                                While travelling west on the 401, exit at McCowan Road and drive south across the overpass and turn right into the Progress Avenue exit. At the first lights proceed across Progress Avenue into the Centre.
+                            </p>
+                            <div class="margin_30"></div>
+                            <h2 class="hstc no_margin">FOR THOSE ARRIVING FROM THE SOUTH</h2>
+                            <p class="description">
+                                While travelling north on McCowan Road, turn left onto Town Centre Drive and then turn right on Borough Drive. Borough Drive will take you into the Centre.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="transit">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <p class="description">
+                                The Centre is accessed by GO Transit, Voyageur, Greyhound and the T.T.C., including the L.R.T.
+                            </p>
+                            <a class="feature_read_more" href="#">CLICK HERE TO PLAN YOUR ROUTE ON GOOGLE MAPS</a>
+                            <div class="margin_30"></div>
+                            <h2 class="hstc no_margin">FOR BUS AND SUBWAY SCHEDULES, YOU MAY CALL:</h2>
+                            <p class="description">
+                                <strong>Toronto Transit Commission</strong>
+                                <br />
+                                (416) 393-4636
+                            </p>
+                            <div class="margin_15px"></div>
+                            <p class="description">
+                                <strong>Go Bus</strong>
+                                <br />
+                                (416) 869-3200
+                            </p>
+                            <div class="margin_15px"></div>
+                            <p class="description">
+                               <strong> Voyageur</strong>
+                                <br />
+                                (416) 393-7911
+                            </p>
+                            <div class="margin_15px"></div>
+                            <p class="description">
+                               <strong> Wheel Trans</strong>
+                                <br />
+                                (416) 393-4222
+                            </p>
+                            <div class="margin_15px"></div>
+                            <p class="description">
+                                <strong>Greyhound</strong>
+                                <br />
+                                (800) 661-8747
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                 <div role="tabpanel" class="tab-pane" id="google">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <p class="description">
+                               <iframe src="https://www.google.com/maps/embed?pb=!1m0!4v1505419888017!6m8!1m7!1sCAoSLEFGMVFpcE9maTJPUjZ4SDVQSFVJY2djRmZvaUlRSlZRcDdNQVRYQWk0WDUw!2m2!1d43.775852909828!2d-79.256998602734!3f4.45!4f3.25!5f1.3915199859048966" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            $('.mini_nav_2 a').removeClass('active')
+            $(this).addClass('active')
+        })
+        function renderAll (){
+            init_home_hours();
+            var hours = getPropertyHours();
+            var hours_mf = [];
+            var hours_sat = [];
+            var hours_sun = [];
+            var hours_today = []
+            var n = moment().day();
+            $.each(hours, function(key, val){
+                if(val.day_of_week == n){
+                    if (val.is_closed == true ||val.is_holiday == true){
+                        $('#open_today').text("CLOSE TODAY")
+                    }
+                    else{
+                        hours_today.push(val);
+                        var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+var close_time = moment(val.close_time).tz(getPropertyTimeZone());
+                        $('#hours_today').text(open_time.format("h:mm A") + " - " + close_time.format("h:mm A"));
+                    }
+                    
+                }
+                if (val.day_of_week == 1 && val.is_holiday == false){
+                    hours_mf.push(val);
+                }
+                if (val.day_of_week == 6 && val.is_holiday == false){
+                    hours_sat.push(val);
+                }
+                if (val.day_of_week == 0 && val.is_holiday == false){
+                    hours_sun.push(val);
+                }
+            });
+            renderHours('#hours_mf_container','#hours_mf_template', hours_mf, 'reg_hours');
+            renderHours('#hours_sat_container','#hours_sat_template', hours_sat, 'reg_hours');
+            renderHours('#hours_sun_container','#hours_sun_template', hours_sun, 'reg_hours');
+            show_content();
+        }
+         $('#mm_page_content').on('click', function () {
+            $('iframe').removeClass('scrolloff');
+        });
+        $("iframe").mouseleave(function () {
+            $(this).addClass('scrolloff');
+        });
+        loadMallDataCached(renderAll); 
+    })
+</script>
