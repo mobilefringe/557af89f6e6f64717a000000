@@ -108,7 +108,7 @@
 <script>
     $(document).ready(function(){
         if($( document ).width() <= 768) {
-            $('main').data('num', num); 
+            $('main').data('header', 130); 
         }
     })
     
