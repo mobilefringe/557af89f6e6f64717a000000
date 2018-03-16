@@ -1,0 +1,182 @@
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<div class="container-fluid container_60">
+    <div class="row">
+        <div class="col-md-5 text-center">
+            <div id="contest_image_container">
+                <script id="contest_image_template" type="x-tmpl-mustache/text">
+                    <img alt="contest side image" class="width_100" src="{{alt_photo_url}}" />
+                    <div class="margin_30"></div>
+                    <h5 class="new_store_name text-left">{{name}}</h5>
+                    <p class="description text-left">{{{description}}}</p>
+                </script>
+            </div>
+        </div>
+        <div class="col-md-6 left_pad">
+            <h1>Contest</h1>
+            <div class="line"></div>
+            <div id="contest_ended" style="display:none">
+                <p class="description">The contest has ended. Good luck to all the entrants. Stay tuned for more chances to win.</p>
+            </div>
+            <div id="success_subscribe" style="display:none">
+                <p class="description">Thank you for your entry. Good luck!</p>
+            </div>
+            <div id="form_div">
+                <script id="contest_template" type="x-tmpl-mustache/text">
+                    <form id="contest_form">
+                        <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
+                        <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
+                        <input type="hidden" name="cm-name" id="cm-name" />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="first_name">First Name *</label>  
+                                <input class="form-control" id="first_name" name="contest[first_name]" type="text" required />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="last_name">Last Name *</label>  
+                                <input class="form-control" id="last_name" name="contest[last_name]" type="text" required />
+                            </div>
+                        </div>
+                        <div class="margin_30"></div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="email">Email *</label> 
+                                <input class="form-control" id="email" name="contest[email]" type="email" required />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone_number">Phone Number</label>  
+                                <input class="form-control" id="phone_number" name="contest[phone]" type="text"  />
+                            </div>
+                        </div>
+                        <div class="margin_30"></div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="postal_code">Postal Code</label> 
+                                <input class="form-control" id="postal_code" name="contest[postal_code]" type="text"  />
+                            </div>
+                            <div class="col-md-2">
+                                <label for="age">Age</label> 
+                                <input class="form-control" id="age" name="contest[age]" type="text"  />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="fieldmuuht">Gender</label>  
+                                <select class="form-control" id="fieldmuuht" name="contest[gender]">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="margin_30"></div>
+                        <div class="row">
+                            <div class="col-md-12">
+                              <label><input id="newsletter_signup" type="checkbox" name="contest[newsletter]" /> I agree to receive newsletters from Scarborough Town Centre. You can unsubscribe anytime. For more details about personal privacy, please read our <a href="/privacy" target="_blank">Privacy Policy.</a></label>
+                            
+                            
+                               
+                                <div class="margin_15px"></div>
+                                <label><input id="vendor_info" type="checkbox" name="contest[get_vendor_info]" /> I agree to receive electronic message from Hudson’s Bay Company containing information and offers with respect to products and services that may be of interest to me, including notification of sales, special events and store promotions. I may withdraw this consent at any time by selecting the unsubscribe option.</label>
+                            </div>
+                        </div>
+                        <div class="margin_30"></div>
+                        <label for="enterVerify">Enter the following number below to proceed: <div id="verifyNum"></div></label><br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="hidden" value="701469" id="verifyNumHidden" name="verifyNumHidden" />
+                                <input type="text" id="enterVerify" name="enterVerify" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="margin_30"></div>
+                        <label><input type="checkbox" id="agree_terms"> I understand the Scarborough Town Center <a href="/policy" target="_blank">Privacy Policy</a></label>
+                        <br />
+                        <a target="_blank" class="feature_read_more" href="http://cdn.mallmaverick.com/system/site_images/photos/000/009/061/original/TERMS_AND_CONDITIONS(1).pdf?1430846021">Terms and Conditions</a>
+                        <div class="margin_30"></div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type = "submit" value="SUBMIT" class="btn_submit_stc "/>
+                            </div>
+                        </div>
+                        <div class="margin_30"></div>
+                        
+                    </form>
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            init_home_hours();
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var contestDetails = getContestBySlug(slug);
+            if(contestDetails != undefined){
+                renderContest('#form_div','#contest_template', contestDetails, 'contestDetails');
+                renderContest('#contest_image_container','#contest_image_template', contestDetails, 'contestDetails');
+            }
+            else{
+                $('#contest_ended').show()
+            }
+            show_content();
+            randomgen();
+            $('#contest_form').submit(function (e) {
+                e.preventDefault();
+                if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
+                    if ($("#agree_terms").prop("checked") == true){
+                        var e = verify_required_fields();
+                        if (e == true){
+                            if ($("#newsletter_signup").prop("checked") == true){
+                                var s = validateEmail($("#email").val());
+                                if (s == true){
+                                    var email = $("#email").val();
+                                    var n_data = {};
+                                    n_data['cm-yktkih-yktkih'] = email;
+                                    $.getJSON(
+                                        "http://mobilefringe.createsend.com/t/d/s/yktkih/?callback=?",
+                                        n_data,
+                                        function (data) {
+                                            if (data.Status === 400) {
+                                                alert("Please try again later.");
+                                            } else { // 200
+                                                data = $("#contest_form").serialize();
+                                                submit_contest(data);
+                                                  
+                                            }
+                                    });  
+                                } else {
+        
+                                    alert("Invaid E-mail address.")
+                                }
+                                
+                            } else {
+                                data = $(this).serialize();
+                                submit_contest(data);
+                            }    
+                        } else {
+                            alert("One or more required fields are blank! please fill in all fields marked with * and try again.")
+                        }
+                        
+                        
+                    } else {
+                        alert("Please agree to the STC Privacy Policy")
+                    }
+                }
+                else
+                {
+                    alert("Please Enter Correct Verification Number");
+                    randomgen();
+                }
+            
+            });
+        }
+        loadMallDataCached(renderAll); 
+        function verify_required_fields (){
+            if ($("#first_name").val() != "" && $("#last_name").val() != "" && $("#email").val() != "") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    })
+</script>
