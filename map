@@ -95,9 +95,9 @@
     }
     @media (max-width: 768px) {
         .chat_link {
-               /*font-size: 0.9em;*/
-               /*padding: 10px 10px;*/
-              display:none;
+           /*font-size: 0.9em;*/
+           /*padding: 10px 10px;*/
+          display:none;
         }
     }
     
