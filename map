@@ -93,7 +93,7 @@
             max-width:100%;
         }
     }
-    @media (max-width: 380px) {
+    @media (max-width: 7680px) {
         .chat_link {
                font-size: 0.9em;
                padding: 10px 10px;
