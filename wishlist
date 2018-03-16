@@ -1,0 +1,60 @@
+<div>
+    <a href="/"><img src="//codecloud.cdn.speedyrails.net/sites/5a9857916e6f6458ec6f0000/image/png/1448057669000/stc_logo_hd.png" class="wishlist_logo" alt="wishlist logo"></a>
+    <!--<h1 class="text-center">Holiday Wish List</h1>-->
+    <div class="flexslider custom_slider">
+        <ul class="slides" id="fashion_images_container">
+            <script id="fashion_images_template" type="x-tmpl-mustache/text">
+               <li><img src="{{image_url}}" alt="STC Wish List" /></li>
+            </script>
+        </ul>
+    </div>
+    <div class="text-center">
+        <h3 class="new_store_subheading no_margin c_bold">SHARE YOUR FAVOURITE WISH LIST</h3>
+        <div class="margin_20"></div>
+        <div class="container-fluid">
+            <div class="custom_share_row">
+                <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://scarboroughtowncentre.com/wishlist" class="c_deck share_social c_margin">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/5a9857916e6f6458ec6f0000/image/png/1447354236000/facebook26.png" class="" alt="fb">
+                </a>
+                <a target="_blank" href="http://twitter.com/share?text=My STC Wish List&url=http://scarboroughtowncentre.com/wishlist" class="share_social c_deck">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/5a9857916e6f6458ec6f0000/image/png/1447354246000/twitter15.png" class="" alt="tweet">
+                </a>
+                <a onclick="pinIt()" class="share_social c_deck c_margin">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/5a9857916e6f6458ec6f0000/image/png/1447354256000/pinterest12.png" class="" alt="pin">
+                </a>
+                <a href="mailto:email@address.com?subject=My STC Wish List&body=http://scarboroughtowncentre.com/wishlist" class="c_deck share_social">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/5a9857916e6f6458ec6f0000/image/png/1447354263000/Group.png" class="" alt="email">
+                </a>  
+            </div>
+        </div>
+        <div class="margin_20"></div>
+        <p class="wishlist_footer c_deck">
+            Scarborough Town Centre - 300 Borough Drive. <br class="show_phone" /> Scarborough, Ontario M1P 4P5. Canada
+        </p>
+        <p class="wishlist_footer2 c_deck"><a href="/"><i class="fa fa-long-arrow-left"></i> Back to scarboroughtowncentre.com</a></p>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            init_home_hours();
+            var fashion = getFashionBySlug('stc-wish-list');
+            if (fashion != undefined){
+                var fashion_images = fashion.fashion_images
+                renderFashionImages("#fashion_images_container", "#fashion_images_template", fashion_images);
+            }
+            show_content();
+            $('.flexslider').flexslider({
+                animation: "slide",
+                after: function(slider){
+                    // var img_src = $(slider).find(".flex-active-slide").find('img').attr('src');
+                    // $('meta[property="og:image"]').attr('content', img_src);
+                
+              }
+            });
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
