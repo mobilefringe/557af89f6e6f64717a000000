@@ -99,9 +99,12 @@
                padding: 10px 10px;
         }
     }
-    @media only screen and (min-height: 700px) {
-        .mappedin_container{
-            height: calc(100vh - 166px);
+    @media only screen and (min-width: 400px) {
+        /*.mappedin_container{*/
+        /*    height: calc(100vh - 166px);*/
+        /*}*/
+        body {
+                padding-top: 88px;
         }
     }
     /*@media only screen and (min-height: 700px) {*/
