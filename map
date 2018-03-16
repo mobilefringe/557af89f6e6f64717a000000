@@ -100,9 +100,9 @@
         }
     }
     @media only screen and (min-width: 400px) {
-        /*.mappedin_container{*/
-        /*    height: calc(100vh - 166px);*/
-        /*}*/
+        .mappedin_container{
+            height: calc(100vh - 166px);
+        }
         body {
             padding-top: 88px;
         }
