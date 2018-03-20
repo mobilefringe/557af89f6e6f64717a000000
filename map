@@ -88,6 +88,11 @@
     /*.navbar-collapse.in{*/
     /*    overflow:visible !important;*/
     /*}*/
+     @media only screen and (max-width: 800px) { 
+        .show_phone {
+           display:block;
+        }
+    }
     @media only screen and (max-width: 800px) { 
         .chat_link {
             max-width:100%;
